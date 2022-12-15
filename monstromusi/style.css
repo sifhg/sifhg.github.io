@@ -23,11 +23,15 @@ h1 {
     color: #c094b5;
     
 }
-header {
-    text-decoration: none;
+a {
+    text-decoration-line: none;
 }
 h2 {
     color: #c094b5;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .site-description {
     font-family: Alegreya Sans,sans-serif;
@@ -39,6 +43,7 @@ h2 {
 table {
     width: 100%;
 }
-th, td {
-    border: 1px solid rgb(255, 255, 255);
-  }
+td {
+    padding: 1rem;
+    vertical-align: top;
+}
