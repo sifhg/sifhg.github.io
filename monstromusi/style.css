@@ -1,0 +1,44 @@
+body {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #322c4d;
+    color: #e6edf0;
+    margin: auto;
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+    width: 80%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h1 {
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 43px;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: #c094b5;
+    
+}
+header {
+    text-decoration: none;
+}
+h2 {
+    color: #c094b5;
+}
+.site-description {
+    font-family: Alegreya Sans,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #e6edf0;
+    text-transform: none;
+}
+table {
+    width: 100%;
+}
+th, td {
+    border: 1px solid rgb(255, 255, 255);
+  }
