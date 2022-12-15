@@ -16,8 +16,8 @@ function createP(someInner, aClass, anId) {
     return startTag + inner + endTag;
 }
 function createTr(aDate, aTitle, someContent) {
-    const startTag = "<tr><td>";
-    const inner =  "" + aDate + '</td><td><a href="?post=' + aDate + '"><h2>' + aTitle + "</h2></a><br>" + someContent;
+    const startTag = '<tr><td class="td-left">';
+    const inner =  "" + aDate + '</td><td class="td-right"><a href="?post=' + aDate + '"><h2>' + aTitle + "</h2></a>" + someContent;
     const endTag = "[...]</td></tr>";
     return startTag + inner + endTag;
 }
