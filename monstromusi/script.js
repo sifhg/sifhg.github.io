@@ -1,12 +1,12 @@
 const queryString = window.location.search;
 const urlParameters = new URLSearchParams(queryString);
 let postContent;
+let metaData;
 
 fetch("https://raw.githubusercontent.com/sifhg/sifhg.github.io/main/monstromusi/posts.json")
     .then((response) => response.json())
     .then((data) => {
-        const metaData = data;
-        console.log(metaData);
+        metaData = data;
         document.getElementById("post-load").innerHTML = "";
         
         if(urlParameters.get('post') == null) {
@@ -33,7 +33,20 @@ function createTr(aDate, aTitle, someContent) {
     return startTag + inner + endTag;
 }
 function addPreviews(firstPreview, lastPreview) {
-    document.getElementById("post-list").innerHTML += createTr("2022-12-15", "TodayToday", "Her er der rigtig mange");
+    for(let i = firstPreview; i < lastPreview; i++) {
+        fetch("https://sifhg.github.io/monstromusi/" + metaData[i].publicationDate + ".html")
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            let preview = fixHTML(getWordString(html, 60));
+            document.getElementById("post-list").innerHTML += createTr(metaData[i].publicationDate, "TodayToday", "Her er der rigtig mange");
+        })
+        .catch((error) => {
+            console.log("ERROR: " + error);
+        })
+        
+    }    
 }
 function loadPost(postName) {
     fetch("https://sifhg.github.io/monstromusi/" + postName + ".html")
@@ -50,4 +63,26 @@ function loadPost(postName) {
     .catch((error) => {
         console.log("ERROR: "+ error);
     })
+}
+function getPreview(postName) {
+    fetch("https://sifhg.github.io/monstromusi/" + postName + ".html")
+    .then((response) => {
+        return response.text();
+    })
+    .then((html) => {
+        console.log(fixHTML(getWordString(html, 60)));
+        preview = fixHTML(getWordString(html, 60));
+        return preview;
+    })
+    .catch((error) => {
+        console.log("ERROR: " + error);
+    })
+}
+function fixHTML(html) {
+    let div = document.createElement("div");
+    div.innerHTML = html;
+    return div.innerHTML;
+}
+function getWordString(string, numOfWords) {
+    return string.split(/\s+/).slice(0, numOfWords).join(" ");
 }
