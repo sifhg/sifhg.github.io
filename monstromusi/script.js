@@ -29,7 +29,7 @@ function createP(someInner, aClass, anId) {
 function createTr(aDate, aTitle, someContent) {
     const startTag = '<tr><td class="td-left">';
     const inner =  "" + aDate + '</td><td class="td-right"><a href="?post=' + aDate + '"><h2>' + aTitle + "</h2></a>" + someContent;
-    const endTag = "[...]</td></tr>";
+    const endTag = "</td></tr>";
     return startTag + inner + endTag;
 }
 function addPreviews(firstPreview, lastPreview) {
@@ -39,8 +39,10 @@ function addPreviews(firstPreview, lastPreview) {
             return response.text();
         })
         .then((html) => {
-            let preview = fixHTML(getWordString(html, 60));
-            document.getElementById("post-list").innerHTML += createTr(metaData[i].publicationDate, "TodayToday", "Her er der rigtig mange");
+            let preview = fixHTML(getWordString(html, 60).replaceAll("<a", "<span").replaceAll("</a>", "") + " [...]");
+            let title = preview.split("<h2>")[1].split("</h2>")[0];
+            preview = preview.split("</h2>")[1];
+            document.getElementById("post-list").innerHTML += createTr(metaData[i].publicationDate, title, preview);
         })
         .catch((error) => {
             console.log("ERROR: " + error);
@@ -64,20 +66,6 @@ function loadPost(postName) {
         console.log("ERROR: "+ error);
     })
 }
-function getPreview(postName) {
-    fetch("https://sifhg.github.io/monstromusi/" + postName + ".html")
-    .then((response) => {
-        return response.text();
-    })
-    .then((html) => {
-        console.log(fixHTML(getWordString(html, 60)));
-        preview = fixHTML(getWordString(html, 60));
-        return preview;
-    })
-    .catch((error) => {
-        console.log("ERROR: " + error);
-    })
-}
 function fixHTML(html) {
     let div = document.createElement("div");
     div.innerHTML = html;
@@ -86,3 +74,9 @@ function fixHTML(html) {
 function getWordString(string, numOfWords) {
     return string.split(/\s+/).slice(0, numOfWords).join(" ");
 }
+document.getElementsByTagName("body")[0].innerHTML += '<button id="more-posts">OLDER POSTS</button>';
+const loadMoreButton = document.getElementById("more-posts");
+loadMoreButton.addEventListener("click", (event) => {
+    addPreviews(10, metaData.length-1);
+    loadMoreButton.style.display = "none";
+});

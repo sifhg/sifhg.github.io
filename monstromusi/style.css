@@ -78,6 +78,7 @@ a h2 {
     letter-spacing: 0;
     display: block;
 }
+
 .site-description {
     font-family: "Alegreya Sans", sans-serif;
     font-size: 16px;
@@ -95,6 +96,9 @@ td {
     padding-top: 1rem;
     padding-bottom: 2rem;
     vertical-align: top;
+}
+td p {
+    font-size: 16px;
 }
 .td-left {
     text-align: left;
@@ -123,6 +127,15 @@ button {
   }
 p {
     font-size: 20px;
+}
+a {
+    color: #C094B5;
+}
+a:hover {
+    text-decoration: underline;
+}
+.noLine:hover {
+    text-decoration: none;
 }
 .has-text-align-justify {
     max-width: 90%;
