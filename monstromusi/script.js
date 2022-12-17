@@ -59,7 +59,7 @@ function loadPost(postName) {
         return response.text();
     })
     .then((html) => {
-        postContent = html;
+        postContent = html.replace("</h2>", ('</h2><img src="' + postName + '.png" onerror="this.style.visibility = \'hidden\'">'));
         document.getElementsByTagName("body")[0].innerHTML += postContent;
     })
     .catch((error) => {

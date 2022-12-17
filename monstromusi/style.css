@@ -28,10 +28,30 @@ body {
     color: #e6edf0;
 }
 
-img {
+.logo {
     width: 100%;
     height: auto;
 }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+figcaption {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #abb8c3;
+    text-transform: none;
+    margin-bottom: 4rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
 h1 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
@@ -79,7 +99,7 @@ a h2 {
     display: block;
 }
 
-.site-description {
+.description {
     font-family: "Alegreya Sans", sans-serif;
     font-size: 16px;
     font-style: italic;
