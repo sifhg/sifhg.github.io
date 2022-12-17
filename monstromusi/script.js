@@ -59,6 +59,7 @@ function loadPost(postName) {
         return response.text();
     })
     .then((html) => {
+        document.getElementsByTagName("body")[0].innerHTML += '<p class="menu-item">' + postName + '<br>Written by Sif Høg </p>';
         postContent = html.replace("</h2>", ('</h2><img src="' + postName + '.png" onerror="this.style.visibility = \'hidden\'">'));
         document.getElementsByTagName("body")[0].innerHTML += postContent;
     })
