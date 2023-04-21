@@ -9,8 +9,12 @@
     --h5-size: 1rem;
     --h6-size: 1rem;
 
-    --highlight-colour: #000000;
-    --link-colour: #0000ff;
+    --text-colour: #0F2620;
+    --background-colour: #FAEDAF;
+    --spcial-text-colour: #1A6650;
+    
+    background-color: var(--background-colour);
+    color: var(--text-colour);
 }
 
 body {
@@ -31,7 +35,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 2rem;
 }
 a {
-    color: var(--link-colour);
+    color: var(--spcial-text-colour);
 }
 
 .main-header {
@@ -42,7 +46,14 @@ a {
     max-width: 896px;
     height: 470px;
 }
-.logo {
+#header-animation {
+    background-color: black;
+
     width: 100%;
-    height: auto;
+    padding-bottom: 33%;
+}
+#blog-title {
+    text-decoration: none;
+    letter-spacing: .25rem;
+    font-size: 2.5rem;
 }
