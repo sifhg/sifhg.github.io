@@ -9,12 +9,14 @@
     --h5-size: 1rem;
     --h6-size: 1rem;
 
-    --text-colour: #0F2620;
-    --background-colour: #FAEDAF;
-    --spcial-text-colour: #1A6650;
+    --background-colour: hsl(10, 100%, 95%);
+    --standard-ingrid-colour: hsl(170, 30%, 10%);
+    --special-ingrid-colour: hsl(170, 45%, 25%);
+    --standard-sif-colour: hsl(10, 30%, 10%);
+    --special-sif-colour: hsl(0, 45%, 25%);
     
     background-color: var(--background-colour);
-    color: var(--text-colour);
+    color: var(--standard-sif-colour);
 }
 
 body {
@@ -35,25 +37,32 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 2rem;
 }
 a {
-    color: var(--spcial-text-colour);
+    color: var(--special-ingrid-colour);
 }
-
-.main-header {
-    margin: auto;
-    margin-top: 0px;
-    padding-bottom: 0px;
+embed {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+header, .main-header {
+    margin: 0%;
+    padding: 0px;
     width: 100%;
     max-width: 896px;
     height: 470px;
+    overflow: hidden;
 }
 #header-animation {
-    background-color: black;
-
+    border-bottom: .2rem solid var(--standard-sif-colour);
     width: 100%;
     padding-bottom: 33%;
+    position: relative;
 }
 #blog-title {
-    text-decoration: none;
     letter-spacing: .25rem;
     font-size: 2.5rem;
+    position: absolute;
+    bottom: -2.8rem;
+    left: 1rem;
+    color: var(--standard-sif-colour);
 }

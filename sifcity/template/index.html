@@ -7,7 +7,22 @@
     <title>Template</title>
 </head>
 <body>
-    <embed class="main-header" src="../header.html" type="text/html">
+    <embed src="../header.html" type="text/html" style="height:330px"></embed>
+    <script>
+        addEventListener("resize", (event) => {
+            const header = document.querySelector("embed");
+            if(window.innerWidth < 895) {
+                let newHeight = window.innerWidth*(49/150) + (38);
+                newHeight = (newHeight+"").split(".")[0] + "px";
+                header.style.height = newHeight;
+                console.log(header.style.height);
+            }else {
+                header.style.height = "330px";
+                console.log(header.style.height);
+            }
+            console.log(header.style.height);
+        })
+    </script>
 
     <p>Written by, <em>Sif Høg</em>, dd/mm/yyyy</p>
     <h1>Header 1</h1>

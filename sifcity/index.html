@@ -7,8 +7,22 @@
     <title>Sif City</title>
 </head>
 <body>
-    <embed class="main-header" src="header.html" type="text/html" style="height: 500px;"></embed>
-
+    <embed src="header.html" type="text/html" style="height:330px"></embed>
+    <script>
+        addEventListener("resize", (event) => {
+            const header = document.querySelector("embed");
+            if(window.innerWidth < 895) {
+                let newHeight = window.innerWidth*(49/150) + (38);
+                newHeight = (newHeight+"").split(".")[0] + "px";
+                header.style.height = newHeight;
+                console.log(header.style.height);
+            }else {
+                header.style.height = "330px";
+                console.log(header.style.height);
+            }
+            console.log(header.style.height);
+        })
+    </script>
 
     <h1>Blog upcoming...</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quidem sequi alias obcaecati. Corrupti deserunt iste quas in facilis fugiat, molestias neque possimus quibusdam odio necessitatibus laudantium eius iusto ab!</p>
