@@ -12,8 +12,10 @@
     --background-colour: hsl(10, 100%, 97%);
     --standard-ingrid-colour: hsl(170, 30%, 10%);
     --special-ingrid-colour: hsl(170, 45%, 25%);
+    --dim-ingrid-colour: hsl(160, 75%, 50%);
     --standard-sif-colour: hsl(10, 30%, 10%);
     --special-sif-colour: hsl(0, 45%, 25%);
+    --dim-sif-colour: hsl(10, 50%, 75%);
     
     background-color: var(--background-colour);
     color: var(--standard-sif-colour);
@@ -26,6 +28,45 @@ body {
     width: 80%;
     max-width: 896px;
 }
+
+nav {
+    display: flex;
+    width: 100%;
+}
+nav:after {
+    top: 2.2rem;
+    content: "";
+    height: .1rem;
+    left: 0%;
+    position: absolute;
+    background: var(--special-ingrid-colour);
+    width: 50%;
+}
+
+nav>a {
+    margin: .5rem;
+    color: var(--special-ingrid-colour);
+    text-decoration: none;
+    text-decoration-line: none;
+    letter-spacing: .1rem;
+    transition: 0.2s;
+}
+
+nav>a:hover {
+    color: var(--standard-ingrid-colour-colour);
+
+}
+
+.current-page {
+    color: var(--dim-sif-colour);
+    text-decoration-line: none;
+}
+.current-page:hover {
+    color: var(--dim-sif-colour);
+    text-decoration-line: none;
+}
+
+
 body,input,textarea,select {
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 500;
