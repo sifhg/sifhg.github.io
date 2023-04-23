@@ -75,15 +75,12 @@ nav:after {
     text-decoration-line: none;
     font-style: italic;
     margin: .5rem;
-    color: var(--dim-sif-colour);
     text-decoration: none;
     letter-spacing: .1rem;
     position: relative;
-    
-}
-#current-page::before {
-    content: "| ";
-    font-style: normal;
+    border-left: .1rem solid var(--dim-sif-colour);
+    text-align: center;
+    padding-left: .5rem;
 }
 
 
