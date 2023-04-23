@@ -96,6 +96,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
     color: var(--special-ingrid-colour);
+    transition: 0.2s;
+}
+a:hover {
+    color: var(--standard-ingrid-colour);
 }
 embed {
     margin: 0%;
@@ -141,4 +145,7 @@ footer {
     width: 80%;
     max-width: 896px;
     text-align: justify;
+}
+#footer-content a:hover {
+    color: var(--dim-sif-colour);
 }
