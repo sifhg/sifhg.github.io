@@ -29,12 +29,14 @@ body {
     max-width: 896px;
 }
 
+/* MENU */
 nav {
     display: flex;
     width: 100%;
+    position: relative;
 }
 nav:after {
-    top: 2.2rem;
+    bottom: 0;
     content: "";
     height: .1rem;
     left: 0%;
@@ -42,28 +44,46 @@ nav:after {
     background: var(--special-ingrid-colour);
     width: 50%;
 }
-
-nav>a {
+.menu-item {
     margin: .5rem;
     color: var(--special-ingrid-colour);
     text-decoration: none;
     text-decoration-line: none;
     letter-spacing: .1rem;
     transition: 0.2s;
+    position: relative;
 }
-
-nav>a:hover {
-    color: var(--standard-ingrid-colour-colour);
-
+.menu-item:after {
+    position: absolute; /*For the line to position properly, .menu-item has to have "position: relative;"*/
+    content: '';
+    height: .1rem;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: var(--special-ingrid-colour);
+    transition: 0.5s;
 }
-
-.current-page {
+.menu-item:hover {
+    color: var(--standard-ingrid-colour);
+}
+.menu-item:hover:after {
+    width: 75%;
+    background: var(--standard-ingrid-colour);
+}
+#current-page {
     color: var(--dim-sif-colour);
     text-decoration-line: none;
-}
-.current-page:hover {
+    font-style: italic;
+    margin: .5rem;
     color: var(--dim-sif-colour);
-    text-decoration-line: none;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    position: relative;
+    
+}
+#current-page::before {
+    content: "| ";
+    font-style: normal;
 }
 
 

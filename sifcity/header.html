@@ -10,9 +10,11 @@
         <nav>
             <a href="https://sifhg.github.io/sifcity/" target="_top" class="menu-item">Blog</a>
             <a href="https://sifhg.github.io/sifcity/about-me" target="_top" class="menu-item">About me</a>
-            <a class="current-page">| <i>Hej</i></a>
+            <a id="current-page">__Placeholder text__</a>
         </nav>
-        
+        <script>
+            document.getElementById("current-page").innerText = sessionStorage.getItem("title");
+        </script>
         <a href="https://sifhg.github.io/sifcity/" target="_top" class="noLine">
             <div id="header-animation">
                 <h1 id="blog-title">Sif City</h1>
