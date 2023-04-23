@@ -132,20 +132,22 @@ header, .main-header {
 footer {
     background-color: var(--standard-ingrid-colour);
     color: var(--dim-sif-colour);
-    padding: 2rem;
-    margin-top: 2rem;
-    position: absolute;
-    left: 0;
-    width: 94%;
-}
-#footer-content {
+    padding: 0;
     margin: auto;
     margin-top: 2rem;
-    padding-bottom: 8rem;
+    position:absolute;
+    left: 0%;
+    width: 100%;
+}
+#footer-content {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 0;
     width: 75%;
     max-width: 896px;
     text-align: justify;
     font-size: .8rem;
+    border: 2px solid black;
 }
 #footer-content a:hover {
     color: var(--dim-sif-colour);
