@@ -129,6 +129,10 @@ header, .main-header {
     color: var(--standard-sif-colour);
 }
 
+.hidden-element {
+    visibility: hidden;
+}
+
 footer {
     background-color: var(--standard-ingrid-colour);
     color: var(--dim-sif-colour);
