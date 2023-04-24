@@ -140,14 +140,13 @@ footer {
     width: 100%;
 }
 #footer-content {
-    margin-left: 2rem;
+    margin-left: 10%;
     margin-top: 2rem;
     padding-bottom: 0;
-    width: 75%;
+    width: 80%;
     max-width: 896px;
     text-align: justify;
     font-size: .8rem;
-    border: 2px solid black;
 }
 #footer-content a:hover {
     color: var(--dim-sif-colour);
