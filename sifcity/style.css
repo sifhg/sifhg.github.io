@@ -71,9 +71,7 @@ nav:after {
     background: var(--standard-ingrid-colour);
 }
 #current-page {
-    color: var(--dim-sif-colour);
     text-decoration-line: none;
-    font-style: italic;
     margin: .5rem;
     text-decoration: none;
     letter-spacing: .1rem;
@@ -100,6 +98,10 @@ a {
 }
 a:hover {
     color: var(--standard-ingrid-colour);
+}
+.data {
+    color: var(--dim-sif-colour);
+    font-style: italic;
 }
 embed {
     margin: 0%;
