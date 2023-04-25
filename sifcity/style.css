@@ -99,7 +99,7 @@ a {
 a:hover {
     color: var(--standard-ingrid-colour);
 }
-.data {
+.data,.data:hover {
     color: var(--dim-sif-colour);
     font-style: italic;
 }
