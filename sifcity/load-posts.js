@@ -22,17 +22,20 @@ function generatePostRow(publication) {
     const TITLE_CELL = document.createElement("td");
     const TITLE_LINK = document.createElement("a");
     const TITLE_HEADING = document.createElement("h2");
+    const DESCRIPTION = document.createElement("p");
 
     //Add data
     DATE.innerText = publication.date;
     DATE.setAttribute("class", "data");
     TITLE_HEADING.innerText = publication.title;
     TITLE_LINK.setAttribute("href", publication.link);
+    DESCRIPTION.innerText = publication.description;
 
     //Gather elements
     TITLE_CELL
         .appendChild(TITLE_LINK)
         .appendChild(TITLE_HEADING);
+    TITLE_CELL.appendChild(DESCRIPTION);
     ROW.appendChild(DATE);
     ROW.appendChild(TITLE_CELL);
     

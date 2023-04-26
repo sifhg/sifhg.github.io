@@ -6,7 +6,8 @@ for(const PUBLICATION of TABLE_ROWS) {
         title: LINK_ELEMENT.innerText,
         link: LINK_ELEMENT.getAttribute("href"),
         date: PUBLICATION.querySelector(".publication-date").innerText,
-        author: PUBLICATION.querySelector(".publication-author").innerText
+        author: PUBLICATION.querySelector(".publication-author").innerText,
+        description: PUBLICATION.querySelector(".publication-description").innerText
     }
     publications.push(TO_STORAGE);
 }

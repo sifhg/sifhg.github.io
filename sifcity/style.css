@@ -157,3 +157,10 @@ footer {
 #footer-content a:hover {
     color: var(--dim-sif-colour);
 }
+
+td,th {
+    padding: 0;
+    min-width: 6rem;
+    text-align: left;
+    vertical-align: top;
+}
