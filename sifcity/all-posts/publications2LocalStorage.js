@@ -11,4 +11,5 @@ for(const PUBLICATION of TABLE_ROWS) {
     }
     publications.push(TO_STORAGE);
 }
+publications.push(new Date());
 localStorage.setItem("allPublications", JSON.stringify(publications));

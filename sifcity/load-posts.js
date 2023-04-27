@@ -2,12 +2,18 @@ const POST_TABLE = document.getElementById("post-list");
 const PUBLICATION_LIST = JSON.parse(localStorage.getItem("allPublications"));
 
 let latestLoaded = 0;
-latestLoaded = load10Posts(latestLoaded, PUBLICATION_LIST, POST_TABLE);
+
+
+window.addEventListener('storage', function(event) {
+    if (event.key === 'allPublications' && event.newValue) {
+      latestLoaded = load10Posts(latestLoaded, JSON.parse(event.newValue), POST_TABLE);
+    }
+  });
 
 
 function load10Posts(firstIndex, publications, topTable) {
     let i;
-    for(i = firstIndex; i < publications.length && i < firstIndex+10; i++) {
+    for(i = firstIndex; i < publications.length-1 && i < firstIndex+10; i++) {
         const PUBLICATION_CONTENT = generatePostRow(publications[i]);
         topTable.appendChild(PUBLICATION_CONTENT);
     }
