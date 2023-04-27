@@ -15,4 +15,3 @@ addEventListener("resize", (event) => {
     resizeHeader();
 })
 
-sessionStorage.setItem("title", document.querySelector("title").innerText);
