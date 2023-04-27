@@ -1,7 +1,9 @@
 const POST_TABLE = document.getElementById("post-list");
 const PUBLICATION_LIST = JSON.parse(localStorage.getItem("allPublications"));
+
 let latestLoaded = 0;
 latestLoaded = load10Posts(latestLoaded, PUBLICATION_LIST, POST_TABLE);
+
 
 function load10Posts(firstIndex, publications, topTable) {
     let i;
