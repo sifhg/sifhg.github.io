@@ -29,6 +29,7 @@ function generatePostRow(publication) {
     DATE.setAttribute("class", "data");
     TITLE_HEADING.innerText = publication.title;
     TITLE_LINK.setAttribute("href", publication.link);
+    TITLE_LINK.setAttribute("class", "title-link");
     DESCRIPTION.innerText = publication.description;
 
     //Gather elements
