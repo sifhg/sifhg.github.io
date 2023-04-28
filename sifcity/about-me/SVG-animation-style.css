@@ -6,6 +6,7 @@
 #me-line {
     width: 50%;
     stroke: var(--standard-sif-colour);
+    stroke-width: 2px;
     stroke-opacity: 100%;
     fill: var(--standard-sif-colour);
     fill-opacity: 0%;
