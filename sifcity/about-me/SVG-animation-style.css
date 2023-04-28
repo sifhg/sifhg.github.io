@@ -6,31 +6,22 @@
 
 #me-line {
     width: 50%;
-    stroke: var(--standard-sif-colour);
+    stroke: var(--dim-sif-colour);
     stroke-width: .1rem;
     stroke-opacity: 100%;
     fill: var(--standard-sif-colour);
     fill-opacity: 0%;
     stroke-dasharray: 2403;
     stroke-dashoffset: 2403;
-    animation: 5s linear forwards draw;
+    animation: 4s linear forwards draw;
 }
 
 @keyframes draw {
     0% {
         stroke-dashoffset: 2403;
-        stroke-width: .1rem;
-        fill-opacity: 0%;
-    }
-    80% {
-        stroke-dashoffset: 0;
-        stroke-width: .1rem;
-        fill-opacity: 0%;
     }
     100% {
         stroke-dashoffset: 0;
-        stroke-width: 0rem;
-        fill-opacity: 100%;
     }
 }
 
