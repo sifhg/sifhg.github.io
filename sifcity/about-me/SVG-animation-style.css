@@ -1,5 +1,35 @@
+:root {
+    --standard-sif-colour: hsl(10, 30%, 10%);
+    --special-sif-colour: hsl(0, 45%, 25%);
+}
+
 #me-line {
     width: 50%;
+    stroke: var(--standard-sif-colour);
+    stroke-opacity: 100%;
+    fill: var(--standard-sif-colour);
+    fill-opacity: 0%;
+    stroke-dasharray: 2403;
+    stroke-dashoffset: 2403;
+    animation: 5s linear forwards draw;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 2403;
+        stroke-opacity: 100%;
+        fill-opacity: 0%;
+    }
+    80% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 100%;
+        fill-opacity: 0%;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 0%;
+        fill-opacity: 100%;
+    }
 }
 
 @media (min-width: 512px) {
