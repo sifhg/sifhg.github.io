@@ -1,3 +1,16 @@
 #me-line {
-    width: 100%;
+    width: 50%;
+}
+
+@media (min-width: 512px) {
+    #me-line {
+        float: right;
+    }
+}
+
+@media (max-width: 512px) {
+    #me-line {
+        display: block;
+        margin: 0 auto;
+    }
 }
