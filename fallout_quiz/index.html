@@ -12,11 +12,16 @@
 </head>
 <body>
     <h1>Fallout Quiz</h1>
-    <form>
-        <label for="shuffle-code">Shuffle code (optional):</label><br>
-        <input type="text" id="shuffle-code" name="SC"><br>
-        <input type="submit" value="Quiz!">
-    </form>
+    <div id="opening-window">
+        <form>
+            <label for="shuffle-code">Shuffle code (optional):</label>
+            <input type="text" id="shuffle-code" name="SC" autocomplete="off"><br>
+            <input type="submit" id="begin-quiz" value="Quiz!">
+        </form>
+    </div>
+    <div id="game-window">
+        <p>Questions!█</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
