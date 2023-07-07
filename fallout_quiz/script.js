@@ -2,6 +2,7 @@ let questions;
 let shuffleCode;
 const OPENING_WINDOW = document.getElementById("opening-window");
 const GAME_WINDOW = document.getElementById("game-window");
+const SYSTEM_DIAGNOSTICS_WINDOW = document.getElementById("system-diagnostics");
 const INPUT_BOX = document.querySelector("input[type='text']");
 
   
@@ -33,8 +34,10 @@ shuffleCode = getShuffleCode();
 if(shuffleCode === false) {
     OPENING_WINDOW.style.display = "block";
     GAME_WINDOW.style.display = "none";
+    SYSTEM_DIAGNOSTICS_WINDOW.style.display = "none";
 }else {
     OPENING_WINDOW.style.display = "none";
     GAME_WINDOW.style.display = "block";
+    SYSTEM_DIAGNOSTICS_WINDOW.style.display = "none";
 }
 
