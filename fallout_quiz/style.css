@@ -63,3 +63,8 @@ input[type="submit"]:hover,button:hover {
     color: var(--background-colour);
     background: var(--text-colour);
 }
+
+.typewriter {
+    width: 100%;
+    word-wrap: break-word; /* or overflow-wrap: break-word; */
+}
