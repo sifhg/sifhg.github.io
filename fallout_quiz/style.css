@@ -66,5 +66,9 @@ input[type="submit"]:hover,button:hover {
 
 .typewriter {
     width: 100%;
-    word-wrap: break-word; /* or overflow-wrap: break-word; */
+    word-wrap: break-word;
+}
+
+.typing::after {
+    content: "█";
 }
