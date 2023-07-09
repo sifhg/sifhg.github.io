@@ -34,7 +34,7 @@ label {
     display: block;
     margin-bottom: .5rem;
 }
-input[type="text"] {
+input[type="text"],textarea {
     background: none;
     border: 2px solid;
     border-radius: 0;
