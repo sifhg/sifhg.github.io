@@ -1,90 +1,453 @@
 [
     {
-        "question" : "When did the bombs drop?",
-        "answers" : [
-            "23rd of October 2077",
-            "25th of June 2020",
-            "13rd of July 2258"
+        "question": "Where can Veronica Santangelo be found?",
+        "answers": [
+            "188 Trading Post",
+            "Hidden Valley bunker",
+            "Novac"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "A?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "What is Veronica's role within the Brotherhood of Steel?",
+        "answers": [
+            "Journeyman scribe",
+            "Paladin",
+            "Elder"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "B?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "Who was Veronica's tutor and parental figure?",
+        "answers": [
+            "Father Elijah",
+            "Elder McNamara",
+            "Knight Torres"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "C?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "What did Veronica become increasingly irritated by within the Brotherhood of Steel?",
+        "answers": [
+            "Their strict adherence to the Codex",
+            "Their lack of military power",
+            "Their isolation from the outside world"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "D?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "Who did Veronica fall in love with as an adolescent?",
+        "answers": [
+            "Christine Royce",
+            "Elder McNamara",
+            "Scribe Schuler"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "E?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "Who was responsible for breaking up Veronica's relationship with Christine?",
+        "answers": [
+            "Father Elijah",
+            "Elder McNamara",
+            "Paladin Ramos"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "F?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "Who tricked the elders into approving the assignment to investigate Hoover Dam?",
+        "answers": [
+            "Father Elijah",
+            "Elder McNamara",
+            "Paladin Ramos"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "G?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "What event made Veronica realize that Father Elijah's obsession was with the power of Hoover Dam?",
+        "answers": [
+            "News of the NCR's deployment to Hoover Dam",
+            "The destruction of HELIOS One",
+            "The death of Paladin Ramos"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "H?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "What made Veronica increasingly aware of the Brotherhood's failure to adapt?",
+        "answers": [
+            "Watching the influx of NCR troops and citizens to the Mojave",
+            "Discovering lost Brotherhood technology",
+            "Listening to Elder McNamara's speeches"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "I?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "What is Veronica's opinion about the future of the Brotherhood of Steel?",
+        "answers": [
+            "She believes it is doomed in the long run",
+            "She thinks it will conquer the wasteland",
+            "She is uncertain about its future"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
     },
     {
-        "question" : "J?",
-        "answers" : [
-            "123",
-            "456",
-            "789"
+        "question": "Where can Veronica be recruited as a companion?",
+        "answers": [
+            "188 Trading Post",
+            "Hidden Valley bunker",
+            "Novac"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
         ]
+    },
+    {
+        "question": "What type of combat does Veronica specialize in?",
+        "answers": [
+            "Unarmed combat",
+            "Ranged combat with energy weapons",
+            "Melee combat with melee weapons"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
+        ]
+    },
+    {
+        "question": "What special perk does Veronica offer to the player character?",
+        "answers": [
+            "Ability to use a workbench interface anywhere in the world",
+            "Increased resistance to radiation",
+            "Enhanced lockpicking skills"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
+        ]
+    },
+    {
+        "question": "What happens if the player character destroys the Brotherhood bunker in Hidden Valley before recruiting Veronica?",
+        "answers": [
+            "She attacks the player character in revenge",
+            "She refuses to join as a companion",
+            "She becomes hostile towards the player character"
+        ],
+        "category": [
+            "character",
+            "Veronica Santangelo"
+        ]
+    },
+    {
+        "question": "What happens if the player character becomes Vilified with the Brotherhood of Steel?",
+        "answers": [
+            "Veronica quits as a companion",
+            "Veronica becomes the player character's enemy",
+            "Veronica remains a companion but becomes hostile towards other Brotherhood members"
+        ]
+    },
+    {
+      "question": "Where did Moira Brown grow up?",
+      "answers": ["Canterbury Commons", "Megaton", "Rivet City"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "What inspired Moira to write a book?",
+      "answers": ["An accident with a domesticated centaur", "Her curiosity about the world", "A recent trip to the wasteland"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "Who helped Moira complete her guide?",
+      "answers": ["The Lone Wanderer", "Three Dog", "Lucas Simms"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "In which game does the Wasteland Survival Guide become a series?",
+      "answers": ["Fallout 4", "Fallout 3", "Fallout: New Vegas"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "What is Moira's occupation?",
+      "answers": ["Owner of Craterside Supply", "Doctor in Rivet City", "Bartender in Tenpenny Tower"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "At what time does Moira open her store?",
+      "answers": ["8:00 a.m.", "6:00 a.m.", "10:00 a.m."],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "Where does Moira sleep?",
+      "answers": ["Upstairs in Craterside Supply", "In Megaton's clinic", "In Rivet City's marketplace"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "What will Moira do if the Lone Wanderer trespasses after hours?",
+      "answers": ["Become increasingly upset", "Call the guards", "Ignore it"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "What quest causes Moira to leave her shop?",
+      "answers": ["The Power of the Atom", "The Replicated Man", "Trouble on the Homefront"],
+      "category": ["character", "Moira Brown"]
+    },
+    {
+      "question": "In which game is Madison Li a major character?",
+      "answers": ["Fallout 3", "Fallout: New Vegas", "Fallout 4"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Where is Madison Li found in Fallout 3?",
+      "answers": ["Rivet City science lab", "Vault 101", "Megaton clinic"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "What was Madison's role in Project Purity?",
+      "answers": ["Devoted scientist", "Security officer", "Janitor"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Who did Madison develop romantic feelings for during Project Purity?",
+      "answers": ["James", "Colonel Autumn", "Father"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Where did Madison go after leaving Project Purity?",
+      "answers": ["Rivet City", "Diamond City", "Goodsprings"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Who occupied the facility during Madison's work on Project Purity?",
+      "answers": ["Enclave", "Super Mutants", "Raiders"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Who killed Madison's assistant Janice Kaplinski?",
+      "answers": ["Enclave", "Super Mutants", "Brotherhood of Steel"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Where did Madison take refuge after escaping the Jefferson Memorial?",
+      "answers": ["The Citadel", "Tenpenny Tower", "Underworld"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Who offered Madison a position in the Institute?",
+      "answers": ["Father", "Elder Lyons", "Colonel Autumn"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "What is Madison's role in the Institute in Fallout 4?",
+      "answers": ["Head of Institute Advanced Systems", "Lead Scientist", "Director of Synth Retention Bureau"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "What does Madison believe about the Institute's intentions?",
+      "answers": ["They want the best for all humanity", "They are selfish and isolated", "They seek to control and weaponize her research"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Who does Madison consider the best physicist in the Institute?",
+      "answers": ["Rosalind Orman", "Evan Watson", "Dr. Zimmer"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "What happened to Madison's friend Brian Virgil?",
+      "answers": ["Declared dead after fleeing the Institute", "Became head of the FEV lab", "Became Father's protégé"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "What is unique about Madison Li's hairstyle?",
+      "answers": ["Unused by any other NPC", "Selected for the player character", "Shared with another NPC"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "Who else from Fallout 3 reappears in Fallout 4?",
+      "answers": ["Arthur Maxson", "Colonel Autumn", "Janice Kaplinski"],
+      "category": ["character", "Madison Li"]
+    },
+    {
+      "question": "What is Harkness' designation?",
+      "answers": ["A3-21", "B7-32", "C4-15"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "Where is Harkness the security chief?",
+      "answers": ["Rivet City", "Diamond City", "Megaton"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What is Harkness' demeanor?",
+      "answers": ["Rough but fair", "Strict and demanding", "Friendly and outgoing"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What is Harkness' true nature?",
+      "answers": ["A synth/android", "A human", "A ghoul"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What was Harkness' role in the Synth Retention Bureau?",
+      "answers": ["Tracking down escaped synths", "Performing facial surgeries", "Supervising robotics research"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What allowed Harkness to become fully sentient?",
+      "answers": ["Complex AI and thinking for himself", "Facial reconstruction surgery", "Voice alteration"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "Who helped Harkness assume his new identity?",
+      "answers": ["Horace Pinkerton", "Dr. Zimmer", "Lana Danvers"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What memories were suppressed/replaced in Harkness' new persona?",
+      "answers": ["His memories of being a synth", "His combat veteran memories", "His childhood memories"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What position did Harkness eventually hold in Rivet City?",
+      "answers": ["Chief officer of the Security Force", "Mayor of Rivet City", "Leader of the Underground"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What command can restore Institute control of Harkness?",
+      "answers": ["Recall code", "Memory reset", "Synth shutdown"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What can the player character pickpocket from Harkness during The Replicated Man quest?",
+      "answers": ["Key to the ship's armory", "Vault 112's mem chip", "A secret holotape"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What happens if the player character doesn't return Harkness to Zimmer?",
+      "answers": ["He stays in Rivet City in a loop", "He escapes to Diamond City", "He joins the Brotherhood of Steel"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "How many ears does Harkness have if killed with the Contract Killer perk?",
+      "answers": ["Four", "Two", "None"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "According to Zimmer, what was Harkness' previous occupation?",
+      "answers": ["Member of a special branch of the Commonwealth Police", "Institute scientist", "Wasteland scavenger"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "In Fallout Shelter, what sets Harkness apart from other vault dwellers?",
+      "answers": ["No radiation while exploring", "Ability to use heavy weapons", "Increased intelligence"],
+      "category": ["character", "Harkness"]
+    },
+    {
+      "question": "What is John Hancock's occupation in Goodneighbor?",
+      "answers": ["Mayor", "Doctor", "Merchant"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What was John Hancock's original name?",
+      "answers": ["John McDonough", "John Smith", "John Johnson"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "Who is John Hancock estranged from?",
+      "answers": ["Diamond City's Mayor McDonough", "His parents", "His best friend"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What caused the breakdown of the relationship between John Hancock and his brother?",
+      "answers": ["His brother's anti-ghoul platform", "A childhood prank gone wrong", "A dispute over inheritance"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "Where did John Hancock relocate ghouls to?",
+      "answers": ["Goodneighbor", "Diamond City", "Vault 111"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What drug did John Hancock use during his depression?",
+      "answers": ["Jet", "Psycho", "Med-X"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What drug did John Hancock take in an attempt to transform himself into a ghoul?",
+      "answers": ["An experimental radioactive drug", "Mentats", "Buffout"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What clothes did John Hancock find next to him after blacking out?",
+      "answers": ["Clothes belonging to John Hancock, the historical figure", "A set of power armor", "A tattered vault jumpsuit"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "Who did John Hancock gather to raise a revolutionary militia?",
+      "answers": ["A crew of drifters", "Members of the Brotherhood of Steel", "Goodneighbor's residents"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "How did John Hancock overthrow Vic?",
+      "answers": ["His militia massacred Vic's gangsters", "He negotiated a peaceful resolution", "He staged a protest"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What proclamation did John Hancock make after overthrowing Vic?",
+      "answers": ["'Of the people, for the people!'", "'Victory is ours!'", "'Long live Goodneighbor!'"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What does John Hancock claim to feel after Bobbi No-Nose's plan to steal from him?",
+      "answers": ["Too pampered and comfortable", "Angry and betrayed", "Fearful and suspicious"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "Which companions does John Hancock like?",
+      "answers": ["Cait, MacCready, Nick Valentine", "Dogmeat, Preston Garvey, Deacon", "Curie, Piper, Strong"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What are John Hancock's chems of choice?",
+      "answers": ["Mentats", "Psycho", "Buffout"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What caused John Hancock to become a ghoul?",
+      "answers": ["An experimental radiation-based drug", "A pre-war scientific experiment", "A nuclear explosion"],
+      "category": ["character", "John Hancock"]
+    },
+    {
+      "question": "What was the name of the serum that transformed a research assistant into a ghoul?",
+      "answers": ["42-BA-7", "FEV", "RadAway"],
+      "category": ["character", "John Hancock"]
     }
-]
+  ]
