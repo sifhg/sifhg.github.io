@@ -52,9 +52,11 @@ input[type="submit"],button {
     border: none;
     text-align: left;
     cursor: pointer;
-    opacity: 0;
-    fill: red;
 } 
+input[type="submit"]:hover,button:hover {
+    background: var(--text-colour);
+    color: var(--background-colour);
+}
 
 input[type="radio"] {
     border-radius: 100%;
@@ -64,10 +66,7 @@ input[type="radio"] {
 }
 
 
-input[type="submit"]:hover,button:hover {
-    background: var(--text-colour);
-    color: var(--background-colour);
-} 
+
 
 ::selection {
     color: var(--background-colour);
