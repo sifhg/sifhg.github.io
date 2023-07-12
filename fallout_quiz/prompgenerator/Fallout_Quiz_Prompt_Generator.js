@@ -67,7 +67,7 @@ function generatePrompts(divElement) {
     numberOfQuestions = (numberOfQuestions < 1) ? 1 : numberOfQuestions;
     numberOfQuestions = (numberOfQuestions > 15) ? 15 : numberOfQuestions;
     
-    return `Here is a wiki text about from the Fallout page for ${NAME}. Please give me ${numberOfQuestions} quiz questions based on knowledge from this text. Each question should have three possible answers, and list the right answer as the first for each question. List them as a JSON list, each with three keys "question", "answers", and "category", where category is ["${category}", "${NAME}"].\n\n\n${TEXTAREA_VALUE.trim()}\n\n\n\n`;
+    return `Here is a wiki text from the Fallout page for ${NAME}. Please give me ${numberOfQuestions} quiz questions based on knowledge from this text. Each question should have three possible answers, and list the right answer as the first for each question. List them as a JSON list, each with three keys "question", "answers", and "category", where category is ["${category}", "${NAME}"].\n\n\n${TEXTAREA_VALUE.trim()}\n\n\n\n`;
 }
 
 

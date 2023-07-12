@@ -2370,5 +2370,745 @@
       "question": "Who does Tinker Tom suspect to be a time traveler?",
       "answers": ["Deacon", "Desdemona", "Dr. Carrington"],
       "category": ["character", "Tinker Tom"]
+    },
+    {
+      "question": "What is Deacon's role within the Railroad?",
+      "answers": ["Enigmatic agent and potential recruiter", "Leader and strategist", "Quartermaster and primary repairman"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What does Deacon claim about his involvement in the Railroad?",
+      "answers": ["That he helped found the organization", "That he is the true leader", "That he was among the first liberated Gen 3s"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What was Deacon's former affiliation before joining the Railroad?",
+      "answers": ["University Point Deathclaws gang", "Brotherhood of Steel", "Institute's Synth Retention Bureau"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What act left Deacon shaken and made him leave the University Point Deathclaws?",
+      "answers": ["The lynching of a man suspected of being a Gen 3 synth", "The assassination of a Brotherhood of Steel member", "The betrayal of his gang members"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What happened to Deacon's wife, Barbara?",
+      "answers": ["She was killed during an attack on their farm", "She turned out to be a synth", "She betrayed Deacon and joined the Institute"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "How did Deacon become involved with the Railroad?",
+      "answers": ["He was contacted by them after the attack on his farm", "He sought them out to seek revenge on the Institute", "He stumbled upon their secret hideout by chance"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What is Deacon's primary role within the Railroad in 2287?",
+      "answers": ["Gathering intel on persons of interest", "Recruiting new agents for the organization", "Providing medical aid to synths"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What does Deacon do when the Sole Survivor awakens in Vault 111?",
+      "answers": ["He shadows them to gather information and potentially recruit them", "He offers them immediate assistance and protection", "He warns them about the dangers of the Commonwealth"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What happens when the player character kills a settler or anyone involved in the Railroad?",
+      "answers": ["Deacon instantly becomes hostile", "Deacon expresses disappointment but remains non-hostile", "Deacon ignores the player character's actions"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What does Deacon award at maximum approval?",
+      "answers": ["The Cloak & Dagger perk", "The Commando perk", "The Fortune Finder perk"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What does Deacon comment on if the Sole Survivor takes out Sinjin?",
+      "answers": ["He acknowledges the accomplishment", "He questions the decision", "He ignores the player character's actions"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What is Deacon's opinion of the Minutemen?",
+      "answers": ["He never really cared for them", "He sees them as a necessary evil", "He admires their ideals and values"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What does Deacon claim to have done in the past?",
+      "answers": ["Had a face change and became a girl for a few months", "Pioneered new technologies for the Railroad", "Assassinated high-ranking Institute officials"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What are the big three for predicting people, according to Deacon?",
+      "answers": ["Caps, beliefs, and ego", "Power, loyalty, and resources", "Intelligence, charisma, and endurance"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What does Deacon want to know about the Big One?",
+      "answers": ["How it started, who fired first, and their intentions", "How to prevent future conflicts, and how to rebuild society", "Who the major players were and how they profited from it"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What does Deacon say about death and the player character's inevitable doom?",
+      "answers": ["Insert something Shakespearean involving death and your inevitable doom here.", "Death is just another phase in the grand scheme of things", "Death is an illusion created by the mind"],
+      "category": ["character", "Deacon"]
+    },
+    {
+      "question": "What is Barney Rook's role in Salem?",
+      "answers": ["Commander, quartermaster, sergeant at arms, and scribe of the Salem Volunteer Militia", "Mayor and town council member", "Historian and librarian"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "How did Barney Rook's ancestors contribute to the safety of Salem?",
+      "answers": ["They worked hard to maintain the community's safety", "They formed a militia to protect the town", "They built a series of defensive turrets"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "Why did Barney Rook want to train a militia?",
+      "answers": ["To teach the citizens how to shoot and fend for themselves", "To enforce strict law and order in the town", "To organize community events and festivals"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "Why were Barney Rook's requests to train a militia denied?",
+      "answers": ["The town council thought he was just paranoid", "The citizens of Salem were opposed to the idea", "There was no perceived threat at the time"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "What threat did Salem face?",
+      "answers": ["Mirelurks from the ocean", "Super mutants from a nearby vault", "Raiders from a neighboring town"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "What did Barney Rook do to protect the town from the mirelurks?",
+      "answers": ["Sniped the creatures from the roost atop his home", "Set up defensive turrets around town", "Organized the citizens into a militia"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "What did Barney Rook recently do with the town's turrets?",
+      "answers": ["Took them offline to conserve ammunition", "Upgraded and repaired them for better defense", "Repositioned them to cover different areas"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "How did Barney Rook react when the Sole Survivor tried to explore Salem?",
+      "answers": ["He led them to safety in his bunker", "He welcomed them as a potential recruit", "He warned them to leave immediately"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "What weapons has Barney Rook made for himself?",
+      "answers": ["A personalized hunting rifle called Reba and a sister called Reba II", "A laser pistol and a plasma rifle", "A combat shotgun and a missile launcher"],
+      "category": ["character", "Barney Rook"]
+    },
+    {
+      "question": "What is Doctor Mobius's role in the Big MT?",
+      "answers": ["Think Tank leader and leader of the robo-scorpion army", "Scientist and researcher", "Administrator and supervisor"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "Why did Doctor Mobius become disillusioned with the other think tanks?",
+      "answers": ["He grew tired of their endless and horrible experimentation", "He disagreed with their research methodologies", "He believed they were becoming too powerful"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What did Doctor Mobius do to prevent the disembodied brains from escaping?",
+      "answers": ["Erected a radar fence around the perimeter of Big MT", "Destroyed their physical bodies", "Programmed them with false beliefs about the outside world"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What alterations did Doctor Mobius make to the other think tanks?",
+      "answers": ["Removed their chips and reprogrammed their data banks", "Enhanced their cognitive abilities and memories", "Provided them with new research projects"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "Where did Doctor Mobius move to after his dispute with Dr. Klein?",
+      "answers": ["The X-42 robo-warfare facility (Forbidden Zone)", "The central dome of Big MT", "The Think Tank's main laboratory"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What inspired Doctor Mobius to recreate the robo-scorpions?",
+      "answers": ["Radscorpions that had wandered into Big MT", "Pre-War blueprints and designs", "Visions from his hallucinations"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What technology did Doctor Mobius use to instill fear in the think tanks?",
+      "answers": ["Repetitive, threatening broadcasts", "Powerful energy weapons", "Mind-controlling devices"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What problems did Doctor Mobius face in his own behavior?",
+      "answers": ["Short term memory loss, hallucinations, and obsessive-compulsive behavior", "Physical disabilities and chronic pain", "Lack of motivation and interest in research"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What components did Doctor Mobius subliminally suggest would help the think tanks against him?",
+      "answers": ["Sonic emitter, X-2 antenna, Stealth suit Mk II", "Energy blaster, force field generator, mind control device", "Chemical injector, cybernetic limb, holographic projector"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What did the Courier confront Doctor Mobius in?",
+      "answers": ["The Forbidden Dome", "The central laboratory", "The robo-scorpion factory"],
+      "category": ["character", "Mobius"]
+    },
+    {
+      "question": "What is Paladin Danse's unit designation?",
+      "answers": ["M7-97", "DN-407P", "M6-98"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "Where did Danse grow up?",
+      "answers": ["Capital Wasteland", "Commonwealth", "Rivet City"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "Who sponsored Danse to join the Brotherhood of Steel?",
+      "answers": ["Paladin Krieg", "Elder Arthur Maxson", "Scribe Haylen"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What happened to Cutler, Danse's friend and fellow trader?",
+      "answers": ["Ambushed and turned into a super mutant", "Disappeared during a scouting operation", "Became a high-ranking Brotherhood knight"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What is the name of the airship launched by the Brotherhood in 2282?",
+      "answers": ["Prydwen", "Liberty Prime", "Cambridge Police Station"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What did Danse do when he found Cutler undergoing an FEV transformation?",
+      "answers": ["Delivered a mercy kill", "Called for medical assistance", "Fought the super mutants"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What was the purpose of Paladin Danse's squad in the Commonwealth?",
+      "answers": ["Tech recovery and search and rescue", "Raider extermination", "Establishing a forward operating base"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What did Danse discover at Fort Strong?",
+      "answers": ["Super mutants infestation", "A hidden cache of weapons", "The Institute's secret base"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What did DNA analysis confirm about Paladin Danse?",
+      "answers": ["He is a missing synth", "He is a high-ranking Brotherhood officer", "He is related to Elder Maxson"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What does Elder Maxson order the Sole Survivor to do regarding Paladin Danse?",
+      "answers": ["Track him down and execute him", "Capture and interrogate him", "Convince him to join the Institute"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What happens to Paladin Danse if he survives the events of Blind Betrayal?",
+      "answers": ["He stays to aid the Sole Survivor", "He becomes a leader of the Brotherhood", "He leaves the Commonwealth"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What does Danse struggle with after learning he is a synth?",
+      "answers": ["Accepting his entire identity being a lie", "Dealing with post-traumatic stress disorder", "Finding a purpose in life"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What is Danse's opinion on synths?",
+      "answers": ["He considers them abominations", "He believes they deserve a chance at redemption", "He thinks they are misunderstood"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What does Danse struggle with after losing close friends and mentors?",
+      "answers": ["Feeling a burden to honor their sacrifices", "Coping with feelings of guilt and remorse", "Overcoming the fear of forming new bonds"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What does Piper attribute to Danse's expansive vocabulary?",
+      "answers": ["Being a synth", "Attending school", "Reading many books"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What does Danse find valuable in pre-War artifacts?",
+      "answers": ["Glimpses at moments in time", "High monetary value", "Technological advancements"],
+      "category": ["character", "Paladin Danse"]
+    },
+    {
+      "question": "What is Dr. Zimmer's role in the Institute?",
+      "answers": ["Leader of the Synth Retention Bureau", "Head of the FEV Lab", "Chief Scientist"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "Where does Dr. Zimmer temporarily stay in 2277?",
+      "answers": ["Rivet City", "Diamond City", "Goodneighbor"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "Who accompanies Dr. Zimmer on his journey to the Capital Wasteland?",
+      "answers": ["Armitage", "Dr. Madison Li", "Anna Holt"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "Why does Dr. Zimmer seek assistance from Dr. Madison Li?",
+      "answers": ["To help him find his missing android", "To conduct scientific experiments", "To collaborate on hydroponic developments"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "Who refuses Dr. Zimmer the right to speak with Dr. Madison Li?",
+      "answers": ["Dr. Madison Li", "Anna Holt", "The Lone Wanderer"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "What quest involves Dr. Zimmer's search for a rogue android?",
+      "answers": ["The Replicated Man", "The Android Conspiracy", "The Synth Retention Mission"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "What happens if the Lone Wanderer convinces Dr. Zimmer that the android is dead?",
+      "answers": ["He leaves Rivet City and disappears", "He rewards the Lone Wanderer with valuable technology", "He becomes hostile and attacks"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "What does Dr. Zimmer believe about robots in the Commonwealth?",
+      "answers": ["They can be more than simple robots", "They are all just buckets of bolts", "They are a threat to humanity"],
+      "category": ["character", "Zimmer"]
+    },
+    {
+      "question": "What is Agatha's profession in the Capital Wasteland?",
+      "answers": ["Radio host", "Trader", "Violinist"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Who is Agatha's great-great grandmother?",
+      "answers": ["Hilda Egglebrecht", "Mary Egglebrecht", "Agnes Egglebrecht"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "What is the name of the violin Agatha is desperate to recover?",
+      "answers": ["Soil Stradivarius", "Vault Stradivarius", "Egglebrecht Stradivarius"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Why does Agatha believe the Soil Stradivarius is in perfect condition?",
+      "answers": ["It was stored in a custom-made pressurized case", "It was recently repaired by a skilled craftsman", "It was hidden in a vault sealed from radiation"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Where does Agatha reside in the Capital Wasteland?",
+      "answers": ["Her husband's constructed house", "Megaton", "Tenpenny Tower"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "What equipment does Agatha use to broadcast her violin-playing?",
+      "answers": ["Radio setup", "Amplifier", "Gramophone"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "What does Agatha offer in exchange for goods from caravans?",
+      "answers": ["Entertainment", "Weapons", "Chemicals"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Why does Agatha have concerns over the security of her trade?",
+      "answers": ["Her own violin is constantly out of tune", "She lacks proper security measures", "The caravans are unreliable"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "What historical knowledge does Agatha retain about Stradivarius violins?",
+      "answers": ["Their creator and their status as works of art", "The specific techniques used in their construction", "Their original prices and auction records"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Which quote does Agatha attribute to Augustine of Hippo?",
+      "answers": ["'Patience is the companion of wisdom'", "'A handful of patience is worth more than a bushel of brains'", "'Always forgive and forget'"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Why does Agatha tend to ramble in conversations?",
+      "answers": ["She is lonely and yearning for visitors", "She enjoys storytelling and sharing anecdotes", "She has trouble remembering important details"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "How does Agatha respond to poor treatment or lack of manners?",
+      "answers": ["Comments on the lack of manners", "Gets angry and refuses to trade", "Makes sarcastic remarks"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Who are some of Agatha's friends among the traders?",
+      "answers": ["Crow, Doc Hoff, Crazy Wolfgang", "Lucas Simms, Moira Brown, Sydney", "Three Dog, Harold, Fawkes"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "What happens to Agatha's music and voice if she dies after completing Agatha's Song?",
+      "answers": ["They can still be heard on Agatha's Station", "They are permanently lost", "They continue to play in her house"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "What does Agatha think about the future of crafting musical instruments?",
+      "answers": ["They cannot be crafted like they were before the War", "They will continue to improve with new technology", "They will become obsolete in the wasteland"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "What term does Agatha use to describe the Soil Stradivarius?",
+      "answers": ["Family heirloom", "Masterpiece", "Valuable artifact"],
+      "category": ["character", "Agatha"]
+    },
+    {
+      "question": "Where does Jack live at Nellis Air Force Base?",
+      "answers": ["Nellis hangars", "Command center", "Barracks"],
+      "category": ["character", "Jack (Boomer)"]
+    },
+    {
+      "question": "Who is Jack's boss at Nellis?",
+      "answers": ["Loyal", "Pearl", "Janet"],
+      "category": ["character", "Jack (Boomer)"]
+    },
+    {
+      "question": "What does Jack hope to catch a glimpse of with his binoculars?",
+      "answers": ["Janet", "Boomers' artillery", "Redheads in general"],
+      "category": ["character", "Jack (Boomer)"]
+    },
+    {
+      "question": "In which quest does Jack task the Courier with finding someone?",
+      "answers": ["Young Hearts", "Volare!", "Bleed Me Dry"],
+      "category": ["character", "Jack (Boomer)"]
+    },
+    {
+      "question": "What happens if the Courier gives Jack scrap metal?",
+      "answers": ["Increases fame with Nellis", "Decreases fame with Nellis", "Triggers a hostile reaction from Jack"],
+      "category": ["character", "Jack (Boomer)"]
+    },
+    {
+      "question": "What can the Courier steal from Nellis to give to Jack?",
+      "answers": ["Scrap metal", "Ammo", "Weapons"],
+      "category": ["character", "Jack (Boomer)"]
+    },
+    {
+      "question": "What happens if the player character gets Jack's crush killed?",
+      "answers": ["Jack becomes hostile unless a speech check is passed", "Jack rewards the player character with a unique item", "The quest for the bomber becomes unavailable"],
+      "category": ["character", "Jack (Boomer)"]
+    },
+    {
+      "question": "What is Sunny Smiles' occupation in Goodsprings?",
+      "answers": ["Gecko hunter and town guard", "Trader and merchant", "Doctor and healer"],
+      "category": ["character", "Sunny Smiles"]
+    },
+    {
+      "question": "What kind of animals does Sunny Smiles primarily hunt?",
+      "answers": ["Geckos", "Coyotes", "Radscorpions"],
+      "category": ["character", "Sunny Smiles"]
+    },
+    {
+      "question": "What does Sunny Smiles do to help keep Goodsprings clear of threats?",
+      "answers": ["Defends the town and hunts dangerous creatures", "Builds defenses and fortifications", "Organizes trade caravans"],
+      "category": ["character", "Sunny Smiles"]
+    },
+    {
+      "question": "Which group does Sunny Smiles proactively deal with in Goodsprings?",
+      "answers": ["Powder Gangers", "Great Khans", "Brotherhood of Steel"],
+      "category": ["character", "Sunny Smiles"]
+    },
+    {
+      "question": "What is Sunny Smiles' opinion of the New California Republic?",
+      "answers": ["They are pushy but have made the roads safer", "They are oppressive and corrupt", "They are a necessary force for stability"],
+      "category": ["character", "Sunny Smiles"]
+    },
+    {
+      "question": "What has Sunny Smiles heard about Caesar's Legion?",
+      "answers": ["They practice slavery and kill others brutally", "They are a benevolent governing body", "They are a peaceful faction promoting trade"],
+      "category": ["character", "Sunny Smiles"]
+    },
+    {
+      "question": "Which town is Sunny Smiles associated with?",
+      "answers": ["Goodsprings", "Novac", "Primm"],
+      "category": ["character", "Sunny Smiles"]
+    },
+    {
+      "question": "What was Malcolm Holmes' hobby before retiring?",
+      "answers": ["Collecting star bottle caps", "Exploring abandoned buildings", "Hunting radscorpions"],
+      "category": ["character", "Malcolm Holmes"]
+    },
+    {
+      "question": "What is the treasure Malcolm Holmes seeks in the Sunset Sarsaparilla headquarters building?",
+      "answers": ["Hidden treasure", "Rare weapons", "Ancient artifacts"],
+      "category": ["character", "Malcolm Holmes"]
+    },
+    {
+      "question": "Who is the person Malcolm Holmes warns about, who is willing to kill for the blue star caps?",
+      "answers": ["Allen Marks", "Victor Cross", "Eddie Johnson"],
+      "category": ["character", "Malcolm Holmes"]
+    },
+    {
+      "question": "What is the name of the motel owned by Jeannie May Crawford?",
+      "answers": ["Dino Dee-lite Motel", "Novac Inn", "Sunset Sands Motel"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "How does Jeannie May Crawford feel about the ghouls led by Jason Bright?",
+      "answers": ["She would not miss them if they were all slaughtered", "She sympathizes with their plight", "She believes they should be treated with respect"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "Why did Jeannie May Crawford betray Carla Boone to the Legion?",
+      "answers": ["Carla's apparent ingratitude and failure to appreciate the town", "A personal vendetta against Carla", "Financial gain"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "What excuse did Jeannie May Crawford use to cover up Carla Boone's abduction?",
+      "answers": ["She claimed Carla just up and left town", "She blamed Craig for the kidnapping", "She said Carla was taken by raiders"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "What is Jeannie May Crawford's opinion of Novac?",
+      "answers": ["She is proud of the hard work done by its inhabitants", "She believes it is a struggling town", "She thinks it is a corrupt and dangerous place"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "What is the basis of Novac's economy?",
+      "answers": ["Salvage of the REPCONN test site", "Farming and agriculture", "Tourism"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "Who did Jeannie May Crawford sell Carla Boone to?",
+      "answers": ["The slavers of the Legion", "The Van Graffs", "The Great Khans"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "Where does Jeannie May Crawford keep the bill of sale for selling Carla Boone?",
+      "answers": ["In the motel's safe", "Hidden in her bedroom", "Buried outside of Novac"],
+      "category": ["character", "Jeanie May Crawford"]
+    },
+    {
+      "question": "What is the name of the unique super mutant behemoth living in Swan's Pond?",
+      "answers": ["Swan", "Hank", "Goliath"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What was Swan's original name before he became a super mutant behemoth?",
+      "answers": ["Edgar Swann", "Franklin Stone", "Arthur Johnson"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "How did Edgar Swann end up in the Institute's experiment?",
+      "answers": ["He accepted probation after stealing cigarettes", "He volunteered for a research study", "He was captured and forced into the experiment"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What happened to Edgar Swann's mental faculties during the experiment?",
+      "answers": ["They deteriorated and he experienced seizures", "They improved significantly", "They remained stable throughout"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "Where did Swan make his home after being exiled to the Commonwealth?",
+      "answers": ["Boston Common", "Goodneighbor", "Diamond City"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What did Swan create armor from?",
+      "answers": ["Ruined swan boats", "Scrap metal", "Animal hides"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What type of attacks does Swan use in combat?",
+      "answers": ["Slamming with his anchor and charging with his shield", "Throwing rocks and using a flamethrower", "Using a laser rifle and throwing grenades"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "Where can Swan be found in the game?",
+      "answers": ["Swan's Pond", "Fenway Park", "The Glowing Sea"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What warnings are present in the area where Swan resides?",
+      "answers": ["Makeshift signs warning of his presence", "Radio broadcasts warning of his attacks", "Graffiti on the walls describing his power"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What is Swan's resistance to radiation damage?",
+      "answers": ["Immune to radiation damage", "Vulnerable to radiation damage", "Resistant but not immune to radiation damage"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What type of armor does Swan wear?",
+      "answers": ["Makeshift armor created from swan boat fragments", "Power armor", "Leather armor"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What type of creatures are afraid to enter Boston Common due to Swan's presence?",
+      "answers": ["Raiders", "Super mutants", "Deathclaws"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What attacks can Swan use from a distance?",
+      "answers": ["Throwing rocks", "Firing a minigun", "Launching explosive projectiles"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "Where can the experiment logs of Swan be found?",
+      "answers": ["Scattered around his living area", "In a locked safe", "In the Institute's archives"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What is Swan's behavior when the Sole Survivor approaches the mass in Swan's Pond?",
+      "answers": ["He roars, emerges from the water, and attacks", "He remains hidden and observes", "He retreats to a safer location"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What is Swan's resistance against poison damage?",
+      "answers": ["100 resistance", "No resistance", "50 resistance"],
+      "category": ["character", "Swan"]
+    },
+    {
+      "question": "What is Dr. Brian Virgil's Institute username?",
+      "answers": ["Virgil.B", "Dr.Virgil", "BrianV"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "Where can Dr. Brian Virgil be found?",
+      "answers": ["In a rocky cave", "In the Glowing Sea", "In the Institute"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What was Dr. Brian Virgil's role in the Institute?",
+      "answers": ["In charge of the super mutant project", "Head of security", "Lead scientist in robotics"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What did Dr. Brian Virgil do after leaving the Institute?",
+      "answers": ["Destroyed the lab equipment and all the research", "Went into hiding", "Joined a rebel faction"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "Why did Dr. Brian Virgil infect himself with FEV?",
+      "answers": ["To survive the radiation in the Glowing Sea", "To become a super mutant", "To gain superhuman abilities"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What mission was Kellogg sent on regarding Dr. Brian Virgil?",
+      "answers": ["To kill him", "To capture him", "To recruit him"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "Which quest involves Dr. Brian Virgil?",
+      "answers": ["The Glowing Sea", "Hunter/Hunted", "The Molecular Level"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What does Dr. Brian Virgil ask the Sole Survivor to recover for him?",
+      "answers": ["An experimental serum", "A weapon prototype", "Institute research data"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What are the two options for the player character after getting the serum for Dr. Brian Virgil?",
+      "answers": ["Give him the serum or lie about its existence", "Keep the serum for themselves or sell it", "Destroy the serum or use it for personal gain"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "Which companion does not like the player's choice to give the serum to Dr. Brian Virgil?",
+      "answers": ["Danse", "Hancock", "Codsworth"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What happens if the player lies to Dr. Brian Virgil about the serum?",
+      "answers": ["Virgil's Cure will fail", "Virgil becomes hostile", "Virgil leaves the area"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What can the player character do after the first two speech checks if they lied about the serum?",
+      "answers": ["Give the serum to Virgil through breaking and re-initiating dialogue", "Destroy the serum", "Sell the serum to a trader"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What option is available if the player has read the notes at Swan's Pond?",
+      "answers": ["Ask Virgil if he remembers Edgar Swann", "Give the serum to Virgil immediately", "Confront Virgil about his actions"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What happens if the player convinces Dr. Brian Virgil to end his life?",
+      "answers": ["Bypasses the hard speech check for him to kill himself", "Virgil becomes hostile", "The quest fails"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What is Dr. Brian Virgil's project referred to as in the Institute's terminal entries?",
+      "answers": ["Incident V", "Project Phoenix", "Operation Genesis"],
+      "category": ["character", "Brian Virgil"]
+    },
+    {
+      "question": "What is the name of the Courier's brain in-game?",
+      "answers": ["Brain Tank", "Cerebral Core", "Mind Chamber"],
+      "category": ["character", "Courier's brain"]
+    },
+    {
+      "question": "Who takes the Courier's brain to the Forbidden Zone?",
+      "answers": ["Dr. Mobius", "Think Tank", "Dr. Klein"],
+      "category": ["character", "Courier's brain"]
+    },
+    {
+      "question": "Where is the brain's new home?",
+      "answers": ["The Forbidden Zone", "The Big Empty", "The Wasteland"],
+      "category": ["character", "Courier's brain"]
+    },
+    {
+      "question": "Why does the brain sound male even if the Courier is female?",
+      "answers": ["Female voice modulator is hard to come by", "A glitch in the brain tank", "Intentional design choice"],
+      "category": ["character", "Courier's brain"]
+    },
+    {
+      "question": "What caused small scarring on the brain?",
+      "answers": ["Benny shooting the Courier", "An experiment gone wrong", "A surgical procedure"],
+      "category": ["character", "Courier's brain"]
+    },
+    {
+      "question": "Which perk allows the Courier to hit on their own brain?",
+      "answers": ["Confirmed Bachelor (male) / Cherchez La Femme (female)", "Lady Killer (male) / Black Widow (female)", "Intimidation"],
+      "category": ["character", "Courier's brain"]
+    },
+    {
+      "question": "What is the brain's reaction to being hit on by the Courier?",
+      "answers": ["Disgusted", "Flattered", "Confused"],
+      "category": ["character", "Courier's brain"]
+    },
+    {
+      "question": "What was Doctor Dala's area of research in the Think Tank?",
+      "answers": ["Mineralogy", "Astrophysics", "Neuroscience"],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "What subject is Dala the head researcher of when the Courier meets her?",
+      "answers": ["Humanology and lobotomites", "Astrobiology and alien lifeforms", "Robotics and artificial intelligence"],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "How many doctorates does Dala claim to have?",
+      "answers": ["211", "100", "50"],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "What is Dala's obsession with the human body referred to as?",
+      "answers": ["Formography", "Anatomymania", "Physiophilia"],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "Who replaced Dala and her colleagues' pre-War memories and names?",
+      "answers": ["Doctor Mobius", "Doctor Klein", "Doctor 8"],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "Which perk can affect Dala's emotional response during speech options?",
+      "answers": ["Lady Killer / Cherchez La Femme", "Animal Friend", "Gun Nut"],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "What can the Courier do for Dala once a day after completing Coming Out of Her Shell?",
+      "answers": ["Let her watch them breathe", "Bring her teddy bears", "Give her ammunition"],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "What is one of Dala's notable quotes about breathing?",
+      "answers": ["I did so enjoy breathing once. Long ago.", "I love to hear you breathe.", "Shhh, little organs. Go to sleep in your tanks, Dala loves you."],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "What is Dala's response to standing on the green pipes?",
+      "answers": ["Please get off them at once.", "It's against the rules.", "There is no response."],
+      "category": ["character", "Dala"]
+    },
+    {
+      "question": "What does Dala admit to having an obsession with?",
+      "answers": ["Teddy bears", "Books", "Computers"],
+      "category": ["character", "Dala"]
     }
   ]
