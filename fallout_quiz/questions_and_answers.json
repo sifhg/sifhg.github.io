@@ -3110,5 +3110,1435 @@
       "question": "What does Dala admit to having an obsession with?",
       "answers": ["Teddy bears", "Books", "Computers"],
       "category": ["character", "Dala"]
+    },
+    {
+      "question": "Who is responsible for saving Las Vegas from complete destruction?",
+      "answers": ["Robert House", "The NCR", "Caesar's Legion"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "Which tribes gained Mr. House's favor and became the families running the casinos on the Strip?",
+      "answers": ["Omertas, Chairmen, and White Glove Society", "Great Khans, Fiends, and Boomers", "Brotherhood of Steel, Followers of the Apocalypse, and Kings"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What happened to the residents of Vault 21?",
+      "answers": ["They were bought out by Mr. House and their vault turned into a hotel and gift shop.", "They were killed by raiders.", "They joined the NCR."],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "Which faction controls the Strip after the Battle of Hoover Dam?",
+      "answers": ["Mr. House", "The NCR", "Caesar's Legion"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "Where is the entrance to the Strip located?",
+      "answers": ["Through the Strip's north gate", "Through the Tops casino", "Through the Ultra-Luxe casino"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "How can the Courier gain entrance to the Strip if they don't have enough caps?",
+      "answers": ["By having a Science skill of at least 80", "By killing all the Securitrons at the gate", "By forging a passport at Mick & Ralph's"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What song plays over the loudspeakers when the Courier first enters the Strip?",
+      "answers": ["Ain't that a Kick in the Head?", "Blue Moon", "Fly Me to the Moon"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What do NCR soldiers do near the gate leading to the second part of the Strip?",
+      "answers": ["Dance with hookers", "Patrol the area", "Play card games"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What event happens in the fountain of the Ultra-Luxe involving drunk NCR soldiers?",
+      "answers": ["They are forced out by an MP unit and a Securitron", "They start fighting each other", "They start swimming in the fountain"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What is the possible outcome if the How Little We Know quest is not completed?",
+      "answers": ["The Omertas bomb the NCR Embassy and assault the entire Strip", "Mr. House takes control of the Strip", "The NCR establishes control over the Strip"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What are the three main buildings located on the Strip?",
+      "answers": ["Gomorrah, Lucky 38, and Tops", "Ultra-Luxe, Vault 21, and NCR Embassy", "Michael Angelo's workshop, The Tops, and NCR Military Police HQ"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What is the name of the first gate that must be passed to enter the Strip?",
+      "answers": ["The Strip North Gate", "The Freeside Gate", "The New Vegas Gate"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "What is the name of the vault that was turned into a hotel and gift shop?",
+      "answers": ["Vault 21", "Vault 13", "Vault 101"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "Which group of people settled on the Strip after the war?",
+      "answers": ["Tribal families", "Brotherhood of Steel members", "Super mutants"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "Which of the following statements about the Strip's families is true?",
+      "answers": ["They have long-standing grudges but do not openly act against each other", "They are allies and work together closely", "They are constantly at war with each other"],
+      "category": ["location", "New Vegas Strip"]
+    },
+    {
+      "question": "Where is Freeside located?",
+      "answers": ["Adjacent to the New Vegas Strip", "On the outskirts of New Vegas", "In the Mojave Desert"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "Which groups have some influence over Freeside?",
+      "answers": ["The Kings and the Van Graffs", "The NCR and Caesar's Legion", "The Brotherhood of Steel and the Followers of the Apocalypse"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What is the relationship between the locals and squatters in Freeside?",
+      "answers": ["There is a conflict between them", "They live harmoniously together", "The squatters dominate the locals"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "Who directed the tribes to build the walls separating the Strip and Freeside from the rest of New Vegas?",
+      "answers": ["Mr. House", "The NCR", "Caesar's Legion"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "How did Freeside become a stopping point for people heading to the Strip?",
+      "answers": ["People went straight for the Strip, leaving Freeside as a stopping point", "Mr. House forced people to stop in Freeside", "The NCR established Freeside as a checkpoint"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What groups prevent all-out chaos in Freeside?",
+      "answers": ["The Kings and the Followers of the Apocalypse", "The Van Graffs and the Garret twins", "The Securitrons and the NCR"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What is located inside Freeside's east gate?",
+      "answers": ["Mick & Ralph's general store", "The Old Mormon Fort", "The Atomic Wrangler Casino"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "Who sells a fake passport to the Strip in Freeside?",
+      "answers": ["Ralph at Mick & Ralph's", "The Garret twins at the Atomic Wrangler Casino", "The King at the King's School of Impersonation"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What can be acquired from Max, a boy in Freeside?",
+      "answers": ["Euclid's C-Finder", "A toy gun", "A unique energy weapon"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "Where is the Silver Rush located in Freeside?",
+      "answers": ["In the central and southern parts of the district", "Inside the Old Mormon Fort", "Near the train station"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What is the home of the Kings in Freeside?",
+      "answers": ["The King's School of Impersonation", "The Silver Rush", "The Atomic Wrangler Casino"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "Where can campfires be found in Freeside?",
+      "answers": ["By the north gate to the New Vegas Strip", "Inside the King's School of Impersonation", "At the Old Mormon Fort"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "How is the second section of Freeside reached?",
+      "answers": ["From the north by passing through a roadblock", "From the south via The Strip North Gate", "Through a tunnel near the Atomic Wrangler Casino"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "Which of the following statements about Freeside is true?",
+      "answers": ["It is a large slum adjacent to the New Vegas Strip", "It is a thriving tourist destination", "It is heavily guarded by Caesar's Legion"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What is the relationship between the Kings and the Followers of the Apocalypse?",
+      "answers": ["The Kings receive help from the Followers in exchange for protection", "The Kings and the Followers are bitter rivals", "The Kings are controlled by the Followers"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What do the rough bodyguards near Freeside's gates offer?",
+      "answers": ["Their 'protection' for a sum of caps", "Free supplies and food", "Entertainment and games"],
+      "category": ["location", "Freeside"]
+    },
+    {
+      "question": "What is the name of the fortified settlement in the Capital Wasteland?",
+      "answers": ["Megaton", "Rivet City", "Tenpenny Tower"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "What is at the center of Megaton?",
+      "answers": ["An undetonated atomic bomb", "A water processing plant", "A radio broadcasting tower"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "How is Megaton protected?",
+      "answers": ["Large metal walls made from scavenged materials", "A force field barrier", "High-tech energy shields"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Who were the founders of Megaton?",
+      "answers": ["People seeking shelter in Vault 101", "Vault dwellers", "Wandering travelers"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Why were people initially denied access to Vault 101?",
+      "answers": ["Vault dwellers were not allowed to leave or let anyone in", "Vault 101 was already full", "Vault 101 was under attack"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Who inherited Moriarty's Saloon after the death of Colin Moriarty's father?",
+      "answers": ["Colin Moriarty", "Lucas Simms", "Agnes Taylor"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "When did the construction of the wall around Megaton begin?",
+      "answers": ["2241", "2277", "2205"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Who made contact with the residents of Megaton on behalf of Vault 101?",
+      "answers": ["An expeditionary party led by Anne Palmer", "Lucas Simms and his guards", "The Brotherhood of Steel"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Who is the self-appointed sheriff of Megaton?",
+      "answers": ["Lucas Simms", "Colin Moriarty", "Moira Brown"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Who runs the town saloon in Megaton?",
+      "answers": ["Colin Moriarty", "Lucas Simms", "Moira Brown"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Which group occupied Springvale Elementary School near Megaton?",
+      "answers": ["A gang of raiders", "The Brotherhood of Steel", "The Enclave"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Who is the author of the Wasteland Survival Guide in Megaton?",
+      "answers": ["Moira Brown", "Lucas Simms", "Colin Moriarty"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "What is the main gate of Megaton made of?",
+      "answers": ["Two old aircraft wings", "Reinforced concrete", "Steel bars"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Where is the Megaton clinic located?",
+      "answers": ["On the right past the bomb", "At the bottom of the depression", "Inside Lucas Simms' house"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "What can be found inside Craterside Supply in Megaton?",
+      "answers": ["A water processing plant", "Supplies for trade and sale", "A hidden treasure chest"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "What happens to Megaton if the player character blows it up in The Power of the Atom quest?",
+      "answers": ["The town becomes ruins surrounded by a high wall", "The town is completely destroyed", "The bomb detonates, causing widespread destruction"],
+      "category": ["location", "Megaton"]
+    },
+    {
+      "question": "Where is Tenpenny Tower located in the Capital Wasteland?",
+      "answers": ["West of the DC ruins, southwest of the RobCo main production facility", "East of the DC ruins, northeast of the Super Duper Mart", "South of the DC ruins, southeast of the National Archives"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What was Tenpenny Tower before the Great War?",
+      "answers": ["A resort", "A military base", "An office building"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "Who is the owner of Tenpenny Tower?",
+      "answers": ["Allistair Tenpenny", "Chief Gustavo", "Michael Masters"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "Who is Tenpenny's right-hand man?",
+      "answers": ["Mister Burke", "Chief Gustavo", "Shakes"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What did Tenpenny do to the tower to provide security?",
+      "answers": ["Hired individuals to fix it up quickly", "Built a moat around it", "Installed automated turrets"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What was set up in and around the lobby of Tenpenny Tower?",
+      "answers": ["Shops, a bar, and a clinic", "Residential apartments", "An art gallery"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "Who concerns himself with the 'ghoul problem' in Tenpenny Tower?",
+      "answers": ["Chief Gustavo", "Allistair Tenpenny", "Mister Burke"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What is the name of the Protectron programmed to be the barman in Tenpenny Tower?",
+      "answers": ["Shakes", "Rusty", "Bart"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What surrounds the structure of Tenpenny Tower?",
+      "answers": ["Tall concrete walls", "A moat filled with radioactive water", "Electric fences"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "How can the player character enter Tenpenny Tower without using the main gate?",
+      "answers": ["Jump over the wall using a broken piece and gap", "Use a secret underground entrance", "Climb over the rooftops"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What businesses can be found in the lobby of Tenpenny Tower?",
+      "answers": ["Boutique Le Chic, Café Beau Monde, Federalist Lounge, Gustavo's armory, New Urban Apparel, Wellness Center", "Chems R Us, The Junkyard, Lucky's Bar, Bob's Guns, Super Mart", "Tech Emporium, The Armory, The Book Nook, Rosie's Diner, The Clinic"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What happens if the player character steals from the safes and cash boxes of the store owners in Tenpenny Tower?",
+      "answers": ["The store owners complain about security and leave", "The player character is banned from entering Tenpenny Tower", "The security turrets attack the player character"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "Where is the Lone Wanderer's suite located in Tenpenny Tower?",
+      "answers": ["On the third floor", "In the penthouse", "In the basement"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "Who shares a balcony with the Lone Wanderer's suite in Tenpenny Tower?",
+      "answers": ["Allistair Tenpenny", "Mister Burke", "Chief Gustavo"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What can the player character do to obtain the inventory keys of the store owners in Tenpenny Tower without making the other residents hostile?",
+      "answers": ["Follow them outside Tenpenny Tower and kill them", "Persuade them to give the keys willingly", "Steal the keys while they are sleeping"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "What is the water supply in Tenpenny Tower?",
+      "answers": ["Not irradiated and siphoned from the underground DC Metro system", "Filtered through a purification system", "Brought in from a nearby river"],
+      "category": ["location", "Tenpenny Tower"]
+    },
+    {
+      "question": "Where is Jacobstown located?",
+      "answers": ["On Mount Charleston", "In the Mojave Desert", "In the Capital Wasteland"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "Who is the mild-mannered super mutant sheriff of Broken Hills who founded Jacobstown?",
+      "answers": ["Marcus", "Davison", "Tabitha"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What is the main source of sustenance for Jacobstown?",
+      "answers": ["Ranching bighorners", "Hunting radscorpions", "Farming crops"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "Who is Jacobstown named after?",
+      "answers": ["Jacob, a Brotherhood of Steel paladin and past traveling companion of Marcus", "Allistair Tenpenny", "Michael Masters"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "Who broke off from Jacobstown to form their own super mutant communities?",
+      "answers": ["Davison and Tabitha", "Marcus and Keene", "Lily and Henry"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "Who represents the Nightkin in Jacobstown?",
+      "answers": ["Keene", "Marcus", "Henry"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What is Dr. Henry trying to cure in Jacobstown?",
+      "answers": ["The mental illness of the nightkin", "The physical mutations of the super mutants", "The bighorners' diseases"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What threats does Jacobstown face from the outside?",
+      "answers": ["Mercenaries sent by the NCR to displace or eliminate the super mutants", "Raider attacks", "Super mutant rebellions"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What is the social structure like among the super mutants in Jacobstown?",
+      "answers": ["Egalitarian collective with shared resources", "Caste system with strict hierarchy", "Individualistic and competitive"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "Which group among the super mutants of Jacobstown is focused on finding a cure for their deteriorating condition?",
+      "answers": ["The Nightkin", "The first generation super mutants", "The second generation super mutants"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What is Marcus' goal for Jacobstown in terms of relations with other groups?",
+      "answers": ["Establish trade and borders with the NCR", "Assimilate into Caesar's Legion", "Form an alliance with the Great Khans"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What is the general attitude of Jacobstown towards the Great Khans?",
+      "answers": ["Little interest in each other", "Friendly and cooperative", "Hostile and confrontational"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What type of facility does Jacobstown resemble in terms of its appearance?",
+      "answers": ["A ski lodge resort", "An old military base", "A pre-War office building"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "Who can the player character meet in Jacobstown for the quest 'Guess Who I Saw Today'?",
+      "answers": ["Lily Bowen and Keene", "Doctor Henry and Marcus", "Davison and Tabitha"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "Where is the hollowed-out rock located at the entrance of Jacobstown?",
+      "answers": ["Near the right guard", "Near the left guard", "Inside the Jacobstown lodge"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "How does the player character learn about the location of Jacobstown?",
+      "answers": ["By visiting Neil near Black Mountain", "By speaking to Marcus in Broken Hills", "By finding a map in a nearby cave"],
+      "category": ["location", "Jacobstown"]
+    },
+    {
+      "question": "What is the current name of the small farming settlement in the far northeastern corner of the Capital Wasteland?",
+      "answers": ["The Republic of Dave", "The Kingdom of Tom", "The New Republic of Stevie-Ray"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "Who is the ruler of the Republic of Dave?",
+      "answers": ["Dave", "Tom", "Larry"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What type of government does the Republic of Dave have?",
+      "answers": ["A republic with voting", "A dictatorship", "A monarchy"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What was the previous name of the Republic of Dave?",
+      "answers": ["The Kingdom of Tom", "The Republic of Stevie-Ray", "The New Republic of Stevie-Ray"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "How did Dave come to power in the Republic of Dave?",
+      "answers": ["He overthrew his father Tom in a rebellion", "He won a democratic election", "He was appointed by the previous ruler"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What is the main economic activity of the Republic of Dave?",
+      "answers": ["Farming and trading", "Mining and scavenging", "Manufacturing and crafting"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What is the role of the Army of Dave in the Republic of Dave?",
+      "answers": ["Dave is the Commander and Bob is the Second-Commander", "They protect the agricultural sector", "They handle immigration and tourism"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "How can the Lone Wanderer earn the right to temporarily stay in the Republic of Dave?",
+      "answers": ["Tell Dave they are looking for asylum", "Pay an \"unwanted immigrant tax\"", "Become the Ambassador of the Wastelands"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What is the purpose of the Tourism Office in the Republic of Dave?",
+      "answers": ["To answer questions for the Ambassador of the Wasteland", "To promote tourism in the Republic", "To handle diplomatic relations with other settlements"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What amenities are mentioned in the Republic of Dave?",
+      "answers": ["Museum, school, Capitol building, men's and women's separate sleeping quarters", "Bar, casino, marketplace, and brothel", "Hospital, library, gym, and theater"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What happens if Dave loses the elections in the Republic of Dave?",
+      "answers": ["He heads to Old Olney to establish the New Republic of Dave", "He remains the ruler but with reduced powers", "He accepts the defeat and retires from politics"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "Where is the Republic of Dave located in the Capital Wasteland?",
+      "answers": ["In the northeast corner", "In the southwest corner", "In the center"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "How many primary buildings are there in the Republic of Dave?",
+      "answers": ["Four", "Two", "Six"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What is the composition of the perimeter fence around the Republic of Dave?",
+      "answers": ["Chain-link fence, wood, and sheet metal", "Concrete wall with guard towers", "Barbed wire fence"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "What is the recognized access gate to the Republic of Dave?",
+      "answers": ["The single gate in the fence", "The back door of Dave's house", "The front gate of the Capitol building"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "How many active schools are there in the entire Capital Wasteland?",
+      "answers": ["Three", "Five", "One"],
+      "category": ["location", "Republic of Dave"]
+    },
+    {
+      "question": "Where is Rivet City located in Washington, D.C.?",
+      "answers": ["Inside a decaying aircraft carrier", "On a floating platform", "In an underground bunker"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What is the main attraction of Rivet City?",
+      "answers": ["The largest settlement in the Capital Wasteland", "The hydroponic gardens", "The American history museum"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What was the original purpose of the aircraft carrier that became Rivet City?",
+      "answers": ["A massive, dry-docked aircraft carrier", "A research facility", "A military base"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "Who established the Rivet Station Science Outpost on the aircraft carrier?",
+      "answers": ["Remnants of the Naval Research Institute", "The Brotherhood of Steel", "The Enclave"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "When was Rivet City formally established as a settlement?",
+      "answers": ["April 25, 2239", "April 1, 2250", "May 13, 2277"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "Who took over as the science officer of Rivet City after 2258?",
+      "answers": ["Madison Li", "Horace Pinkerton", "Brad Danvers"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What is one of the challenges facing Rivet City?",
+      "answers": ["Respiratory ailments among residents caused by rust", "Lack of edible food", "Constant raider attacks"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What is the role of Rivet City in the Capital Wasteland?",
+      "answers": ["Supplier of edible, non-irradiated food", "Center of scientific research", "Trading hub for weapons"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What is the composition of Rivet City's security force?",
+      "answers": ["Trained guards with combat armor and automatic weapons", "Unarmed civilians", "Super mutants and mirelurks"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "How can the player character gain access to Rivet City?",
+      "answers": ["Use the intercom box to extend the bridge", "Swim across the Potomac River", "Defeat the security guards"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What amenities can be found in Rivet City?",
+      "answers": ["Shopping area, American history museum, science lab, church, clinic, bar, and hotel", "School, library, gym, and theater", "Hospital, marketplace, and brothel"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What can be found in Pinkerton's laboratory in Rivet City?",
+      "answers": ["Traps, such as rigged shotguns and frag mines", "Advanced technology and experiments", "Hydroponic farms"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What is the policy of Rivet City regarding criminals?",
+      "answers": ["No holding facilities for criminals and zero tolerance for crime", "Criminals are welcomed and rehabilitated", "Criminals are allowed to roam freely"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "Where can the player character rent a hotel room in Rivet City?",
+      "answers": ["On the upper deck of the carrier", "In the broken bow of the ship", "In the science lab"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What is the primary threat in the lower sections of Rivet City?",
+      "answers": ["Mirelurks", "Super mutants", "Raiders"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "What do citizens and security guards complain about regarding the city's water?",
+      "answers": ["It's not any better than drinking river water", "It's highly irradiated", "It has a strange taste"],
+      "category": ["location", "Rivet City"]
+    },
+    {
+      "question": "Where is Vault 101 located in the Capital Wasteland?",
+      "answers": ["Northwest area of Washington, D.C.", "East of Springvale", "South of Megaton"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What was the original purpose of the Vault 101 experiment?",
+      "answers": ["To stay closed indefinitely and study the role of the overseer", "To conduct medical experiments on the residents", "To simulate life on the surface"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Who was the first overseer of Vault 101?",
+      "answers": ["Vault 76 overseer (she refused the position)", "James (the Lone Wanderer's father)", "Horace Pinkerton"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What caused Vault 101 to become infested with radroaches?",
+      "answers": ["Opening the Vault numerous times", "A failed experiment", "Outside contamination"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Who created the illusion that the outside world was uninhabitable?",
+      "answers": ["The first Vault 101 overseer", "James (the Lone Wanderer's father)", "The survey team led by Anne Palmer"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Who became the overseer of Vault 101 after the first overseer's death?",
+      "answers": ["Alphonse Almodovar", "James (the Lone Wanderer's father)", "Anne Palmer"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What happened to the water purifier in Vault 101 in 2268?",
+      "answers": ["It malfunctioned and was repaired by Stanley Armstrong", "It was sabotaged by the rebels", "It became contaminated with radiation"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Who led the rebels in Vault 101?",
+      "answers": ["Amata Almodovar", "Alphonse Almodovar", "Butch DeLoria"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Why did James, the Lone Wanderer's father, leave Vault 101?",
+      "answers": ["To escape a radroach infestation", "To search for Project Purity", "To join the rebels"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What activities do the inhabitants of Vault 101 engage in during their free time?",
+      "answers": ["Cake bake-off, Founder's Day celebration, and Hunt the mutant game", "Weapon training, scientific experiments, and farming", "Radio broadcasting, theater performances, and sports"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Which section connects the overseer's office with the main entrance in Vault 101?",
+      "answers": ["Overseer's tunnel", "Atrium/upper level", "Lower level"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What is the Vault 101 mantra?",
+      "answers": ["We are born in the Vault, we live in the Vault, and we die in the Vault", "Escape the Vault, find the truth, and rebuild society", "Question authority, explore the wasteland, and survive"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Who is the leader of the Tunnel Snakes gang in Vault 101?",
+      "answers": ["Butch DeLoria", "Wally Mack", "Paul Hannon Jr."],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What is the hidden tunnel named in Vault 101 that leads to the Capital Wasteland?",
+      "answers": ["The overseer's tunnel", "The secret passage", "The escape route"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "Who requested assistance from the Lone Wanderer via emergency frequency?",
+      "answers": ["Amata Almodovar", "James (the Lone Wanderer's father)", "The Enclave"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What holiday is celebrated on the 23rd of October in Vault 101?",
+      "answers": ["Founder's Day", "Survival Day", "Reclamation Day"],
+      "category": ["location", "Vault 101"]
+    },
+    {
+      "question": "What is the name of the town in the Mojave Wasteland where the Courier begins their journey in Fallout: New Vegas?",
+      "answers": ["Goodsprings", "Primm", "Novac"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What is Goodsprings named after?",
+      "answers": ["The Goodsprings source", "A famous prospector", "A local hero"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What caused a reduction in trade in Goodsprings?",
+      "answers": ["A prison break at the NCR Correctional Facility and a deathclaw infestation", "A raider attack on the town", "A severe drought"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "Who led the Powder Gangers in their search for Ringo in Goodsprings?",
+      "answers": ["Joe Cobb", "Benny", "Doc Mitchell"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "Where does the Courier recover after being shot in the head?",
+      "answers": ["Doc Mitchell's house", "The Prospector Saloon", "Victor's shack"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What major routes converge in front of Doc Mitchell's house in Goodsprings?",
+      "answers": ["Nevada State Route 160 and Nevada State Route 161", "Interstate 15 and Nevada State Route 160", "Nevada State Route 161 and Interstate 80"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What is the name of the general store in Goodsprings?",
+      "answers": ["Goodsprings General Store", "Prospector Saloon", "Mojave Express"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What can be found in the abandoned schoolhouse in Goodsprings?",
+      "answers": ["A safe storage container", "A bed for resting", "A working terminal"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "Which skill-based checks can be found in the Goodsprings area and related quests?",
+      "answers": ["Barter, Explosives, Medicine, Repair, Science, Sneak, Speech, and Lockpick", "Melee, Energy Weapons, Survival, Sneak, Science, and Lockpick", "Guns, Explosives, Medicine, Repair, Speech, and Lockpick"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What will not respawn within the town limits of Goodsprings after it has been cleared?",
+      "answers": ["Hostiles", "Traders", "Brahmin"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What flies above the entrance to Doc Mitchell's house in Goodsprings?",
+      "answers": ["The state flag of Nevada", "A Brotherhood of Steel banner", "A NCR flag"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "According to a front-page newspaper story, what happened in Goodsprings before the Great War?",
+      "answers": ["A kind doctor was murdered", "A major battle occurred", "A valuable treasure was discovered"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What item will the residents of Goodsprings continue to wear indefinitely if Chet donates it?",
+      "answers": ["Leather armor", "Metal armor", "Combat armor"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What skill is required to open Trudy's safe in Goodsprings?",
+      "answers": ["Lockpick", "Science", "Explosives"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What can still appear in Goodsprings Cemetery after the town has been cleared?",
+      "answers": ["Bark scorpions", "Radroaches", "Mole rats"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "What organization provided a grant for the development of Goodsprings?",
+      "answers": ["New California Republic", "Brotherhood of Steel", "Crimson Caravan"],
+      "category": ["location", "Goodsprings"]
+    },
+    {
+      "question": "Where is Vault 111 located?",
+      "answers": ["Overlooking Sanctuary Hills", "In the heart of Diamond City", "Deep underground in the Glowing Sea"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What was the purpose of Vault 111's experiment?",
+      "answers": ["To observe the effects of long-term cryogenic suspended animation", "To test the effects of radiation exposure", "To study the behavior of isolated communities"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "Who were the test subjects lured to Vault 111?",
+      "answers": ["Residents from Sanctuary Hills and Concord", "Prisoners from nearby jails", "Soldiers from the New California Republic"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What was the fate of the Vault 111 residents after the Great War?",
+      "answers": ["Placed in cryo-stasis pods under false pretenses", "Evacuated to a nearby government facility", "Left outside to face the nuclear fallout"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "Why did the overseer refuse to unseal the Vault door after the mandatory shelter period elapsed?",
+      "answers": ["Concerned about the radiation outside the Vault", "Following Vault-Tec's standard operating procedures", "Fearful of the mutated creatures roaming the wasteland"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What happened during the mutiny against the overseer in Vault 111?",
+      "answers": ["The Vault was placed on lockdown and supplies were confiscated", "The overseer was overthrown and a new leader was chosen", "The security and support staff abandoned the Vault"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "Who murdered one of the parents and kidnapped the infant in Vault 111?",
+      "answers": ["Conrad Kellogg", "The Sole Survivor", "The Institute's agents"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "How long was the Sole Survivor held in cryogenic stasis in Vault 111?",
+      "answers": ["210 years", "50 years", "500 years"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What does the Sole Survivor find when accessing the Vault 111 monitoring terminal?",
+      "answers": ["All other subjects died of asphyxiation due to life support failure", "An escape plan from the Vault", "A distress message from the outside world"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What is the condition of Vault 111 when the Sole Survivor awakens?",
+      "answers": ["Signs of neglect, frozen mummified corpses, and scattered skeletal remains", "Fully functional and well-maintained", "Destroyed and flooded with radioactive water"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What notable loot can be found in Vault 111?",
+      "answers": ["Pip-Boy 3000 Mark IV, Red Menace holotape, and Vault 111 jumpsuit", "Legendary weapons and armor", "Stimpaks and RadAway"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "How can one re-enter Vault 111 after leaving?",
+      "answers": ["Pressing the red button at the command station near the entrance", "Using a special keycard found in the wasteland", "Hacking a terminal near the Vault"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "In which mode can the water fountain in Vault 111 be used to fill empty bottles with purified water?",
+      "answers": ["Survival mode", "Hardcore mode", "Legendary mode"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What makes the weapons found in Vault 111 unique?",
+      "answers": ["They automatically equip upon pickup, even if modified", "They have unlimited ammunition", "They have special elemental effects"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "Which companions do not have comments when at Vault 111?",
+      "answers": ["Curie, Deacon, Dogmeat, and Strong", "Codsworth, Piper, Cait, and Hancock", "Nick Valentine, Preston Garvey, MacCready, and X6-88"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "What organization discovered the location of Vault 111 in 2227?",
+      "answers": ["The Institute", "The Brotherhood of Steel", "The Enclave"],
+      "category": ["location", "Vault 111"]
+    },
+    {
+      "question": "Where is Novac located?",
+      "answers": ["South of the Gibson scrap yard and north of the Viper's encampment along Highway 95", "In the heart of New Vegas", "In the Divide, east of the Mojave Wasteland"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What was Novac before the Great War?",
+      "answers": ["A small stopover point for travelers", "A bustling city", "A military outpost"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What are Dinky the Dinosaur and the \"World's 2nd Largest Thermometer\"?",
+      "answers": ["Novelty roadside attractions", "Pre-war weapons", "Scientific research facilities"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Who are the two NCR Army veterans protecting Novac?",
+      "answers": ["Craig Boone and Manny Vargas", "Ranger Andy and Cliff Briscoe", "Jeannie May Crawford and No-bark Noonan"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Who is Ranger Andy and why is he stationed in Novac?",
+      "answers": ["A retired ranger providing protection", "A merchant selling goods", "A doctor providing medical services"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What is the concern for Novac's livelihood?",
+      "answers": ["The growing threat of Caesar's Legion and feral ghouls", "Lack of water and resources", "Radioactive contamination in the area"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What recent event has increased caravan traffic to Novac?",
+      "answers": ["The shutdown of parallel Interstate 15", "The discovery of a hidden treasure", "A new trade agreement with New Vegas"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Who can the Courier rent a room from in Novac?",
+      "answers": ["Jeannie May Crawford", "Cliff Briscoe", "Ranger Andy"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Where is Dr. Ada Straus located in Novac?",
+      "answers": ["At the gas station and near the McBride's", "Inside the Dinky the T-Rex gift shop", "In Manny Vargas' room at the motel"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Where can the Courier find a campfire near Novac?",
+      "answers": ["In a cave past a water tower and radio tower to the northwest", "At the motel courtyard", "Inside the Dino Dee-lite Motel"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What can the Courier find near the gravesite in Novac?",
+      "answers": ["A shanty with a usable workbench and crafting materials", "A hidden treasure chest", "A collection of pre-war artifacts"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Who inhabits the motel rooms in Novac?",
+      "answers": ["Manny Vargas, Boone, Daisy Whitman, and Bruce Isaac", "Craig Boone, Cliff Briscoe, and Jeannie May Crawford", "No-bark Noonan, Ranger Andy, and Dr. Ada Straus"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What can be found at the gas station in Novac?",
+      "answers": ["A workbench and a reloading bench", "A hidden underground vault", "A secret NCR outpost"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What are REPCONN rockets in Novac?",
+      "answers": ["Models found around the gas station", "Nuclear weapons", "Advanced communication devices"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "What triggers faint, ghostly whispering near the graves in Novac?",
+      "answers": ["Walking near the gravesites", "Playing music on a nearby radio", "Reading ancient inscriptions on the gravestones"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Who remains distrusting of outsiders in Novac?",
+      "answers": ["The residents of Novac", "The New California Republic", "The Bright Brotherhood"],
+      "category": ["location", "Novac"]
+    },
+    {
+      "question": "Where is the 188 Trading Post located?",
+      "answers": ["On the intersection of Highway 93 and Highway 95, directly north of El Dorado Dry Lake, west-northwest of Boulder City", "In the heart of New Vegas", "In the Divide, east of the Mojave Wasteland"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Why was the trading post established in 2281?",
+      "answers": ["Escaping the NCRCF prison break in Primm", "To serve as a military outpost", "To exploit a newly discovered resource"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Who established the 188 Slop & Shop at the trading post?",
+      "answers": ["Samuel Kerr and his daughter Michelle", "Veronica and her family", "The Gun Runners"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "What does the 188 Slop & Shop offer to travelers?",
+      "answers": ["Food, water, supplies, and repair services", "Luxury goods and entertainment", "Weapons and ammunition"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Which group set up shop underneath the overpass at the trading post?",
+      "answers": ["The Gun Runners", "The NCR troopers", "The Legionary assassins"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Who is Veronica and what is she doing at the trading post?",
+      "answers": ["A recruitable companion picking up supplies for her family", "The bartender at 188 Slop & Shop", "An arms merchant selling weapons and armor"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "What type of troopers can be found at the trading post at high levels?",
+      "answers": ["NCR heavy troopers", "Legionary assassins", "Gun Runners bodyguards"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Who runs the 188 Slop & Shop?",
+      "answers": ["Samuel Kerr and Michelle", "Veronica and her family", "NCR troopers"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Where can the Courier find a reloading bench at the trading post?",
+      "answers": ["Behind the 188 Slop & Shop", "Inside Veronica's tent", "Near the Gun Runners' area"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Who can provide weapons, armor, and information about the NCR at the trading post?",
+      "answers": ["The arms merchant", "Veronica", "The Forecaster"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Where is the Gun Runners' satellite location at the trading post?",
+      "answers": ["Underneath the overpass", "Inside the 188 Slop & Shop", "At the eastern side of the overpass"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Who is The Forecaster at the trading post?",
+      "answers": ["A young boy selling \"thoughts\"", "A fortune teller", "A military strategist"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "What does The Forecaster sell to the Courier?",
+      "answers": ["Three different \"thoughts\" for 100 caps each", "Weapons and armor", "Medical supplies and chems"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "What is the motto of the 188 Slop & Shop?",
+      "answers": ["\"It's Better Than Nothing\"", "\"Quality Goods at Low Prices\"", "\"The Best in Town\""],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "What can be found near the makeshift shacks and tents at the trading post?",
+      "answers": ["Derelict vehicles and barrel fires", "Guard towers and watchtowers", "A water purification station"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "Who frequently visits the trading post?",
+      "answers": ["Soldiers, merchants, and NCR citizens", "Raiders and bandits", "Super mutants and ghouls"],
+      "category": ["location", "188 Trading Post"]
+    },
+    {
+      "question": "What is the alternate name for Sanctuary Hills?",
+      "answers": ["Sanctuary", "Concord", "Misty Lake"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Who lived in the House of Tomorrow in Sanctuary Hills?",
+      "answers": ["The Sole Survivor, their spouse, their son Shaun, and Codsworth", "The Minutemen and their leader", "The Quincy Massacre survivors"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Why did select citizens flee to Vault 111?",
+      "answers": ["To escape the nuclear detonations", "To find valuable resources", "To join a secret organization"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What is the layout of Sanctuary Hills?",
+      "answers": ["A village built along a single road that ends in a cul-de-sac", "A sprawling city with multiple districts", "A series of interconnected underground bunkers"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Where can a floor safe (Advanced) be found in Sanctuary Hills?",
+      "answers": ["Under a dresser in the blue house to the north of the road", "In the root cellar", "In the House of Tomorrow"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What notable loot can be found on the kitchen counter in Sanctuary Hills?",
+      "answers": ["Grognak the Barbarian issue #3", "You're SPECIAL!", "Three gold bars"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Who are the pre-War inhabitants of Sanctuary Hills?",
+      "answers": ["Mr. Able, Mrs. Able, Nora/Nate, Shaun, and others", "The Quincy Massacre survivors", "The Minutemen and their leader"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What crafting stations are available in Sanctuary Hills?",
+      "answers": ["Armor workbench, chemistry station, cooking station, power armor station, weapons workbench", "Armor workbench, cooking station, power armor station", "Chemistry station, weapons workbench"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Who is the settlement leader in Sanctuary Hills after completing the quest When Freedom Calls?",
+      "answers": ["Preston Garvey", "Codsworth", "Mama Murphy"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What will happen if you attempt to leave pre-War Sanctuary Hills via any method other than evacuating to Vault 111?",
+      "answers": ["A premature atomic warhead detonation resulting in instant death", "A raider attack", "The Sole Survivor becomes trapped"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What can be found on a small island southwest of Sanctuary Hills?",
+      "answers": ["An APC, radioactive waste barrels, a medic box, and loot", "A hidden treasure chest", "A secret underground bunker"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Who typically resides in the House of Tomorrow in Sanctuary Hills?",
+      "answers": ["Codsworth", "The Quincy Massacre survivors", "The Sole Survivor and their family"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What useful feature does Sanctuary Hills have for an early settlement?",
+      "answers": ["All the base game crafting workshops", "A strong defense system", "A reliable source of clean water"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Where can the cooking station be found in Sanctuary Hills?",
+      "answers": ["On the driveway of the blue house marked 'Russell'", "In the House of Tomorrow", "Inside the root cellar"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What can be found in the root cellar of Sanctuary Hills?",
+      "answers": ["Three gold bars", "A hidden treasure chest", "An entrance to a secret underground facility"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "Who can be found at the Minutemen Monument near the bridge in Sanctuary Hills?",
+      "answers": ["Jun Long, Mama Murphy, and Preston Garvey", "Codsworth, Mr. Able, and Mrs. Able", "The Sole Survivor and their spouse"],
+      "category": ["location", "Sanctuary Hills"]
+    },
+    {
+      "question": "What was Primm known for before the Great War?",
+      "answers": ["Being a small resort town and a budget version of Las Vegas", "Being a thriving trade town", "Being a military stronghold"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "What are the tourist attractions in Primm?",
+      "answers": ["Vikki and Vance Casino and Bison Steve Casino and Hotel", "Nipton Museum and Mojave Roller Coaster", "Red Rocket Truck Stop and 188 Trading Post"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Who took control of Primm after the breakout of the NCRCF prisoners?",
+      "answers": ["The convicts", "The NCR", "The Powder Gangers"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Where did the residents of Primm take refuge during the convict takeover?",
+      "answers": ["Vikki & Vance Casino", "Bison Steve Hotel", "Nipton Museum"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "What strategic advantage does Primm offer in the southern Mojave?",
+      "answers": ["Its location and proximity to New Vegas", "Its natural resources", "Its defensive structures"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "What is the layout of Primm dominated by?",
+      "answers": ["Empty ranch homes, rubble, and a small NCR camp", "Luxurious hotels and resorts", "Vast farmlands and agricultural fields"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Where can the Courier find Deputy Beagle in Primm?",
+      "answers": ["Bison Steve Hotel", "Vikki and Vance Casino", "Nash residence"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Where can two Sunset Sarsaparilla star bottle caps be found in Primm?",
+      "answers": ["Southeast house in the southern part of town and Bison Steve Hotel first floor lobby", "Primm sheriff's office and NCR camp", "Bison Steve Casino and Hotel and Vikki and Vance Casino"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Where can a unique .357 Magnum revolver called 'Lucky' be found in Primm?",
+      "answers": ["Bison Steve Hotel's first floor shop, in a Hard locked floor safe", "Vikki and Vance Casino, on a gaming table", "Primm sheriff's office, on the desk"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Where is the unique sheriff's duster, cowboy repeater, and sheriff's hat located in Primm?",
+      "answers": ["Primm sheriff's office, near the foot of the bed", "Bison Steve Hotel's first floor shop, on a shelf", "Vikki and Vance Casino, behind the bar"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "What quest can be triggered by interacting with Deputy Beagle or Johnson Nash in Primm?",
+      "answers": ["My Kind of Town", "ED-E My Love", "Bounty of the Mojave"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Where can ED-E be found in Primm?",
+      "answers": ["On the table inside the Nash residence", "Bison Steve Hotel, second floor", "Vikki and Vance Casino, behind the cashier's counter"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "What can be found outside the Nash residence in Primm?",
+      "answers": ["Remains of the fourth courier and the fourth courier note", "A hidden treasure chest", "A campfire and a cooking station"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "What notable loot can be found in the Bison Steve Hotel in Primm?",
+      "answers": ["Lucky (unique .357 Magnum revolver) and Tales of a Junktown Jerky Vendor", "Two Sunset Sarsaparilla star bottle caps", "A unique sheriff's duster and a cowboy repeater"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "What serves as a barricade at the entrance of Primm in the Mojave Wasteland?",
+      "answers": ["An overpass held by NCR troopers", "A concrete wall built by the convicts", "A row of abandoned vehicles"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "Where can a hollowed-out rock be found in Primm?",
+      "answers": ["Behind the back wall and in front of the cliff, to the northwest", "On the rooftop of the Bison Steve Hotel", "Inside the Vikki and Vance Casino, near the cashier's counter"],
+      "category": ["location", "Primm"]
+    },
+    {
+      "question": "How can the Sole Survivor access Vault 88?",
+      "answers": ["Via a small cave beneath Quincy Quarries", "Through a hidden entrance in Diamond City", "By completing a series of quests for the Brotherhood of Steel"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What was the purpose of Vault 88?",
+      "answers": ["To test prototype devices for distribution to other Vaults", "To serve as a military bunker", "To conduct social experiments on its inhabitants"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What rooms were completed in Vault 88 before the bombs dropped?",
+      "answers": ["Main entrance, security, and reactor rooms", "Living quarters, cafeteria, and medical bay", "Laboratories, classrooms, and recreational areas"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "Who informs the raiders trying to break into Vault 88 that their efforts are futile?",
+      "answers": ["Overseer Barstow", "Security Chief Andersen", "The Sole Survivor"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What does the Sole Survivor need to find in the reactor room of Vault 88?",
+      "answers": ["Vault-Tec control board", "A key to the armory", "A holotape with valuable information"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "How can the building space in Vault 88 be expanded?",
+      "answers": ["By finding control boards for each sector of the Vault", "By completing quests for the settlers", "By purchasing additional building permits"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What can be found in the main cavern of Vault 88?",
+      "answers": ["Construction machinery, destroyed trains, and piles of debris", "Intact living quarters and recreational areas", "Advanced scientific laboratories"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What can be scrapped in the main cavern of Vault 88 to create open space?",
+      "answers": ["Construction machinery, destroyed trains, and piles of debris", "Feral ghouls and raiders", "Control panels and security systems"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What must be cleared to access the north, northeast, and east sectors of Vault 88?",
+      "answers": ["Limestone walls", "Steel doors", "Concrete barricades"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "Where is the north sector control board located in Vault 88?",
+      "answers": ["Ruined subway platform area", "Main chamber", "Brick and concrete area"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What enemies can be encountered in the north sector of Vault 88?",
+      "answers": ["Mole rats, feral ghouls, and a legendary deathclaw", "Super mutants and raiders", "Radscorpions and mirelurks"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What can be found in the northeast sector of Vault 88?",
+      "answers": ["Mole rats, feral ghouls, and uranium veins", "Control boards and construction supplies", "Radscorpions and mirelurks"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "Where is the east sector control board located in Vault 88?",
+      "answers": ["Small room at the end of a subway tunnel", "Main chamber", "Natural cavern space"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What enemies can be encountered in the east sector of Vault 88?",
+      "answers": ["Feral ghouls, radscorpions, and a sentry bot", "Mole rats, super mutants, and a deathclaw", "Ghouls, raiders, and robots"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What can be found in the large cavern beyond the east sector of Vault 88?",
+      "answers": ["Uranium veins, radscorpions, and a leveled sentry bot", "Control boards and construction supplies", "Mole rats, feral ghouls, and uranium barrels"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What resource can be obtained from the uranium veins in Vault 88?",
+      "answers": ["Nuclear material", "Adhesive", "Copper"],
+      "category": ["location", "Vault 88"]
+    },
+    {
+      "question": "What is another name for the Big MT Research Facility?",
+      "answers": ["Big Mountain Research and Development Center", "Hopeville Research Facility", "New Vegas Science Center"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "Where is the Big MT Research Facility located?",
+      "answers": ["South of Hopeville", "In the heart of New Vegas", "Beneath the Sierra Madre"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What was the original goal of the Big MT Research Facility?",
+      "answers": ["To create groundbreaking technology without restraints", "To conduct social experiments on its inhabitants", "To develop advanced weapons for the military"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What unethical experiments were conducted at Big MT?",
+      "answers": ["Experiments on living humans and a concentration camp", "Animal cloning and genetic modification", "Psychological tests on the facility's staff"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "Who are the six executives known as the Think Tank?",
+      "answers": ["0, 8, Borous, Dala, Mobius, and Klein", "Elijah, Ulysses, and Christine Royce", "Doctor Mobius and his robotic companions"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What is the purpose of the radar fence around Big MT?",
+      "answers": ["To prevent the disembodied brains from escaping", "To repel intruders with a repulsive field", "To protect the facility from nuclear explosions"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "Who were the three individuals who eluded the Think Tank's experiments?",
+      "answers": ["Elijah, Ulysses, and Christine Royce", "Dr. Borous, Dr. Klein, and Dr. Mobius", "The Courier, Benny, and Mr. House"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What facility did Dr. Mobius establish in the Forbidden Zone?",
+      "answers": ["X-42 robo-warfare facility", "X-8 research center", "Z-43 innovative toxins plant"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What does Elijah search for in Big MT?",
+      "answers": ["Weapons to destroy the NCR and create a new Brotherhood of Steel", "A cure for his terminal illness", "Experimental drugs for addiction treatment"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "Who subjected Christine Royce to horrific experiments in Big MT?",
+      "answers": ["Mister Orderly and Y-17 trauma override harnesses", "Dr. Borous and his cazadores", "Dr. Klein and the Think Tank"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What is the name of the concentration camp in Big MT?",
+      "answers": ["Little Yangtze", "Camp Forlorn Hope", "Hidden Valley Bunker"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What type of creatures were created by Dr. Borous at Big MT?",
+      "answers": ["Cazadores and night stalkers", "Spore carriers and lobotomites", "Robo-scorpions and Y-17 trauma override harnesses"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What are the robotic guardians created by Dr. Mobius called?",
+      "answers": ["Robo-scorpions", "Securitrons", "Protectrons"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What does the Sink in Big MT do to the Courier?",
+      "answers": ["Performs a cranial extraction procedure", "Lobotomizes them", "Repairs their damaged limbs"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What creatures were unleashed upon the wasteland from Big MT?",
+      "answers": ["Cazadores, night stalkers, and spore carriers", "Super mutants and ghouls", "Deathclaws and radscorpions"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What is another name for Big MT?",
+      "answers": ["The Big Empty", "The Hidden Facility", "The Technological Enclave"],
+      "category": ["location", "Big MT"]
+    },
+    {
+      "question": "What is the Glowing Sea?",
+      "answers": ["A heavily irradiated zone", "A radioactive pond", "An underground cave system"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What caused the highly irradiated landscape of the Glowing Sea?",
+      "answers": ["A massive nuclear detonation during the Great War", "A series of volcanic eruptions", "A failed experiment at a research facility"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What are the predominant features of the Glowing Sea?",
+      "answers": ["Scorched earth, radioactive ponds, charred trees, and rubble", "Lush vegetation and flowing rivers", "Pristine buildings and paved roads"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What settlement is located at the center of the Glowing Sea?",
+      "answers": ["Crater of Atom", "Diamond City", "Goodneighbor"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "Which of the following is NOT found in the Glowing Sea?",
+      "answers": ["Vault-Tec Vault", "Deathclaws", "Radscorpions"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What is the radiation level in the Glowing Sea?",
+      "answers": ["At least 10 rads/second", "5 rads/second", "2 rads/second"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "How quickly can unprotected players die from radiation exposure in the Glowing Sea?",
+      "answers": ["Less than two minutes", "Less than five minutes", "Less than ten minutes"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What is the recommended protection against radiation in the Glowing Sea?",
+      "answers": ["RadAway, Rad-X, and rad-resistant armor", "Stimpaks and Psycho", "Jet and Buffout"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What wildlife can be found in the Glowing Sea?",
+      "answers": ["Deathclaws, radscorpions, bloatflies, bloodbugs, and stingwings", "Brahmin, radstags, and radroaches", "Yao Guai, cazadores, and super mutants"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What resources are scarce in the Glowing Sea?",
+      "answers": ["Food, chems, and ammo", "Water, shelter, and clothing", "Books, toys, and furniture"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What dangers can be found in the ruins of the Glowing Sea?",
+      "answers": ["Large packs of feral ghouls and mole rat swarms", "Super mutants and raiders", "Protectrons and turrets"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "Which item can heal radiation in the Glowing Sea?",
+      "answers": ["Mysterious serum", "Stimpaks", "Psycho"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "What organization occupies the Crater of Atom in the Glowing Sea?",
+      "answers": ["Church of the Children of Atom", "Brotherhood of Steel", "Railroad"],
+      "category": ["location", "Glowing Sea"]
+    },
+    {
+      "question": "Where is Diamond City located?",
+      "answers": ["Fenway Park", "Commonwealth Stadium", "Boston Harbor"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What is Diamond City's nickname?",
+      "answers": ["The Great Green Jewel", "The Shining Oasis", "The Radiant Metropolis"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What color is the reinforced wall surrounding Diamond City?",
+      "answers": ["Green", "Yellow", "Red"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What is the name of the radio station in Diamond City?",
+      "answers": ["Diamond City Radio", "Goodneighbor Radio", "The Commonwealth Broadcast"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What year was Diamond City founded?",
+      "answers": ["2130", "2287", "2229"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What is the name of the newspaper founded by Piper Wright in Diamond City?",
+      "answers": ["Publick Occurrences", "The Diamond Dispatch", "The Commonwealth Tribune"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What event caused paranoia about the Institute in Diamond City?",
+      "answers": ["Broken Mask incident", "Super mutant attack", "Ghoul uprising"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "Which settlement was founded by criminals banished from Diamond City?",
+      "answers": ["Goodneighbor", "Bunker Hill", "Vault 81"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What decree did Mayor McDonough issue in Diamond City?",
+      "answers": ["Anti-ghoul decree", "Anti-synth decree", "Anti-super mutant decree"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What resource provides electricity to Diamond City?",
+      "answers": ["Fusion generator", "Solar panels", "Wind turbines"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What kind of meat does the Codman family supply to Diamond City?",
+      "answers": ["Brahmin meat", "Radstag meat", "Mirelurk meat"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "Who is allowed to run a public detective agency in Diamond City?",
+      "answers": ["Nick Valentine (synth)", "Piper Wright (human)", "Mayor McDonough"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What is the social divide in Diamond City called?",
+      "answers": ["Upper Stands and Lower Fields", "High Town and Low Town", "Elite District and Slums"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "Where is the market located in Diamond City?",
+      "answers": ["Center of the city", "North of Third Street", "East of Second Street"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "Who gives a speech about not being a synth in Diamond City?",
+      "answers": ["Mayor McDonough", "Piper Wright", "Nick Valentine"],
+      "category": ["location", "Diamond City"]
+    },
+    {
+      "question": "What is the name of the location in Boston Common with a small pond?",
+      "answers": ["Swan's Pond", "Toxic Pond", "Radiated Lake"],
+      "category": ["location", "Swan's Pond"]
+    },
+    {
+      "question": "What can be found in the northwest of Swan's Pond?",
+      "answers": ["Groundskeeper's shack", "Super mutant camp", "Abandoned house"],
+      "category": ["location", "Swan's Pond"]
+    },
+    {
+      "question": "What is the name of the unique super mutant behemoth living in Swan's Pond?",
+      "answers": ["Swan", "Behemoth", "Hulking Mutant"],
+      "category": ["location", "Swan's Pond"]
     }
   ]
