@@ -4540,5 +4540,930 @@
       "question": "What is the name of the unique super mutant behemoth living in Swan's Pond?",
       "answers": ["Swan", "Behemoth", "Hulking Mutant"],
       "category": ["location", "Swan's Pond"]
+    },
+    {
+      "question": "What is the name of the settlement run entirely by ghouls?",
+      "answers": ["The Slog", "Ghoul Haven", "Outcast Refuge"],
+      "category": ["location", "The Slog"]
+    },
+    {
+      "question": "What type of plant do the ghoul inhabitants grow in the swimming pool outside?",
+      "answers": ["Tarberries", "Mutfruit", "Tato"],
+      "category": ["location", "The Slog"]
+    },
+    {
+      "question": "Who exiled the ghouls to form the settlement at The Slog?",
+      "answers": ["Mayor McDonough", "The Brotherhood of Steel", "Super Mutants"],
+      "category": ["location", "The Slog"]
+    },
+    {
+      "question": "What was the original purpose of the concrete building at The Slog?",
+      "answers": ["Public swimming pool", "Library", "School"],
+      "category": ["location", "The Slog"]
+    },
+    {
+      "question": "What can be found beyond a fence near The Slog settlement?",
+      "answers": ["Children's playground", "Farmers' market", "Ghoul graveyard"],
+      "category": ["location", "The Slog"]
+    },
+    {
+      "question": "When was Goodneighbor founded?",
+      "answers": ["2240", "2077", "2102"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "Who overthrew the criminal named Vic and became the mayor of Goodneighbor?",
+      "answers": ["John Hancock", "Henry Roberts", "Piper Wright"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "Which security team is responsible for maintaining order in Goodneighbor?",
+      "answers": ["Neighborhood Watch", "Diamond City Security", "Gunners"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "What is the name of the shop in Goodneighbor that sells weapons?",
+      "answers": ["Kill or Be Killed", "Daisy's Discounts", "The Third Rail"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "What is the name of the town bar in Goodneighbor?",
+      "answers": ["The Third Rail", "The Drunken Caravan", "The Tipsy Tinker"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "What type of criminal activity is common in Goodneighbor?",
+      "answers": ["Murder", "Pickpocketing", "Forgery"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "Who owns the shop Daisy's Discounts in Goodneighbor?",
+      "answers": ["Daisy", "KL-E-0", "Whitechapel Charlie"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "Which organization is shown contempt by the residents of Goodneighbor?",
+      "answers": ["The Institute", "The Railroad", "The Brotherhood of Steel"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "What do the Triggermen of Goodneighbor dress and act like?",
+      "answers": ["Pre-War mobsters", "Law enforcement officers", "Wasteland scavengers"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "How can Goodneighbor be accessed from the collapsed section of the fallen skybridge?",
+      "answers": ["Jumping down into the city", "Using the jet pack power armor mod", "Walking across the intact section"],
+      "category": ["location", "Goodneighbor"]
+    },
+    {
+      "question": "Who designed and controlled the Tranquility Lane simulation?",
+      "answers": ["Dr. Stanislaus Braun", "Dr. Madison Li", "Dr. Zimmer"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What was the purpose of Vault 112's experiment?",
+      "answers": ["To suspend occupants in a virtual reality world", "To study the effects of isolation", "To test advanced medical treatments"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "How did Dr. Braun torment the occupants of Vault 112?",
+      "answers": ["By virtually killing and resurrecting them repeatedly", "By subjecting them to extreme temperatures", "By manipulating their memories"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What is the name of the hidden terminal in the abandoned house?",
+      "answers": ["Tranquility Lane", "Braun's Console", "Virtual Reality Hub"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What are the items used to enter the simulation's failsafe code?",
+      "answers": ["Broken radio, glass pitcher, garden gnome, glass pitcher, cinder block, garden gnome, empty soda bottle", "Clock, book, chair, lamp, table, rug, painting", "Knife, fork, spoon, plate, bowl, cup, napkin"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What replaces the Pip-Boy in the Tranquility Lane simulation?",
+      "answers": ["Vault Boy watch", "Pip-Boy Deluxe", "Data Pad"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "Which location in Fallout: New Vegas bears a resemblance to Tranquility Lane?",
+      "answers": ["Higgs Village", "Goodsprings", "The Strip"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What do mission objectives do in the Tranquility Lane simulation?",
+      "answers": ["Constantly flash at the right of the screen", "Appear in the Pip-Boy as usual", "Are hidden and require exploration"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What is the date of the initiation of the Tranquility Lane simulation?",
+      "answers": ["June 11", "October 23", "December 5"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What item is used in place of the playground in Higgs Village?",
+      "answers": ["Fountain", "Swing set", "Carousel"],
+      "category": ["location", "Tranquility Lane simulation"]
+    },
+    {
+      "question": "What was Vault 11's social experiment?",
+      "answers": ["To sacrifice one dweller each year", "To study social interactions", "To test self-preservation versus morality"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "Who designed the experiment in Vault 11?",
+      "answers": ["Vault-Tec", "Dr. Braun", "Dr. Stanislaus"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What was the consequence of refusing to sacrifice a dweller?",
+      "answers": ["No one would be killed", "The Vault computer would initiate a lockdown", "The remaining dwellers would be executed"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "Who was the first sacrifice chosen by the residents of Vault 11?",
+      "answers": ["The original overseer", "A random dweller", "A member of the Justice Bloc"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "Who orchestrated the murder of Justice Bloc members in Vault 11?",
+      "answers": ["Katherine Stone", "Roy Gottlieb", "Vault-Tec scientists"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What did Katherine Stone do after becoming the next overseer?",
+      "answers": ["Dissolved the election process and implemented random selection", "Declared herself the permanent overseer", "Introduced more stringent sacrifice rules"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "Why did the Justice Bloc stage an armed coup?",
+      "answers": ["They opposed the random selection of the overseer", "They wanted to prevent the remaining dwellers from leaving", "They were seeking revenge against Katherine Stone"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What was the fate of the remaining Vault dwellers in Vault 11?",
+      "answers": ["They chose death by suicide", "They escaped the Vault", "They were executed by the Vault computer"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What happens when the player character enters the sacrificial chamber?",
+      "answers": ["Robots and turrets attack", "A peaceful presentation is shown", "The Vault computer gives a final message"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What was the true purpose of the Vault 11 experiment?",
+      "answers": ["To test self-preservation versus morality", "To study the effects of isolation", "To observe human behavior in extreme conditions"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What is found inside the small room after dealing with the robots in the sacrificial chamber?",
+      "answers": ["The Vault mainframe computer", "A hidden passage", "A message from Dr. Braun"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "How many voting blocs were there in Vault 11?",
+      "answers": ["Six", "Four", "Eight"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "Who led the Justice Bloc in Vault 11?",
+      "answers": ["Roy Gottlieb", "Katherine Stone", "Nathan Stone"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What happened to Katherine Stone's husband, Nathan?",
+      "answers": ["He was nominated as overseer by the Justice Bloc", "He was murdered by the Justice Bloc", "He escaped the Vault"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What did the residents of Vault 11 believe was the original goal of their defiance?",
+      "answers": ["To defy the social experiment", "To test their selflessness", "To uncover the truth about Vault-Tec"],
+      "category": ["location", "Vault 11"]
+    },
+    {
+      "question": "What was the unique feature of Vault 21's experiment?",
+      "answers": ["Solving conflicts through gambling", "Perfectly symmetrical layout", "Equal representation of all inhabitants"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "How were disputes settled in Vault 21?",
+      "answers": ["Through gambling", "Through democratic voting", "Through arbitration"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "Who made an offer to Vault 21's residents?",
+      "answers": ["Robert House", "The NCR", "Caesar's Legion"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What did the residents of Vault 21 do to settle the offer?",
+      "answers": ["Played Blackjack and those in favor of opening won", "Voted democratically", "Refused the offer altogether"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What did Mr. House do to Vault 21 after the offer was settled?",
+      "answers": ["Filled it with concrete", "Opened it to the outside world", "Converted it into a hotel"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "Who runs the hotel in Vault 21?",
+      "answers": ["Sarah Weintraub", "Robert House", "Sheldon Weintraub"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "Which part of Vault 21 is accessible to the player character?",
+      "answers": ["Living quarters and cafeteria", "Maintenance level", "Concrete-filled lower levels"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "Where is the entrance to Vault 21 located?",
+      "answers": ["On the western end of the Strip", "In the downtown area of Las Vegas", "Inside The Tops casino"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What is the background music played in Vault 21?",
+      "answers": ["Serenity", "New Vegas Nights", "Casino Royale"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "Which other location is connected to Vault 21?",
+      "answers": ["The Tops casino", "Gomorrah casino", "Ultra-Luxe casino"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What happens to the elevator in The Tops basement if Benny is given a chance to flee?",
+      "answers": ["It unlocks and connects to Vault 21", "It remains locked", "It leads to an inaccessible area"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What can be found in the basement maintenance level of Vault 21?",
+      "answers": ["A long hallway with small rooms", "The overseer's office", "An underground casino"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What is the name of the resident who remained in Vault 21?",
+      "answers": ["Sarah Weintraub", "Martina Groesbeck", "Doc Mitchell"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What is the fate of the concrete-filled lower levels of Vault 21?",
+      "answers": ["They are inaccessible", "They are turned into a storage area", "They are transformed into a museum"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "Which musical track was originally used for Modoc in Fallout 2 and plays in Vault 21?",
+      "answers": ["Serenity", "New Vegas Stomp", "Atomic Swing"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "What can be found in one of the rooms in Vault 21 if the quest The Finger of Suspicion has been started?",
+      "answers": ["Three Omerta thugs threatening Martina Groesbeck", "A hidden terminal", "A secret treasure stash"],
+      "category": ["location", "Vault 21"]
+    },
+    {
+      "question": "Who runs and populates Little Lamplight?",
+      "answers": ["Children under the age of 16", "Adult survivors from the Great War", "Ghouls from Vault 87"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What was the original purpose of Lamplight Caverns?",
+      "answers": ["A tourist attraction", "A military base", "A secret research facility"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What happened to the adults who were in Lamplight Caverns during the Great War?",
+      "answers": ["They died off or left", "They transformed into feral ghouls", "They built a new settlement"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "Who assumed the position of mayor in Little Lamplight?",
+      "answers": ["Jason Grant", "Carrie Delaney", "Joseph"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What did the children find when exploring the caves?",
+      "answers": ["Vault 87", "A hidden treasure", "An underground river"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What was the response of the adults inside Vault 87 to the children's plea for assistance?",
+      "answers": ["Told them to go away", "Opened the door and welcomed them in", "Sent supplies to help them"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "Where do the adults who turn 16 in Little Lamplight go?",
+      "answers": ["Big Town", "Megaton", "Rivet City"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "Who teaches classes to the children in Little Lamplight?",
+      "answers": ["Joseph", "Jason Grant", "Carrie Delaney"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What is the name of the restaurant in Little Lamplight?",
+      "answers": ["Spelunkers", "The Great Chamber Diner", "Cavern Delights"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "Which area serves as the main living area for the Little Lamplighters?",
+      "answers": ["The Great Chamber", "Lamplight Caverns", "Spelunkers Restaurant"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What can be found in the Great Chamber besides living quarters?",
+      "answers": ["Wooden walkways", "A workbench", "An irradiated lake"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What is the fate of Little Lamplight as of 2287?",
+      "answers": ["Unknown", "Destroyed by super mutants", "Thriving and prosperous"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "Which character is confirmed to be alive for the events of Fallout 4?",
+      "answers": ["MacCready", "Jason Grant", "Joseph"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What can be found in the Lamplight restrooms?",
+      "answers": ["Toilets and sinks", "A secret passage to Vault 87", "A hidden treasure chest"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "Which area leads to Murder Pass in Little Lamplight?",
+      "answers": ["The town's back gate", "Spelunkers Restaurant", "The souvenir shop"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "What was the response of the adults inside Vault 87 to the children's plea for assistance?",
+      "answers": ["Told them to go away", "Opened the door and welcomed them in", "Sent supplies to help them"],
+      "category": ["location", "Little Lamplight"]
+    },
+    {
+      "question": "Why was construction on Vault 108 cut short?",
+      "answers": ["Work stoppage", "Budget constraints", "Political interference"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What was the purpose of leaving all standard positions unfilled in Vault 108?",
+      "answers": ["To be assigned personally by the overseer", "To encourage chaos and conflict", "To save resources"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "Who was the chief of staff in Vault 108?",
+      "answers": ["Zachary K. Jameson", "Jerec Maddix", "Nathan Auragen"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What was the estimated lifespan of the overseer, Brody Jones?",
+      "answers": ["A little over three years", "Ten years", "Indefinite"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What was the primary power supply in Vault 108?",
+      "answers": ["Set to fail in 20 years", "Nuclear fusion reactor", "Solar panels"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What was the backup power supply in Vault 108?",
+      "answers": ["Steam Whistle mini geo-thermal", "Wind turbines", "Battery cells"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What were the scientists' efforts in the cloning lab of Vault 108?",
+      "answers": ["Cloning a man named Gary", "Developing advanced weapons", "Creating artificial intelligence"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What happened when Gary was cloned in Vault 108?",
+      "answers": ["Became hostile to non-clones", "Became docile and friendly", "Gained superhuman abilities"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "How many clones of Gary were created in Vault 108?",
+      "answers": ["53", "100", "10"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What weapons do some of the Gary clones possess in Vault 108?",
+      "answers": ["Knives or lead pipes", "Guns and explosives", "Unarmed"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "Why is the reactor area inaccessible in Vault 108?",
+      "answers": ["Debris blockage", "Radiation leak", "Sabotage"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "Which area of Vault 108 features a rectangular-shaped window?",
+      "answers": ["Overseer's office", "Cloning lab", "Living quarters"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What creatures inhabit the entrance area of Vault 108?",
+      "answers": ["Mole rats", "Radroaches", "Feral ghouls"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What is the current state of Vault 108?",
+      "answers": ["In an advanced state of disrepair", "Fully operational", "Under renovation"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "Who is the player character in Fallout 3?",
+      "answers": ["The Lone Wanderer", "Gary", "Brody Jones"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "How many main sections can be explored in Vault 108?",
+      "answers": ["Three", "Five", "One"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What caused the construction on Vault 108 to be cut short?",
+      "answers": ["Work stoppage", "Budget constraints", "Technical difficulties"],
+      "category": ["location", "Vault 108"]
+    },
+    {
+      "question": "What does the Unification Monument at Mojave Outpost commemorate?",
+      "answers": ["The merging of Desert Rangers and NCR Rangers", "The signing of a peace treaty", "The defeat of the Legion"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What is the main responsibility of the soldiers stationed at Mojave Outpost?",
+      "answers": ["Protecting caravans on the interstate", "Defending the outpost from Legion attacks", "Patrolling the Colorado River"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Why has the outpost established a permanent presence at Primm?",
+      "answers": ["Due to the NCRCF prison break", "To expand NCR jurisdiction", "To enhance trade routes"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What is the current situation at Mojave Outpost with regards to caravans?",
+      "answers": ["Caravans are backing up, waiting for roads to clear", "Caravans are bypassing the outpost", "Caravans are increasing in numbers"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Who offers the Keep Your Eyes on the Prize quest at Mojave Outpost?",
+      "answers": ["Ranger Ghost", "Sgt. Kilborn", "Major Knight"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Which character in the barracks offers a variety of goods for sale and plays Caravan?",
+      "answers": ["Lacey", "Ranger Jackson", "Rose of Sharon Cassidy"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Who can repair items to 100% in Mojave Outpost headquarters?",
+      "answers": ["Major Knight", "Ranger Ghost", "Sgt. Kilborn"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What quest does Ranger Jackson offer in Mojave Outpost headquarters?",
+      "answers": ["Can You Find it in Your Heart?", "Keep Your Eyes on the Prize", "Heartache by the Number"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Which character can be recruited as a companion at the Mojave Outpost barracks?",
+      "answers": ["Rose of Sharon Cassidy (Cass)", "Lacey", "Ranger Jackson"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What is the southern boundary of fully NCR-controlled territory?",
+      "answers": ["Mojave Outpost", "Hoover Dam", "New Vegas"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What can be found under the counter in the barracks at Mojave Outpost?",
+      "answers": ["A copy of Duck and Cover", "A map of the Mojave Wasteland", "A stash of chems"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Who extends NCR jurisdiction to southern Nevada, New Vegas, and the Hoover Dam?",
+      "answers": ["Desert Rangers", "NCR", "Legion"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What is the locked gate in Mojave Outpost that leads to Long 15?",
+      "answers": ["Southwest gate", "North gate", "Eastern gate"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Which character patrols the road leading to Mojave Outpost?",
+      "answers": ["Sgt. Kilborn", "Ranger Ghost", "Major Knight"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What is the outpost responsible for protecting in the southeastern Mojave?",
+      "answers": ["Stretch of I-15 south of Primm and Highway 95", "Nevada State Route 164 junction", "Colorado River region"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "Where is Mojave Outpost located in relation to the state line of California and Nevada?",
+      "answers": ["Near the state line", "Deep in California", "Deep in Nevada"],
+      "category": ["location", "Mojave Outpost"]
+    },
+    {
+      "question": "What event is the Old North Church associated with?",
+      "answers": ["The battles of Lexington and Concord", "The Boston Tea Party", "The signing of the Declaration of Independence"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "Who climbed to the top of the Old North Church to alert patriots about the Redcoats?",
+      "answers": ["Robert Newman", "Paul Revere", "John Pitcairn"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What does the phrase 'One if by land, two if by sea' refer to?",
+      "answers": ["The method of alerting patriots", "The number of lanterns lit", "The British troops' arrival"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What is hidden in the catacombs beneath the Old North Church?",
+      "answers": ["The secret headquarters of the Railroad", "Treasure chests", "Feral ghouls"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "Where is the Old North Church located?",
+      "answers": ["Boston", "Concord", "Lexington"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What can be found on the roof of the Old North Church?",
+      "answers": ["Caps stash, sniper rifle, and excellent views", "Secret documents", "A hidden treasure"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What is the eighth and final stop on the Freedom Trail?",
+      "answers": ["Old North Church", "Boston Tea Party", "Paul Revere's House"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What word needs to be spelled using the Freedom Trail marker to progress in the quest Road to Freedom?",
+      "answers": ["Railroad", "Revolution", "Redcoats"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "Who are buried in the crypt inside the Railroad HQ beneath the Old North Church?",
+      "answers": ["Major John Pitcairn and William Shippard", "Paul Revere and Robert Newman", "Desdemona and Preston Garvey"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What is the oldest standing church in Boston?",
+      "answers": ["Old North Church", "King's Chapel", "Trinity Church"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What is the tallest church in Boston?",
+      "answers": ["Old North Church", "Trinity Church", "King's Chapel"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What does the plaque outside the Old North Church commemorate?",
+      "answers": ["The historic events associated with the church", "The construction year of the church", "The founding of Boston"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What is the purpose of the holes in the back wall of the Old North Church's main interior?",
+      "answers": ["Reachable balconies", "Ventilation", "Decoration"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What is the code for the Old North Church on the Freedom Trail?",
+      "answers": ["1:R", "8:N", "3:T"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "Which quest is associated with the Old North Church's secret door opened by Desdemona?",
+      "answers": ["Road to Freedom", "The Great Escape", "Secrets Beneath"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What Revolutionary War figure is associated with the Old North Church?",
+      "answers": ["Paul Revere", "John Adams", "Samuel Adams"],
+      "category": ["location", "Old North Church"]
+    },
+    {
+      "question": "What was the Tops Hotel and Casino before the Great War?",
+      "answers": ["One of the foremost establishments of the Las Vegas Strip", "A small motel", "A shopping mall"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "Who restored the Tops to its former glory?",
+      "answers": ["Robert House and the Chairmen", "The NCR", "The Legion"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What is one of the most prominent features of the Tops?",
+      "answers": ["The Aces Theater", "The swimming pool", "The presidential suite"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "When did the casino become abandoned?",
+      "answers": ["After the Great War", "During the Great War", "Before the Great War"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What is the name of the tribe that renovated the Tops?",
+      "answers": ["The Chairmen", "The Boot Riders", "The Securitrons"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "Who conceived the plan to overthrow Mr. House?",
+      "answers": ["Benny", "Tommy Torini", "Swank"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What is the mainstay of the Strip that the Tops offers?",
+      "answers": ["Everything one could desire", "Great accommodations", "Dancing and drinks"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What key is required to access the presidential suite?",
+      "answers": ["A key obtained from Benny or the Chairman bodyguards", "A key obtained from the cashier", "The player character's key"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "Where is Benny's secret workshop located?",
+      "answers": ["In Benny's suite on the 13th floor", "In the Aces Theater", "In the restaurant kitchen"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What can be found in the sub-basement of the Tops?",
+      "answers": ["A breached wall leading to a sealed-off section of Vault 21", "Explosives crates", "Minor loot in lockers"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "Which games are offered for gambling at the Tops?",
+      "answers": ["Blackjack, Roulette, and Slots", "Poker, Baccarat, and Craps", "Lucky Wheel, Bingo, and Keno"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What is the permanent ban threshold for playing games at the Tops?",
+      "answers": ["10,000+ chips", "2,500+ chips", "5,000+ chips"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What notable loot can be found on Benny?",
+      "answers": ["Benny's suit and Maria", "A keycard and a note", "A stash of caps"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "Where can Tommy Torini be found in the Tops?",
+      "answers": ["The Aces theater", "The presidential suite", "The lobby"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What is the first reward offered by the floor manager as the player character earns chips?",
+      "answers": ["Vodka", "Brahmin steak and wine", "High Roller's suite key"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "What does the Tops offer for its patrons' needs?",
+      "answers": ["Comprehensive coverage including accommodations, dancing, drinks, and gambling", "Only gambling facilities", "Live entertainment shows"],
+      "category": ["location", "The Tops"]
+    },
+    {
+      "question": "Where is the Yangtze submarine located in Fallout 4?",
+      "answers": ["In Boston Harbor south of Boston Airport and northeast of the Four Leaf fishpacking plant", "On the coast of Maine", "In the Capital Wasteland"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What quest is automatically started upon discovering the Yangtze?",
+      "answers": ["Here There Be Monsters", "The Great Submarine Expedition", "Lost at Sea"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What type of submarine is the Yangtze?",
+      "answers": ["Yangtze-class stealth submarine", "Liao-class Type 113 submarine", "Ming-class attack submarine"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "Who commands the Yangtze submarine?",
+      "answers": ["Captain Zao", "Captain Li", "Captain Chen"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What happened to the Yangtze after firing its strategic missiles?",
+      "answers": ["It struck a mine and suffered severe damage to its reactor", "It successfully destroyed its targets and returned to China", "It remained hidden in Boston Harbor"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "How many crew members were on board the Yangtze?",
+      "answers": ["Approximately two dozen", "Over a hundred", "Only Captain Zao"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What is the first room the player character enters upon boarding the Yangtze?",
+      "answers": ["The bridge", "The reactor control room", "The crew quarters"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "Where can the player character find decontamination showers on the Yangtze?",
+      "answers": ["In a small room north of the reactor room on the upper level", "In the infirmary", "In the science lab"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What are the doors inside the Yangtze called?",
+      "answers": ["Bulkheads", "Hatches", "Portals"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What can be found in the infirmary of the Yangtze?",
+      "answers": ["The skeleton of an American serviceman on a bunk with handcuffs, a bone cutter, and a surgical scalpel", "Medical supplies and drugs", "A secret stash of ammunition"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What happens if the Yangtze is destroyed during the quest Here There Be Monsters?",
+      "answers": ["Both the Sole Survivor and Zao are killed in the explosion", "The submarine sinks deeper into the harbor", "The submarine becomes operational again"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "How many propellers does the Yangtze have?",
+      "answers": ["Three", "Two", "Four"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What is the name of the quest giver near the Shamrock Taphouse?",
+      "answers": ["Donny Kowalski", "Mickey Sullivan", "Joey O'Leary"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What is the name of the quest that starts upon discovering the Yangtze?",
+      "answers": ["Here There Be Monsters", "Into the Deep", "Submerged Secrets"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What is the submarine's designation in the game guide?",
+      "answers": ["Liao-class Type 113", "SSN-37-1A", "Type 093"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What can be found in the science lab of the Yangtze?",
+      "answers": ["A chemistry station", "Advanced technology prototypes", "Experimental weapons"],
+      "category": ["location", "Yangtze"]
+    },
+    {
+      "question": "What is HELIOS One?",
+      "answers": ["A pre-War Poseidon Energy concentrated solar power plant", "A military research facility", "A post-War Brotherhood of Steel outpost"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What were the primary functions of HELIOS One before the Great War?",
+      "answers": ["Generating and providing power and housing the ARCHIMEDES satellite weapon systems", "Conducting medical research and development", "Manufacturing advanced robots"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "Who oversaw the testing of the ARCHIMEDES weapon at HELIOS One?",
+      "answers": ["Brig. Gen. Scott Lowe", "Col. Johnson", "Gen. Alexander"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What caused power fluctuations in nearby installations when ARCHIMEDES was tested?",
+      "answers": ["Tests caused a 2.5-minute downtime at the facility and system-frying power fluctuations", "The facility experienced a reactor meltdown", "The Brotherhood of Steel sabotaged the power grid"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "Who made the decision to occupy HELIOS One and unlock its secrets?",
+      "answers": ["Elder Elijah of the Brotherhood of Steel", "General Oliver of the NCR", "Caesar of Caesar's Legion"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What was the name of the operation launched by the NCR to capture HELIOS One?",
+      "answers": ["Operation: Sunburst", "Operation: Solar Storm", "Operation: Lightbringer"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "Who did the Brotherhood of Steel fight against during the battle for HELIOS One?",
+      "answers": ["The NCR", "Caesar's Legion", "The Enclave"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What happened to Elder Elijah at the end of the battle for HELIOS One?",
+      "answers": ["He disappeared without a trace", "He was captured by the NCR", "He was killed in action"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "Why did the NCR lock down the solar tower in HELIOS One?",
+      "answers": ["The Brotherhood had activated the security systems to keep the NCR away", "They lacked the resources to shut down the security system remotely", "They wanted to conserve power"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "Who is Ignacio Rivas and what is his role at HELIOS One?",
+      "answers": ["A scientist from the Followers of the Apocalypse assigned to research the facility", "The NCR's principal engineer in charge of restoring the plant's functionality", "A former employee of Poseidon Energy"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "Where can the player character find a unique toolbox in HELIOS One?",
+      "answers": ["In a pool room on the lower level of the building", "In the solar collection tower", "In Ignacio Rivas' room"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What is the purpose of the observation level in the solar collection tower?",
+      "answers": ["Activating the plant's mainframe computer and completing the retargeting of the mirrors", "Overlooking the surrounding area", "Conducting experiments on solar energy"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What happens if ARCHIMEDES is activated at HELIOS One?",
+      "answers": ["All NCR troopers stationed at the plant are killed", "The plant becomes fully operational", "Caesar's Legion occupies HELIOS One"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What impact does activating ARCHIMEDES have on Arcade Gannon?",
+      "answers": ["He leaves the player's party and may even attack", "He becomes permanently hostile", "He gains increased loyalty"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "Who retakes control of HELIOS One after the events of the main game?",
+      "answers": ["Either the Brotherhood of Steel or the NCR, depending on the circumstances", "Caesar's Legion", "The Enclave"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What is the status of HELIOS One's power generation under NCR control?",
+      "answers": ["1% efficiency", "Fully operational", "Completely shut down"],
+      "category": ["location", "HELIOS One"]
+    },
+    {
+      "question": "What was the motto of Nellis Air Force Base?",
+      "answers": ["Testing, Tactics, Training", "Serve and Protect", "Strength in Unity"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What happened to Nellis Air Force Base during the Great War?",
+      "answers": ["It was struck by several nuclear weapons", "It was abandoned by the United States Air Force", "It became a self-sufficient farming community"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "Who currently inhabits Nellis Air Force Base?",
+      "answers": ["The Boomers", "The Brotherhood of Steel", "Caesar's Legion"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "How do the Boomers grow their crops at Nellis Air Force Base?",
+      "answers": ["They pump water from Lake Mead", "They use hydroponics systems", "They import food from nearby settlements"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What provides power to Nellis Air Force Base?",
+      "answers": ["The Nellis solar array", "A nuclear reactor", "Geothermal energy"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What type of training do the Boomers undertake at Nellis Air Force Base?",
+      "answers": ["Virtual reality pilot training", "Close quarters combat training", "Survival skills training"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What is the goal of the Boomers regarding aerial combat?",
+      "answers": ["To take to the skies using recovered B-29 bomber parts", "To join the NCR Air Force", "To establish a peaceful settlement"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "Where is the main entrance to Nellis Air Force Base located?",
+      "answers": ["Approached from the old road leading east from the Fields' shack", "Through a train tunnel located east of Raul's shack", "Across a bridge from the nearby town"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What structures can be found in Nellis Air Force Base?",
+      "answers": ["Control tower, hangars, and runways", "Warehouses, laboratories, and offices", "Barracks, mess hall, and medical facilities"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "Where is the Nellis Boomer museum located?",
+      "answers": ["Among the eastern huts", "Inside the control tower", "Inside one of the hangars"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What can be found inside the Nellis Boomer museum?",
+      "answers": ["A Nellis Air Force Base snow globe", "Virtual reality training terminals", "A collection of old military uniforms"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What can be found inside the Nellis workshop?",
+      "answers": ["A howitzer firing mechanism", "A collection of power armor", "A cache of advanced weapons"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What type of loot can be found in the gun cabinets inside the Nellis workshop?",
+      "answers": ["A howitzer firing mechanism", "A sniper rifle", "A plasma rifle"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What type of loot can be found inside the Nellis Boomer museum?",
+      "answers": ["A Nellis Air Force Base snow globe", "A suit of power armor", "A unique weapon"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "Where is the Nellis Air Force Base snow globe located?",
+      "answers": ["Inside the Nellis Boomer museum", "On a desk inside the control tower", "In a storage room inside one of the hangars"],
+      "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What is the primary source of nourishment for the Boomers at Nellis Air Force Base?",
+      "answers": ["Grains, green vegetables, soy, and legumes", "Meat from hunting local wildlife", "Canned food from pre-War stockpiles"],
+      "category": ["location", "Nellis Air Force Base"]
     }
   ]
