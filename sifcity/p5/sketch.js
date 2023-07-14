@@ -76,7 +76,6 @@ class City {
     displayCity(p, cutoff) {
         //p is the perspective acceleration
         for(let b = 0; b < this.buildings.length; b++) {
-            console.log(this.buildings[b].getCartesianCoordinates().y);
             const ALPHA = (this.buildings[b].getCartesianCoordinates().y < cutoff) ? map(this.buildings[b].getCartesianCoordinates().y, cutoff/4, cutoff, 0, 255) : 255;
             fill(addAlpha(specialIngridColour, ALPHA));
             stroke(addAlpha(specialIngridColour, ALPHA));
@@ -112,6 +111,21 @@ function polarizor(x, f) {
     }
 }
 
+class PerlinStreams {
+    constructor(seed) {
+        this.time = seed;
+        this.fast = noise(this.time * .005 +10);
+        this.medium = noise(this.time * .0025 +100);
+        this.slow = noise(this.time * .00125 +1000);
+    }
+    update() {
+        this.time++;
+        this.fast = polarizor(noise(this.time * .005 +10), .3);
+        this.medium = polarizor(noise(this.time * .0025 +100), .2);
+        this.slow = polarizor(noise(this.time * .00125 +1000), .1);
+    }
+}
+let aPerlinStream;
 function setup() {
     let headerAnimation = document.getElementById("header-animation");
     let ani = createCanvas(headerAnimation.offsetWidth, headerAnimation.offsetHeight);
@@ -120,14 +134,32 @@ function setup() {
     addEventListener("resize", (event) => {
         ani.resize(headerAnimation.offsetWidth, headerAnimation.offsetHeight);
         background(addAlpha(dimIngridColour, 0));
-    })
+    });
+
+    aPerlinStream = new PerlinStreams(100);
 }
 
 let theCity = new City();
 theCity.addBuilding(-1.2);
 
+const START = new Date();
+
 function draw() {
     clear();
     theCity.displayCity(1, .25);
     theCity.updateCity(.005);
+
+    //Counts number of iterations in 10 seconds
+    if (new Date() - START <= 10000) {
+        console.count("Draw iteration");
+    }
+
+    noStroke();
+    fill(200, 20, 20, 127);
+    circle(width*2/5, map(aPerlinStream.fast, 0, 1, 0, height), 30);
+    fill(20, 200, 20, 127);
+    circle(width*3/5, map(aPerlinStream.medium, 0, 1, 0, height), 30);
+    fill(20, 20, 200, 127);
+    circle(width*4/5, map(aPerlinStream.slow, 0, 1, 0, height), 30);
+    aPerlinStream.update();
 }
