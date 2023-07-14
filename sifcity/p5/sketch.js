@@ -18,25 +18,77 @@ document.addEventListener("DOMContentLoaded", (event)=> {
     dimSifColour = rootStyles.getPropertyValue("--dim-sif-colour");
 });
 
+function addAlpha(colour, alpha) {
+    //add alpha to a colour
+    const R = red(colour);
+    const G = green(colour);
+    const B = blue(colour);
+    return color(R, G, B, alpha);
+}
+
 class Building {
-    constructor() {
-        this.distance = 1;
-        this.angle = .5;
+    constructor(C, a) {
+        this.distance = 0;
+        this.angle = a;
         this.style = "A";
         this.height = .5;
+        this.center = C;
+    }
+    getCartesianCoordinates() {
+        let cartesianCoordinates = {
+            x: sin(this.angle) * this.distance,
+            y: cos(this.angle)*this.distance
+        };
+        return cartesianCoordinates;
+    }
+    display(p) {
+        //p is the perspective acceleration
+        let displatCoordinates = {
+            x: this.getCartesianCoordinates().x*(width/2) + (this.center.x*width),
+            y: (this.getCartesianCoordinates().y + sq(p*this.getCartesianCoordinates().y)) *(height/2) + (this.center.y*height)
+        };
+
+        circle(displatCoordinates.x, displatCoordinates.y, 10);
+    }
+    update(speed) {
+        this.distance += speed;
     }
 }
 class City {
     constructor() {
-        this.buildinigs = [];
+        this.buildings = [];
+        this.center = {
+            x: .75,
+            y: .25
+        };
     }
-    addBuilding() {
-        this.building.push(new Building());
+    addBuilding(angle) {
+        this.buildings.push(new Building(this.center, angle));
     }
     demolishBuilding(index) {
-        this.buildinigs.splice(index, 0);
+        this.buildings = this.buildings.slice(0, index).concat(this.buildings.slice(index + 1));
+    }
+    updateCity(speed) {
+        for(const BUILDING of this.buildings) {
+            BUILDING.update(speed);
+        }
+    }
+    displayCity(p, cutoff) {
+        //p is the perspective acceleration
+        for(let b = 0; b < this.buildings.length; b++) {
+            console.log(this.buildings[b].getCartesianCoordinates().y);
+            const ALPHA = (this.buildings[b].getCartesianCoordinates().y < cutoff) ? map(this.buildings[b].getCartesianCoordinates().y, cutoff/4, cutoff, 0, 255) : 255;
+            fill(addAlpha(specialIngridColour, ALPHA));
+            stroke(addAlpha(specialIngridColour, ALPHA));
+            this.buildings[b].display(p);
+            if (this.buildings[b].getCartesianCoordinates().y > 1 ||
+            this.buildings[b].getCartesianCoordinates().y < -1) {
+                this.demolishBuilding(b);
+            }
+        }
     }
 }
+
 
 function polarizor(x, f) {
     //Link to Mathematical formula: https://www.geogebra.org/classic/qbcf5yea
@@ -64,13 +116,18 @@ function setup() {
     let headerAnimation = document.getElementById("header-animation");
     let ani = createCanvas(headerAnimation.offsetWidth, headerAnimation.offsetHeight);
     ani.parent("header-animation");
-    background(dimIngridColour);
+    background(addAlpha(dimIngridColour, 0));
     addEventListener("resize", (event) => {
         ani.resize(headerAnimation.offsetWidth, headerAnimation.offsetHeight);
-        background(dimIngridColour);
+        background(addAlpha(dimIngridColour, 0));
     })
 }
 
+let theCity = new City();
+theCity.addBuilding(-1.2);
+
 function draw() {
-    //background(color(random(0, 256), random(0, 256), random(0, 256)));
+    clear();
+    theCity.displayCity(1, .25);
+    theCity.updateCity(.005);
 }
