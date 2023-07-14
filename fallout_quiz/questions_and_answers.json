@@ -5465,5 +5465,431 @@
       "question": "What is the primary source of nourishment for the Boomers at Nellis Air Force Base?",
       "answers": ["Grains, green vegetables, soy, and legumes", "Meat from hunting local wildlife", "Canned food from pre-War stockpiles"],
       "category": ["location", "Nellis Air Force Base"]
+    },
+    {
+      "question": "What caused the emergence of mirelurks?",
+      "answers": ["Widespread radioactive pollution", "Genetic experiments gone wrong", "Ancient curse"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What environmental organization attempted to raise awareness of the pollution problem?",
+      "answers": ["Nahant Oceanological Society", "Galaxy News Network", "Boston Port Authority"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What replaced corporate pollution after the Great War?",
+      "answers": ["Nuclear fallout", "Clean energy sources", "Government regulations"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What species make up the genetic markers of the crab mirelurk?",
+      "answers": ["Atlantic Horseshoe Crab and Atlantic Blue Crab", "King Crab and Hermit Crab", "Rock Crab and Dungeness Crab"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What is the subspecies name for the crab mirelurk?",
+      "answers": ["Scylla serrata horrendus", "Callinectes sapidus polyphemus", "Limulus polyphemus malacostraca"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What is the primary feature of the crab mirelurk's shell?",
+      "answers": ["Provides excellent resistance to firearms and melee weapons", "Can generate electric shocks", "Allows them to fly"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What type of mirelurk has oversized claws and the ability to spit corrosive acid?",
+      "answers": ["Lobster mirelurk", "Mirelurk king", "Reptilian mirelurk"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What unique ability do mirelurk kings possess?",
+      "answers": ["Cloaking themselves to ambush prey", "Producing powerful sonic attacks", "Breathing underwater"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What is the most human-like variant of the mirelurk?",
+      "answers": ["Snapping turtle", "Swamplurk queen", "Lakelurk"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What type of attack is dangerous against unaware or weakened targets?",
+      "answers": ["Sonic attack", "Acid spit", "Electric shock"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What type of mirelurk has a layer of algae for camouflage?",
+      "answers": ["Swamplurk queen", "Crab mirelurk", "Mirelurk king"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What is the coloration of the lakelurk?",
+      "answers": ["Green", "Blue", "Red"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What ability do mirelurk kings have to control other mirelurks?",
+      "answers": ["Higher intelligence", "Mind control", "Hypnosis"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What are the primary sensory organs of the lobster mirelurk?",
+      "answers": ["Eyes and antennae in the head", "Large claws", "Gills and lungs"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What is the alternative name for the mirelurk hunter variant?",
+      "answers": ["Lobster mirelurk", "Crab mirelurk", "Reptilian mirelurk"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What type of attacks do mirelurks use to catch and consume their prey?",
+      "answers": ["Large claws and abdominal claws", "Acid spit and sonic attacks", "Electric shocks and sonic attacks"],
+      "category": ["creature", "Mirelurk"]
+    },
+    {
+      "question": "What created centaurs in the New California and Mojave Wasteland?",
+      "answers": ["Forced Evolutionary Virus (FEV)", "Nuclear radiation", "Genetic experiments"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What animals were used in the creation process of centaurs?",
+      "answers": ["Humans, dogs, and cats", "Bears, snakes, and birds", "Monkeys, rabbits, and rats"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What is the purpose of centaurs in the Capital Wasteland?",
+      "answers": ["To serve as watchdogs for super mutants", "To act as guards for settlements", "To provide companionship to wastelanders"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What are the primary limbs used for movement in two-headed centaurs?",
+      "answers": ["The rear pair of arms", "The middle pair of arms", "The front pair of arms"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What is the difference between two-headed and one-headed centaurs in appearance?",
+      "answers": ["Two-headed centaurs have a canine head and a humanoid head", "One-headed centaurs have three long, tentacle-like tongues", "Two-headed centaurs are larger in size"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What body parts are covered in thick purple veins?",
+      "answers": ["The centaur's torso", "The centaur's limbs", "The centaur's heads"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What is the ranged attack of one-headed centaurs?",
+      "answers": ["High-arcing saliva projectile with radiation", "Flaming gas vapor", "Electric shock"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What is the characteristic feature of evolved centaurs?",
+      "answers": ["Clusters of tumors growing from their backs", "Metal collars adorned with spikes", "Extra sets of arms"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "Where are giant evolved centaurs commonly found?",
+      "answers": ["The Devil's Throat", "Vault 87", "Mom's Diner"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What draws centaurs to heavily irradiated environments?",
+      "answers": ["They are not harmed by radiation", "They seek shelter from predators", "They are attracted to bright colors"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "Which region has encountered two-headed centaurs?",
+      "answers": ["West Coast (New California)", "Capital Wasteland", "Mojave Wasteland"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What type of attack do one-headed centaurs use in close quarters?",
+      "answers": ["Whip and slash with a three-pronged tongue", "Charge and tackle with brute force", "Bite and tear with sharp teeth"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What is the purpose of the metal collars on two-headed centaurs?",
+      "answers": ["They are ordinary dog collars", "They provide protection against attacks", "They are a symbol of status"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What is the primary source of mutations in centaurs?",
+      "answers": ["Forced Evolutionary Virus (FEV)", "Nuclear explosions", "Toxic chemicals"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "Which centaur variant is bigger and stronger due to exposure to radiation?",
+      "answers": ["Evolved centaur", "Giant evolved centaur", "Two-headed centaur"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What body parts are covered in jagged bones and teeth-like bones?",
+      "answers": ["Spine and abdominal muscles of one-headed centaurs", "Tentacles and tongues of two-headed centaurs", "Limbs and claws of evolved centaurs"],
+      "category": ["creature", "Centaur"]
+    },
+    {
+      "question": "What are radroaches?",
+      "answers": ["Giant versions of pre-War cockroaches", "Mutated rats", "Alien creatures"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "Where are radroaches commonly found?",
+      "answers": ["Underground areas and sewers", "Open fields and forests", "Mountains and caves"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "What do radroaches primarily feed on?",
+      "answers": ["The dead", "Living creatures", "Plants and vegetation"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "How would you describe the size of radroaches?",
+      "answers": ["As large as a domestic cat", "As small as a mouse", "As big as a human"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "What is the main advantage of radroaches?",
+      "answers": ["Their numbers", "Their size", "Their ability to fly"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "Are radroaches harmful to Armageddon survivors?",
+      "answers": ["No, they are little more than a nuisance", "Yes, they are highly dangerous", "It depends on the situation"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "Can radroaches fly?",
+      "answers": ["No, they are not capable of flight", "Yes, they are excellent fliers", "Only in certain circumstances"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "What are radroach innards useful for?",
+      "answers": ["Treatment of radiation poisoning", "Cooking recipes", "Building materials"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "What is the primary way to kill a radroach?",
+      "answers": ["With bare hands", "With firearms", "With explosives"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "What is one of the childhood quests involving radroaches in Vault 101?",
+      "answers": ["Killing one with a BB gun", "Feeding them with food scraps", "Catching them for a science experiment"],
+      "category": ["creature", "Radroach"]
+    },
+    {
+      "question": "What is a super mutant?",
+      "answers": ["A humanoid mutant created by exposing humans to FEV", "A type of ghoul", "An alien creature"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "What are some characteristics of super mutants?",
+      "answers": ["Exceptional strength, endurance, and resistance to disease and radiation", "Flight and invisibility", "Telepathic abilities"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "Which game introduced super mutants led by the Master?",
+      "answers": ["Fallout", "Fallout 3", "Fallout 4"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "Where are the super mutants in Fallout 3 derived from?",
+      "answers": ["Evolutionary Experimentation Program at Vault 87", "Institute's FEV research", "Nuclear power plant accident"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "In Fallout 3, which faction is engaged in a war with the super mutants?",
+      "answers": ["Lyons' Brotherhood of Steel", "Enclave", "Raiders"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "Which non-hostile super mutant appears in Fallout 3?",
+      "answers": ["Uncle Leo", "Fawkes", "Strong"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "Which game features the return of Marcus and efforts to destigmatize friendly relations with super mutants?",
+      "answers": ["Fallout: New Vegas", "Fallout 4", "Fallout 76"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "What is a major element of the super mutant story in Fallout: New Vegas?",
+      "answers": ["Dealing with the nightkin and finding a cure for their psychological ailments", "Building a super mutant army", "Discovering a hidden super mutant city"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "In Fallout 4, who created the super mutants using FEV acquired through clandestine means?",
+      "answers": ["The Institute", "Brotherhood of Steel", "Enclave"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "Which super mutant companion appears in Fallout 4?",
+      "answers": ["Strong", "Fawkes", "Dogmeat"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "What do the Institute's creations, including super mutants, consider themselves in relation to humans?",
+      "answers": ["Superior", "Equal", "Inferior"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "Which strain of FEV can be cured according to ZAX 1.2?",
+      "answers": ["The strain used by the Institute", "The strain used at Vault 87", "The strain created by the Master"],
+      "category": ["creature", "Super Mutant"]
+    },
+    {
+      "question": "What is the term sometimes used to refer to ghouls in the Capital Wasteland?",
+      "answers": ["Necrotic post-humans", "Zombies", "Mutated humans"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What effect does intense and prolonged radiation have on ghouls?",
+      "answers": ["Ravages their skin, flesh, and ligaments", "Rots their flesh", "Strengthens their immune system"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What is one advantage ghouls have due to radiation exposure?",
+      "answers": ["Extended overall lifespans", "Ability to teleport", "Increased intelligence"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "In which game did ghouls emerge as a result of the Great War?",
+      "answers": ["Fallout", "Fallout 3", "Fallout 4"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "Which settlement was founded by the inhabitants of Vault 12 beneath Bakersfield?",
+      "answers": ["Necropolis", "Diamond City", "Gecko"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What is the term used to describe ghouls who have absorbed enough radiation to develop bioluminescence?",
+      "answers": ["Glowing ones", "Radiated ghouls", "Feral ghouls"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What happens when a ghoul deteriorates into a feral state?",
+      "answers": ["Loss of higher brain functions and increased aggression", "Increased intelligence and longevity", "Ability to communicate telepathically"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "Which faction do the feral ghouls tend to cluster with?",
+      "answers": ["Other ghouls", "Super mutants", "Humans"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What are the different subtypes of feral ghouls based on their appearance and behavior?",
+      "answers": ["Regular, roamers, stalkers, reavers", "Zombies, walkers, biters, runners", "Alpha, beta, gamma, delta"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What sustains the marked men in The Divide area?",
+      "answers": ["High background radiation", "Water from underground rivers", "Food scavenged from ruins"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "Which city evicted ghoul citizens after the 2282 election?",
+      "answers": ["Diamond City", "Megaton", "Rivet City"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "Which ghoul is the leader of the Bright Brotherhood in the Mojave Wasteland?",
+      "answers": ["Jason Bright", "Desmond Lockheart", "Eddie Winter"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What physical changes occur to ghouls due to radiation exposure?",
+      "answers": ["Loss of skin, connective tissue, and hair", "Growth of extra limbs", "Increased height and muscle mass"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What is the term used to describe ghouls who have suffered burns and survived a nuclear blast?",
+      "answers": ["Survivor ghouls", "Radiated ghouls", "Zombie ghouls"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "Which faction extended legal protection to ghouls in 2205?",
+      "answers": ["New California Republic", "Brotherhood of Steel", "Caesar's Legion"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What is one advantage ghouls have due to their mutated physiology?",
+      "answers": ["Regenerative properties and increased rate of healing", "Ability to turn invisible", "Resistance to radiation"],
+      "category": ["creature", "Ghoul"]
+    },
+    {
+      "question": "What is the central control and processing unit of a Robobrain?",
+      "answers": ["Organic brain", "Artificial facsimile", "Neural inhibitor"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "Who developed the Robobrain?",
+      "answers": ["General Atomics International", "RobCo Industries", "United States Army's Robotics Division"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "Where was RB-2851, a Robobrain manufacturing facility, located?",
+      "answers": ["Eagle Hill, East Boston", "Sierra Army Depot VI", "Mariposa Military Base"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "How were the brains selected for use in Robobrains?",
+      "answers": ["Adults of high intelligence and sufficient constitution", "Random selection from the general population", "Only brains from primates were used"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What caused problems for General Atomics with Robobrains?",
+      "answers": ["Persistent aggression and violence", "Equipment failure in brain extractors", "Limited trial runs"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What kind of weapons can Robobrains use?",
+      "answers": ["Human weapons", "Laser weapons", "Mesmetron"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What is the purpose of the biomedical gel in the Robobrain's dome?",
+      "answers": ["Preserve the brain", "Increase agility", "Improve combat capabilities"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What is the main power supply of a Robobrain contained within?",
+      "answers": ["Shell", "Torso", "Chassis"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What happens if a Robobrain's dome is damaged?",
+      "answers": ["Disrupts brain/machine connection", "Causes depressurization and leaking", "All of the above"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What happens if regular wipes and maintenance are not performed on a Robobrain?",
+      "answers": ["It develops an ersatz personality", "It loses all functionality", "It becomes more obedient"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What software is responsible for combat calculations in a Robobrain?",
+      "answers": ["Separate combat routines", "Facility Maintenance v2.1", "Sensors '76"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What armament is integrated into the manipulators of some Robobrains?",
+      "answers": ["Laser weapons", "Mesmetron", "Sharpshooter weapons"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What is the primary purpose of the Robobrains deployed in The Glow, Sierra Army Depot VI, or the New California Republic?",
+      "answers": ["Combat using human weapons", "Maintenance and repairs", "Intelligence gathering"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What determines the purpose of a Robobrain?",
+      "answers": ["Paint job", "Armaments", "Serial number"],
+      "category": ["creature", "Robobrain"]
+    },
+    {
+      "question": "What were some of the side effects experienced by the preserved brains in the Vault 118 Robobrains?",
+      "answers": ["Repetitive, delusional behavior", "Disconnect from reality", "Distortion of perception"],
+      "category": ["creature", "Robobrain"]
     }
   ]
+  
