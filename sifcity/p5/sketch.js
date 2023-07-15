@@ -27,10 +27,16 @@ function addAlpha(colour, alpha) {
 }
 
 class Building {
-    constructor(C, a) {
+    constructor(C, a, style) {
         this.distance = 0;
         this.angle = a;
-        this.style = "A";
+        if(style < 1/3) {
+            this.style = "A";
+        }else if(style < 2/3) {
+            this.style = "B";
+        }else {
+            this.style = "C";
+        }
         this.height = .5;
         this.center = C;
     }
@@ -62,8 +68,8 @@ class City {
             y: .25
         };
     }
-    addBuilding(angle) {
-        this.buildings.push(new Building(this.center, angle));
+    addBuilding(angle, style) {
+        this.buildings.push(new Building(this.center, angle, style));
     }
     demolishBuilding(index) {
         this.buildings = this.buildings.slice(0, index).concat(this.buildings.slice(index + 1));
@@ -77,7 +83,7 @@ class City {
         //p is the perspective acceleration
         for(let b = 0; b < this.buildings.length; b++) {
             const ALPHA = (this.buildings[b].getCartesianCoordinates().y < cutoff) ? map(this.buildings[b].getCartesianCoordinates().y, cutoff/4, cutoff, 0, 255) : 255;
-            fill(addAlpha(specialIngridColour, ALPHA));
+            noFill();
             stroke(addAlpha(specialIngridColour, ALPHA));
             this.buildings[b].display(p);
             if (this.buildings[b].getCartesianCoordinates().y > 1 ||
@@ -115,12 +121,12 @@ class PerlinStreams {
     constructor(seed) {
         this.time = seed;
         this.fast = noise(this.time * .005 +10);
-        this.medium = noise(this.time * .0025 +100);
+        this.medium = noise(this.time * .005 +100);
         this.slow = noise(this.time * .00125 +1000);
     }
     update() {
         this.time++;
-        this.fast = polarizor(noise(this.time * .005 +10), .3);
+        this.fast = polarizor(noise(this.time * .02 +10), .3);
         this.medium = polarizor(noise(this.time * .0025 +100), .2);
         this.slow = polarizor(noise(this.time * .00125 +1000), .1);
     }
@@ -138,30 +144,34 @@ function setup() {
         background(addAlpha(dimIngridColour, 0));
     });
 
-    aPerlinStream = new PerlinStreams(100);
+    aPerlinStream = new PerlinStreams(1000);
 }
 
 let theCity = new City();
-theCity.addBuilding(-1.2);
 
 const START = new Date();
 
 function draw() {
-    clear();
-    theCity.displayCity(1, .25);
+    background(addAlpha(backgroundColour, 63))
+    aPerlinStream.update();
     theCity.updateCity(.005);
-
-    //Counts number of iterations in 10 seconds
-    if (new Date() - START <= 10000) {
-        console.count("Draw iteration");
+    theCity.displayCity(1, .25);
+    
+    //Generate house
+    if(random(0, 30) < 1) {
+        theCity.addBuilding(map(aPerlinStream.fast, 0, 1, -1.3, 0.6),
+                            aPerlinStream.medium);
     }
 
-    noStroke();
+    console.log(theCity.buildings.length);
+
+
+    /* noStroke();
     fill(200, 20, 20, 127);
     circle(width*2/5, map(aPerlinStream.fast, 0, 1, 0, height), 30);
     fill(20, 200, 20, 127);
     circle(width*3/5, map(aPerlinStream.medium, 0, 1, 0, height), 30);
     fill(20, 20, 200, 127);
-    circle(width*4/5, map(aPerlinStream.slow, 0, 1, 0, height), 30);
-    aPerlinStream.update();
+    circle(width*4/5, map(aPerlinStream.slow, 0, 1, 0, height), 30); */
+    
 }
