@@ -125,7 +125,9 @@ class PerlinStreams {
         this.slow = polarizor(noise(this.time * .00125 +1000), .1);
     }
 }
+
 let aPerlinStream;
+
 function setup() {
     let headerAnimation = document.getElementById("header-animation");
     let ani = createCanvas(headerAnimation.offsetWidth, headerAnimation.offsetHeight);

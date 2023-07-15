@@ -4,7 +4,6 @@ function incrementLastStringNumber(input) {
         return (number + 1).toString();
     });
 }  
-  
 
 function createHeaderList(domElement) {
     const HEADER_LIST = document.createElement('ol');
@@ -68,7 +67,7 @@ function createHeaderList(domElement) {
     }
     
     return HEADER_LIST;
-  }
+}
 
 const BODY = document.getElementsByTagName("body")[0];
 const CONTENT = document.getElementsByClassName("content")[0];
