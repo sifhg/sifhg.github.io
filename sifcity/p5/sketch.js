@@ -26,6 +26,13 @@ function addAlpha(colour, alpha) {
     return color(R, G, B, alpha);
 }
 
+function cartesian2Polar(x, y) {
+    return {
+        angle: atan2(y/x),
+        distance: sqrt(sq(x) + sq(y))
+    };
+}
+
 class Building {
     constructor(C, a, style) {
         this.distance = 0;
@@ -41,20 +48,19 @@ class Building {
         this.center = C;
     }
     getCartesianCoordinates() {
-        let cartesianCoordinates = {
+        return {
             x: sin(this.angle) * this.distance,
             y: cos(this.angle)*this.distance
-        };
-        return cartesianCoordinates;
+        };      
     }
     display(p) {
         //p is the perspective acceleration
-        let displatCoordinates = {
+        let displayCoordinates = {
             x: this.getCartesianCoordinates().x*(width/2) + (this.center.x*width),
             y: (this.getCartesianCoordinates().y + sq(p*this.getCartesianCoordinates().y)) *(height/2) + (this.center.y*height)
         };
 
-        circle(displatCoordinates.x, displatCoordinates.y, 10);
+        circle(displayCoordinates.x, displayCoordinates.y, 10);
     }
     update(speed) {
         this.distance += speed;
