@@ -148,6 +148,60 @@ a:hover {
     color: var(--standard-ingrid-colour);
 }
 
+ol {
+    counter-reset: item;
+}
+  li {
+    display: block;
+}
+  li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+}
+
+/* ILLUSTRATIONS */
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.middle {
+    display: block;
+    text-align: center;
+}
+
+.content {
+    margin-right: 1rem;
+    padding: .5rem;
+    width: 12rem;
+    border: .25rem solid var(--special-ingrid-colour);
+    border-radius: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .75;
+    background-color: hsla(10, 50%, 75%, 12.5%);
+}
+
+.content a {
+    text-decoration-line: none;
+}
+.content>ol {
+    padding-left: .5rem;
+}
+.content>div {
+    border-bottom: .125rem solid var(--special-ingrid-colour);
+}
+
+#references {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+  
+  #references li::before {
+    content: none;
+  }
+  
+
 /* POST LIST */
 td,th {
     padding: 0;
