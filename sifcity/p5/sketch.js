@@ -163,8 +163,6 @@ function draw() {
                             aPerlinStream.medium);
     }
 
-    console.log(theCity.buildings.length);
-
 
     /* noStroke();
     fill(200, 20, 20, 127);
