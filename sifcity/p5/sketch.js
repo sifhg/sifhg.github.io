@@ -28,7 +28,7 @@ function addAlpha(colour, alpha) {
 
 function cartesian2Polar(x, y) {
     return {
-        angle: atan2(y/x),
+        angle: atan2(y, x),
         distance: sqrt(sq(x) + sq(y))
     };
 }
@@ -49,8 +49,8 @@ class Building {
     }
     getCartesianCoordinates() {
         return {
-            x: sin(this.angle) * this.distance,
-            y: cos(this.angle)*this.distance
+            x: cos(this.angle) * this.distance,
+            y: sin(this.angle) * this.distance
         };      
     }
     display(p) {
@@ -132,7 +132,7 @@ class PerlinStreams {
     }
     update() {
         this.time++;
-        this.fast = polarizor(noise(this.time * .02 +10), .3);
+        this.fast = polarizor(noise(this.time * .02 +10), .2);
         this.medium = polarizor(noise(this.time * .0025 +100), .2);
         this.slow = polarizor(noise(this.time * .00125 +1000), .1);
     }
@@ -165,7 +165,7 @@ function draw() {
     
     //Generate house
     if(random(0, 30) < 1) {
-        theCity.addBuilding(map(aPerlinStream.fast, 0, 1, -1.3, 0.6),
+        theCity.addBuilding(map(aPerlinStream.fast, 0, 1, PI/6, PI*13/14),
                             aPerlinStream.medium);
     }
 
