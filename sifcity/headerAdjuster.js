@@ -17,3 +17,16 @@ addEventListener("resize", (event) => {
 
 
 sessionStorage.setItem("title", document.querySelector("title").innerText);
+
+if(!sessionStorage.getItem("session-start")) {
+    sessionStorage.setItem("session-start", new Date());
+}
+  
+const DATA = {
+    pos: document.URL,
+    title: document.querySelector("title").innerText,
+    previous: document.referrer,
+    time: new Date(),
+    sessionStart: sessionStorage.getItem("session-start")
+}
+console.log(DATA);
