@@ -22,22 +22,13 @@ if(!sessionStorage.getItem("session-start")) {
     sessionStorage.setItem("session-start", new Date());
 }
 
-let sessionData = {
+const SESSION_DATA = {
     title: document.querySelector("title").innerText,
     webLocation: document.URL,
     time: new Date(),
     previous: document.referrer,
-    sessionStart: sessionStorage.getItem("session-start")
+    sessionStart: sessionStorage.getItem("session-start"),
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
 }
 
-//Get country code
-fetch("http://ip-api.com/json/?fields=61439")
-    .then((response) => response.json())
-    .then((response) => {
-        if(response.query != "77.241.128.131") {
-            sessionData.countryCode = response.countryCode;
-        }else {
-            sessionData.countryCode = "SIF";
-        }
-        console.log(sessionData);
-});
+console.log(SESSION_DATA);
