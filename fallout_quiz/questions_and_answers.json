@@ -12788,6 +12788,46 @@
     ]
   },
   {
+    "question": "What is the population of Big Town mostly comprised of?",
+    "answers": ["Teenagers and young adults", "Elderly residents", "Super mutants"],
+    "category": ["location", "Big Town"]
+  },
+  {
+    "question": "From which settlement were the residents of Big Town forcibly expelled?",
+    "answers": ["Little Lamplight", "Megaton", "Rivet City"],
+    "category": ["location", "Big Town"]
+  },
+  {
+    "question": "What constant threats does Big Town face?",
+    "answers": ["Slavers and super mutants", "Raiders and ghouls", "Enclave and Brotherhood of Steel"],
+    "category": ["location", "Big Town"]
+  },
+  {
+    "question": "What is the name of the quest that helps Big Town defend against mutant attacks?",
+    "answers": ["Big Trouble in Big Town", "Trouble in Paradise", "Big City Saviors"],
+    "category": ["location", "Big Town"]
+  },
+  {
+    "question": "What happens if the Lone Wanderer teaches the citizens of Big Town how to defend themselves?",
+    "answers": ["Mutant attacks cease", "More super mutants arrive", "The residents become slavers"],
+    "category": ["location", "Big Town"]
+  },
+  {
+    "question": "What item does the player character receive if they choose to help Timebomb?",
+    "answers": ["Lucky 8-ball", "Super mutant armor", "Alien blaster"],
+    "category": ["location", "Big Town"]
+  },
+  {
+    "question": "What happens after Big Town is liberated from the super mutant threat?",
+    "answers": ["Becomes a node on caravan merchants' travel itinerary", "Becomes a Brotherhood of Steel outpost", "Suffers from more raider attacks"],
+    "category": ["location", "Big Town"]
+  },
+  {
+    "question": "What is the perception of Big Town among residents of Little Lamplight?",
+    "answers": ["A safe and comfortable area", "A dangerous and hostile place", "A mysterious and unexplored settlement"],
+    "category": ["location", "Big Town"]
+  },  
+  {
     "question": "What caused the emergence of mirelurks?",
     "answers": [
       "Widespread radioactive pollution",
@@ -16446,5 +16486,460 @@
       "creature",
       "Robo-scorpion"
     ]
+  },
+  {
+    "question": "What is the primary aim of The Railroad?",
+    "answers": ["Freeing sentient synths from the Institute", "Eliminating the Brotherhood of Steel", "Recruiting wastelanders to join their ranks"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "When was The Railroad first in existence?",
+    "answers": ["Around the 2220s", "Before the Great War", "After the Broken Mask incident"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "Who was the leader of the earliest known incarnation of The Railroad?",
+    "answers": ["Agamemnon", "Pinky Thompson", "Desdemona"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What event led to Wyatt rebuilding The Railroad?",
+    "answers": ["Institute raid on their headquarters", "Loss of a safehouse", "Abduction of their leader"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "Who succeeded Wyatt as the leader of The Railroad in December 2273?",
+    "answers": ["Pinky Thompson", "Thomas Weatherby", "Desdemona"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What is the main command center of The Railroad?",
+    "answers": ["Old North Church", "Trinity", "Switchboard"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What AI provides the Railroad with predictive capabilities and helps plan their operations?",
+    "answers": ["P.A.M.", "Tinker Tom", "Glory"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What organization do the Railroad agents occasionally assist besides synths?",
+    "answers": ["Abolitionists (helping runaway slaves)", "Brotherhood of Steel", "The Minutemen"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What ideology does the Railroad stand by regarding synths?",
+    "answers": ["They deserve freedom and emancipation", "They are mere machines", "They should be destroyed"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What does the Railroad use to alter the memories of androids and conceal their true identity?",
+    "answers": ["Computer science experts and a plastic surgeon", "Teleportation technology", "Mind control devices"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What are the frontline soldiers of The Railroad known as?",
+    "answers": ["Heavies", "Coursers", "Tourists"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "Which individual revolutionized The Railroad's technological edge by introducing purpose-built weapons and armor?",
+    "answers": ["Tinker Tom", "Deacon", "Pinky Thompson"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What group in the Capital Wasteland did The Railroad branch aid in 2277?",
+    "answers": ["A3-21 (Harkness)", "The Brotherhood of Steel", "The Enclave"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What nickname is used for the heavily protected HQ members with access to all Railroad information?",
+    "answers": ["The heavies", "The tourists", "The runners"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "What event in 2286 led to the Railroad rescuing only four synths in three months?",
+    "answers": ["The Institute gearing up to activate its reactor", "The Brotherhood of Steel intervention", "The Railroad's increase in stealth operations"],
+    "category": ["faction", "The Railroad"]
+  },
+  {
+    "question": "When was the New California Republic (NCR) founded?",
+    "answers": ["2189", "2241", "2097"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "Who led the survivors of Vault 15 to found the town of Shady Sands?",
+    "answers": ["Aradesh", "Tandi", "Vault Dweller"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "In what year was the New California Republic properly voted into existence as a federation?",
+    "answers": ["2189", "2281", "2097"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What are the five states that comprise the New California Republic?",
+    "answers": ["Shady, Los Angeles, Maxson, Hub, Dayglow", "Nipton, Primm, Goodsprings, Novac, Boulder City", "Goodsprings, Novac, Primm, Nipton, Searchlight"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What is the design inspiration for the NCR flag?",
+    "answers": ["California state flag", "Two-headed grizzly bear", "California grizzly bear with a single red star"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What was one of the key factors in the transformation of NCR society between 2241 and 2281?",
+    "answers": ["Economic power and rebirth of wage labor", "Cultural exchange with wastelanders", "Isolation and stagnation"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What does the Republic prohibit based on its laws?",
+    "answers": ["Persecution and discrimination based on gender, ethnicity, and religious belief", "Enslavement of super mutants and ghouls", "Open carry of weapons"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What is the approximate population of the New California Republic by 2241?",
+    "answers": ["700,000", "500,000", "1 million"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What is the length of the term for the President of the New California Republic?",
+    "answers": ["5 years", "10 years", "2 years"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What are the requirements for immigration into the NCR?",
+    "answers": ["Law-abiding and peaceful behavior", "Being a ghoul or mutant", "Being a skilled worker"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What are some common criminal laws in the NCR?",
+    "answers": ["A ban on slavery, gambling, and public drunkenness", "A ban on open carry of weapons and public drunkenness", "A ban on slavery and gambling"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What unit of the NCR is considered one of the most professional and deadly military outfits?",
+    "answers": ["New California Republic Rangers", "NCR Army", "Enclave remnants"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "Under which President did the NCR make slow but sustainable territorial expansion?",
+    "answers": ["Tandi", "Kimball", "Peterson"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What is the main source of the Republic's economic might?",
+    "answers": ["Brahmin herds and arable land", "Advanced technologies", "Trade routes with the Enclave"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What was the goal of the Brotherhood of Steel's military campaign against the NCR?",
+    "answers": ["Pacify the NCR and assert dominance", "Spread democracy and the rule of law", "Annex New Vegas as the sixth state of the NCR"],
+    "category": ["faction", "NCR"]
+  },
+  {
+    "question": "What was the original location of the Boomers before they moved to Nellis Air Force Base?",
+    "answers": ["Vault 34", "Vault 101", "Vault 111"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What led to the emergence of a gun-centric culture among the original Vault dwellers?",
+    "answers": ["Overstocked, unprotected armory", "Advanced virtual reality simulators", "Scarcity of food and water"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "How did the Boomers acquire most of their heavy weapons and equipment?",
+    "answers": ["Attacked the Vault 34 armory", "Traded with the NCR", "Found them in the wasteland"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What pre-War military installation did the Boomers occupy?",
+    "answers": ["Nellis Air Force Base", "Mojave Outpost", "Black Mountain Radio Tower"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What do the Boomers use to patch security issues at Nellis Air Force Base?",
+    "answers": ["Extreme firepower and howitzers", "Diplomatic negotiations", "Turrets and laser fences"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What was the Boomers' destiny and goal for the future?",
+    "answers": ["Recover and repair the crashed B-29 bomber", "Conquer the Mojave Wasteland", "Trade with other factions"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What caused the loss of two Boomers and injuries to three more?",
+    "answers": ["Aggressive, explosive ants in the Nellis bunker", "An attack from the NCR", "A reactor malfunction in Nellis"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What name did New Vegas locals give to the Boomers?",
+    "answers": ["Boomers", "Explosive Raiders", "Vault Dwellers"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What do the Boomers believe is the foundation of social trust and responsibility?",
+    "answers": ["Personal armament", "Diplomatic relations", "Agricultural development"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What positions of power do the Boomers have within their tribe?",
+    "answers": ["Elders with authority in areas of skill", "A hereditary ruling council", "A single absolute leader"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What is the main source of power for the Boomers at Nellis Air Force Base?",
+    "answers": ["Solar panels at the Nellis array", "Nuclear reactors from Vault 34", "Geothermal energy"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What are the Boomers forbidden from doing?",
+    "answers": ["Leaving Nellis Air Force Base", "Using virtual reality flight simulators", "Carrying weapons outside the base"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What type of military technology do the Boomers have?",
+    "answers": ["Missile launchers, grenade launchers, and Fat Man class nuclear launchers", "Swords and bows", "Poisonous gas traps"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What military advantage do the Boomers have if the Courier helps them recover the crashed B-29?",
+    "answers": ["Functional air power", "Advanced stealth technology", "Teleportation devices"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What do the Boomers use to manufacture a high volume of ammunition?",
+    "answers": ["Advanced tools like welding torches and plasma cutters", "Slave labor from other factions", "Scavenged ammunition from the wasteland"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "What major faction surrounded the area that has expressed interest in the Boomers?",
+    "answers": ["NCR", "BoS", "Great Khans"],
+    "category": ["faction", "The Boomers"]
+  },
+  {
+    "question": "When was The Institute founded?",
+    "answers": ["2110", "2287", "2178"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What revolutionary technology has The Institute developed?",
+    "answers": ["Teleportation and synthetic humans", "Advanced robotics and AI", "Nuclear fusion reactors"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What caused the Institute to be perceived as a 'boogeyman' in the wasteland?",
+    "answers": ["The secretive and hostile attitude towards the Commonwealth", "Their advanced weaponry", "Their control over the Railroad"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "Where was The Institute built upon?",
+    "answers": ["The Commonwealth Institute of Technology (C.I.T.) ruins", "Vault 111", "The Boston Public Library"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "Which division of The Institute works on applied physics and teleportation?",
+    "answers": ["Advanced Systems", "BioScience", "Robotics"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "Which division of The Institute specializes in botany, genetics, and medicine?",
+    "answers": ["BioScience", "Facilities", "Robotics"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What is the primary role of the Synth Retention Bureau?",
+    "answers": ["To track down and return rogue synths to the Institute", "To develop advanced power armor", "To lead diplomatic relations with the wasteland factions"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "Which faction is ideologically opposed to The Institute and seen as its principal foe in 2287?",
+    "answers": ["The Brotherhood of Steel", "The Railroad", "The Minutemen"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What unique advantage does The Institute have in terms of military capability?",
+    "answers": ["Teleportation and a powerful army of synths", "Powerful energy weapons and advanced armor", "Advanced cybernetics and bionic enhancements"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What do scientists of The Institute use to monitor developments in the Commonwealth?",
+    "answers": ["Synth crows with built-in monitoring devices", "Security cameras", "Robotic spies"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What is the ultimate goal of The Institute to achieve energy independence?",
+    "answers": ["Restarting the ancient nuclear reactor at C.I.T.", "Creating a fusion-powered generator", "Harnessing geothermal energy"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What caused the negative perception of The Institute in Diamond City?",
+    "answers": ["The Broken Mask Incident involving a defective synth", "The Massacre of the CPG", "The theft of important technology"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What genetic material became the basis of the third-generation synths?",
+    "answers": ["The DNA of a baby named Shaun", "FEV samples", "Super mutant tissue"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "What did the Institute seek to develop in 2178 but abandoned due to radiation-induced hereditary damage?",
+    "answers": ["Organic synthetic flesh", "Advanced power armor", "Biological weapons"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "Which faction does The Institute have a network of informants to monitor developments?",
+    "answers": ["The entire Commonwealth", "The Railroad", "The Brotherhood of Steel"],
+    "category": ["faction", "The Institute"]
+  },
+  {
+    "question": "Who is the current leader of the Great Khans?",
+    "answers": ["Papa Khan", "Regis", "Melissa Lewis"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What is the primary source of revenue for the Great Khans?",
+    "answers": ["Drug production", "Weapon trade", "Hunting and farming"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What event caused the NCR to retaliate against the Great Khans?",
+    "answers": ["Abduction and killing of four soldiers", "Assault on Red Rock Canyon", "Stealing supplies from NCR caravans"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What is the initiation ritual to become a fully fledged Khan?",
+    "answers": ["Survive a beat-down from other Khans", "Prove skill in archery", "Complete a stealth mission"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "Which faction taught the Khans basic science skills like chemistry, reading, and writing?",
+    "answers": ["The Followers of the Apocalypse", "The NCR", "Caesar's Legion"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What is the name of the canyon where the Great Khans reside?",
+    "answers": ["Red Rock Canyon", "Hoover Dam Canyon", "Mojave Wasteland Canyon"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "Why did the Great Khans settle at Bitter Springs?",
+    "answers": ["They were driven out of Vegas by the NCR", "They were defeated by the Fiends", "They were attracted to its natural resources"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "Which faction offers the Great Khans an alliance, promising land, wealth, and revenge against the NCR?",
+    "answers": ["Caesar's Legion", "The NCR", "The Followers of the Apocalypse"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What type of homes do the Great Khans live in at Red Rock Canyon?",
+    "answers": ["Mongolian-style tents called Gers", "Underground bunkers", "Abandoned buildings"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What event caused the Khans to be defeated in Vegas?",
+    "answers": ["Robert House claimed New Vegas and offered alliances to other tribes", "The NCR launched a surprise attack", "Caesar's Legion attacked their stronghold"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "Which faction stationed First Recon at the end of Red Pass during the Bitter Springs Massacre?",
+    "answers": ["NCR", "The Followers of the Apocalypse", "Caesar's Legion"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What is the primary form of warfare used by the Great Khans?",
+    "answers": ["War parties with adaptive tactics", "Large organized battles", "Stealth and espionage"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What is Papa Khan's view on criticism of his leadership?",
+    "answers": ["He accepts it and does not punish his followers", "He does not tolerate any criticism", "He banishes anyone who speaks out against him"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "Which faction is the Khans' largest enemy and their biggest consumer of chems?",
+    "answers": ["The NCR", "The Fiends", "The Brotherhood of Steel"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "What event led to the formation of the Great Khans as a unified tribe?",
+    "answers": ["Fragmented Khans coalesced after the New Khans were destroyed", "The Followers of the Apocalypse recruited them", "Caesar's Legion forced them to unite"],
+    "category": ["faction", "The Great Khans"]
+  },
+  {
+    "question": "Who founded The Brotherhood of Steel?",
+    "answers": ["Captain Roger Maxson", "Elder Owyn Lyons", "Sergeant Dennis Allen"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What is the core purpose of The Brotherhood of Steel?",
+    "answers": ["Preserve advanced technology and regulate its usage", "Expand territory and conquer wastelands", "Seek diplomatic relations with other factions"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "In which year did Captain Maxson declare his unit's secession from the United States?",
+    "answers": ["2077", "2159", "2135"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "Which incident led to Maxson establishing himself as the leader of the rebellion?",
+    "answers": ["Killing of Chief Researcher Robert Anderson", "Battle with the Vipers", "Negotiation with the Institute"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What is the name of the Brotherhood's headquarters and first chapter?",
+    "answers": ["Lost Hills bunker", "The Citadel", "Hidden Valley"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "Who took over as the high elder after Roger Maxson's death?",
+    "answers": ["Maxson II", "Sergeant Dennis Allen", "Colonel Robert Spindel"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "Which chapter of the Brotherhood operates in the Mojave Wasteland?",
+    "answers": ["Mojave Chapter", "East Coast Brotherhood", "Capital Wasteland Chapter"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What is the Brotherhood's attitude towards mutants?",
+    "answers": ["Dislike to outright hostility", "Tolerant and accepting", "Indifferent"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What is the Brotherhood's primary focus when it comes to technology?",
+    "answers": ["Military technology", "Medical technology", "Agricultural technology"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "Which division of the Brotherhood established the Citadel in Washington, D.C.?",
+    "answers": ["East Coast Brotherhood", "Mojave Chapter", "Lost Hills division"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What event led to the Brotherhood aiding other human settlements in driving away mutants?",
+    "answers": ["Destruction of the Unity", "The Mariposa Rebellion", "Conflict with the Vipers"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "Who negotiated a treaty with the Brotherhood Outcasts, bringing them back into the fold?",
+    "answers": ["Elder Arthur Maxson", "Colonel Robert Spindel", "Sergeant Dennis Allen"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What is the Brotherhood's belief system primarily focused on?",
+    "answers": ["Preserving technology and human knowledge", "Acquiring wealth and resources", "Religious worship"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What year did Elder Maxson negotiate a treaty with the Brotherhood Outcasts?",
+    "answers": ["2283", "2135", "2159"],
+    "category": ["faction", "The Brotherhood of Steel"]
+  },
+  {
+    "question": "What is the Brotherhood's attitude towards outside recruitment?",
+    "answers": ["Conditional recruitment of wastelanders", "No recruitment of outsiders", "Open recruitment for all"],
+    "category": ["faction", "The Brotherhood of Steel"]
   }
 ]
