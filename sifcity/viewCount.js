@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
-
+import { getAuth, onAuthStateChanged } from  "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const CONFIG = {
@@ -11,9 +11,19 @@ const CONFIG = {
     appId: "1:627953674704:web:a3c38c121cb7895c77f1d5"
   };
 
-  // Initialize Firebase
-  const APP = initializeApp(firebaseConfig);
+// Initialize Firebase
+const APP = initializeApp(CONFIG);
 
+//Obtain authentication instance app.
+const AUTH = getAuth(APP);
+
+onAuthStateChanged(AUTH, user => {
+    if(user != null) {
+        console.log("logged in!");
+    }else {
+        console.log("No user.")
+    }
+});
 
 sessionStorage.setItem("title", document.querySelector("title").innerText);
 
