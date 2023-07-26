@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
 import { getAuth, onAuthStateChanged } from  "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import  { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const CONFIG = {
@@ -14,7 +15,7 @@ const CONFIG = {
 // Initialize Firebase
 const APP = initializeApp(CONFIG);
 
-//Obtain authentication instance app.
+//Obtain authentication instance app, to check if the app works
 const AUTH = getAuth(APP);
 
 onAuthStateChanged(AUTH, user => {
@@ -24,6 +25,29 @@ onAuthStateChanged(AUTH, user => {
         console.log("No user.")
     }
 });
+
+// Initialize Cloud Firestore and get a reference to the service
+const DB = getFirestore(APP);
+
+//Write data
+/* try {
+    const DOC_REF = await addDoc(collection(DB, "users"), {
+        first: "Alan",
+        middle: "Mathison",
+        last: "Turing",
+        born: 1912
+    });
+    console.log("Document written with ID: ", DOC_REF.id);
+}catch(e) {
+    console.error("ERROR adding document: ", e);
+} */
+
+//Read data
+const SNAPSHOT = await getDocs(collection(DB, "users"));
+SNAPSHOT.forEach((doc) => {
+    console.log(doc.id);
+    console.log(doc.data());
+})
 
 sessionStorage.setItem("title", document.querySelector("title").innerText);
 
