@@ -82,9 +82,9 @@ if(window.self == window.top) {
         }
     }else {
         //Update session in database
-        const SESSION_REF = doc(DB, "visits", sessionStorage.getItem("session-id"));
-        await updateDoc(SESSION_REF, {
+        //const SESSION_REF = doc(DB, "visits", sessionStorage.getItem("session-id"));
+        //await updateDoc(SESSION_REF, {
 
-        })
+        //})
     }
 }
