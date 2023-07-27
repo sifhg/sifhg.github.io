@@ -62,8 +62,9 @@ if(window.self == window.top) {
         webLocation: document.URL,
         time: Date.parse(new Date()),
         previous: document.referrer,
-        sessionStart: sessionStorage.getItem("session-start"),
-        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        sessionStart: Number(sessionStorage.getItem("session-start")),
+        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        navigations: []
     }
 
     console.log(SESSION_DATA.sessionStart == SESSION_DATA.time);
