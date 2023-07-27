@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
 import { getAuth, onAuthStateChanged } from  "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
-import  { getFirestore, collection, setDoc, doc, updateDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+import  { getFirestore, setDoc, doc, updateDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 
 if(window.self == window.top) {
 
@@ -79,7 +79,6 @@ if(window.self == window.top) {
         try {
             const DOC_REF = doc(DB, "visits", SESSION_DATA.sessionID);
             await setDoc(DOC_REF, SESSION_DATA);
-            sessionStorage.setItem("document-id", DOC_REF.id);
             console.log("Session logged with ID: ", DOC_REF.id);
         }catch(e) {
             console.error("ERROR adding document: ", e);
