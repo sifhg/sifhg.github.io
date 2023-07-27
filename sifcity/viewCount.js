@@ -68,12 +68,16 @@ if(window.self == window.top) {
         navigations: [{title: document.querySelector("title").innerText,
                        time: NOW}]
     }
+    const NAVIGATION_DATA = {
+        title: document.querySelector("title").innerText,
+        time: NOW 
+    }
     console.log(SESSION_DATA);
 
     //Add sesion to database
     if(SESSION_DATA.sessionStart == SESSION_DATA.navigations[0].time) {
         try {
-            const DOC_REF = doc(DB, "visits", SESSION_DATA.sessionID);//await addDoc(collection(DB, "visits"), SESSION_DATA);
+            const DOC_REF = doc(DB, "visits", SESSION_DATA.sessionID);
             await setDoc(DOC_REF, SESSION_DATA);
             sessionStorage.setItem("document-id", DOC_REF.id);
             console.log("Session logged with ID: ", DOC_REF.id);
@@ -82,9 +86,13 @@ if(window.self == window.top) {
         }
     }else {
         //Update session in database
-        //const SESSION_REF = doc(DB, "visits", sessionStorage.getItem("session-id"));
-        //await updateDoc(SESSION_REF, {
-
-        //})
+        try {
+            const DOC_REF = doc(DB, "visits", SESSION_DATA.sessionID);
+            await updateDoc(DOC_REF, {
+                navigations: arrayUnion(NAVIGATION_DATA)
+            })
+        }catch(e) {
+            console.error("ERROR updating document: ", e);
+        }
     }
 }
