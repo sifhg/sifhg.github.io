@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
 import { getAuth, onAuthStateChanged } from  "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
-import  { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+import  { getFirestore, collection, setDoc, doc, updateDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 
 if(window.self == window.top) {
 
@@ -45,37 +45,46 @@ if(window.self == window.top) {
     } */
 
     //Read data
-    const SNAPSHOT = await getDocs(collection(DB, "users"));
+    /*const SNAPSHOT = await getDocs(collection(DB, "users"));
     SNAPSHOT.forEach((doc) => {
         console.log(doc.id);
         console.log(doc.data());
-    })
+    })*/
 
     sessionStorage.setItem("title", document.querySelector("title").innerText);
 
     const NOW = Date.now();
 
-    if(!sessionStorage.getItem("session-start")) {
-        sessionStorage.setItem("session-start", `${NOW}|${Math.floor(Math.random()*10000).toString(36)}`);
+    if(!sessionStorage.getItem("session-id")) {
+        sessionStorage.setItem("session-id", `${NOW}|${Math.floor(Math.random()*10000).toString(36)}`);
     }
 
     const SESSION_DATA = {
         webLocation: document.URL,
         previous: document.referrer,
-        sessionID: sessionStorage.getItem("session-start"),
-        sessionStart: Number(sessionStorage.getItem("session-start").split("|")[0]),
+        sessionID: sessionStorage.getItem("session-id"),
+        sessionStart: Number(sessionStorage.getItem("session-id").split("|")[0]),
         timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
         navigations: [{title: document.querySelector("title").innerText,
                        time: NOW}]
     }
-
     console.log(SESSION_DATA);
+
+    //Add sesion to database
     if(SESSION_DATA.sessionStart == SESSION_DATA.navigations[0].time) {
         try {
-            const DOC_REF = await addDoc(collection(DB, "visits"), SESSION_DATA);
+            const DOC_REF = doc(DB, "visits", SESSION_DATA.sessionID);//await addDoc(collection(DB, "visits"), SESSION_DATA);
+            await setDoc(DOC_REF, SESSION_DATA);
+            sessionStorage.setItem("document-id", DOC_REF.id);
             console.log("Session logged with ID: ", DOC_REF.id);
         }catch(e) {
             console.error("ERROR adding document: ", e);
         }
+    }else {
+        //Update session in database
+        const SESSION_REF = doc(DB, "visits", sessionStorage.getItem("session-id"));
+        await updateDoc(SESSION_REF, {
+
+        })
     }
 }
