@@ -53,8 +53,10 @@ if(window.self == window.top) {
 
     sessionStorage.setItem("title", document.querySelector("title").innerText);
 
+    const NOW = Date.now();
+
     if(!sessionStorage.getItem("session-start")) {
-        sessionStorage.setItem("session-start", `${Date.now()}|${Math.floor(Math.random()*10000).toString(36)}`);
+        sessionStorage.setItem("session-start", `${NOW}|${Math.floor(Math.random()*10000).toString(36)}`);
     }
 
     const SESSION_DATA = {
@@ -64,12 +66,11 @@ if(window.self == window.top) {
         sessionStart: Number(sessionStorage.getItem("session-start").split("|")[0]),
         timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
         navigations: [{title: document.querySelector("title").innerText,
-                       time: Date.now()}]
+                       time: NOW}]
     }
 
-    console.log(SESSION_DATA.sessionStart == SESSION_DATA.time);
     console.log(SESSION_DATA);
-    if(SESSION_DATA.sessionStart == SESSION_DATA.time) {
+    if(SESSION_DATA.sessionStart == SESSION_DATA.navigations[0].time) {
         try {
             const DOC_REF = await addDoc(collection(DB, "visits"), SESSION_DATA);
             console.log("Session logged with ID: ", DOC_REF.id);
