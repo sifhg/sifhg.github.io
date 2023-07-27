@@ -54,17 +54,17 @@ if(window.self == window.top) {
     sessionStorage.setItem("title", document.querySelector("title").innerText);
 
     if(!sessionStorage.getItem("session-start")) {
-        sessionStorage.setItem("session-start", Date.parse(new Date()));
+        sessionStorage.setItem("session-start", `${Date.now()}|${Math.floor(Math.random()*10000).toString(36)}`);
     }
 
     const SESSION_DATA = {
-        title: document.querySelector("title").innerText,
         webLocation: document.URL,
-        time: Date.parse(new Date()),
         previous: document.referrer,
-        sessionStart: Number(sessionStorage.getItem("session-start")),
+        sessionID: sessionStorage.getItem("session-start"),
+        sessionStart: Number(sessionStorage.getItem("session-start").split("|")[0]),
         timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-        navigations: []
+        navigations: [{title: document.querySelector("title").innerText,
+                       time: Date.now()}]
     }
 
     console.log(SESSION_DATA.sessionStart == SESSION_DATA.time);
