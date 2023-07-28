@@ -1,5 +1,4 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
-import { getAuth, onAuthStateChanged } from  "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 import  { getFirestore, setDoc, doc, updateDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 
 if(window.self == window.top) {
@@ -17,46 +16,14 @@ if(window.self == window.top) {
     // Initialize Firebase
     const APP = initializeApp(CONFIG);
 
-    //Obtain authentication instance app, to check if the app works
-    const AUTH = getAuth(APP);
-
-    onAuthStateChanged(AUTH, user => {
-        if(user != null) {
-            console.log("logged in!");
-        }else {
-            console.log("No user.")
-        }
-    });
-
     // Initialize Cloud Firestore and get a reference to the service
     const DB = getFirestore(APP);
-
-    //Write data
-    /* try {
-        const DOC_REF = await addDoc(collection(DB, "users"), {
-            first: "Alan",
-            middle: "Mathison",
-            last: "Turing",
-            born: 1912
-        });
-        console.log("Document written with ID: ", DOC_REF.id);
-    }catch(e) {
-        console.error("ERROR adding document: ", e);
-    } */
-
-    //Read data
-    /*const SNAPSHOT = await getDocs(collection(DB, "users"));
-    SNAPSHOT.forEach((doc) => {
-        console.log(doc.id);
-        console.log(doc.data());
-    })*/
 
     sessionStorage.setItem("title", document.querySelector("title").innerText);
 
     const NOW = Date.now();
-
     if(!sessionStorage.getItem("session-id")) {
-        sessionStorage.setItem("session-id", `${NOW}|${Math.floor(Math.random()*10000).toString(36)}`);
+        sessionStorage.setItem("session-id", `${NOW}|${Math.floor(Math.random()*1000000).toString(36)}`);
     }
 
     const SESSION_DATA = {
@@ -89,7 +56,8 @@ if(window.self == window.top) {
             const DOC_REF = doc(DB, "visits", SESSION_DATA.sessionID);
             await updateDoc(DOC_REF, {
                 navigations: arrayUnion(NAVIGATION_DATA)
-            })
+            });
+            console.log("Session updated with ID", DOC_REF.id);
         }catch(e) {
             console.error("ERROR updating document: ", e);
         }
