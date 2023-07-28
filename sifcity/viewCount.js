@@ -48,7 +48,7 @@ if(window.self == window.top) {
             await setDoc(DOC_REF, SESSION_DATA);
             console.log("Session logged with ID: ", DOC_REF.id);
         }catch(e) {
-            console.error("ERROR adding document: ", e);
+            //console.error("ERROR adding document: ", e);
         }
     }else {
         //Update session in database
@@ -59,7 +59,7 @@ if(window.self == window.top) {
             });
             console.log("Session updated with ID", DOC_REF.id);
         }catch(e) {
-            console.error("ERROR updating document: ", e);
+            //console.error("ERROR updating document: ", e);
         }
     }
 }
