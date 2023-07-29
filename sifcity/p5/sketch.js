@@ -158,7 +158,7 @@ let theCity = new City();
 const START = new Date();
 
 function draw() {
-    background(addAlpha(backgroundColour, 63))
+    background(addAlpha(backgroundColour, 63));
     aPerlinStream.update();
     theCity.updateCity(.005);
     theCity.displayCity(1, .25);
@@ -171,5 +171,4 @@ function draw() {
 
     fill(255,0,0);
     circle(width/2, perlin.get(.5,frameCount*.01)*height+height/2, 50);
-    
 }
