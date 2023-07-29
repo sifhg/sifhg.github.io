@@ -27,7 +27,7 @@ body {
     margin-top: 4rem;
     padding-bottom: 8rem;
     width: 80%;
-    max-width: 896px;
+    max-width: 800px;
 }
 
 /* MENU AND HEADER */
@@ -116,6 +116,9 @@ header, .main-header {
     bottom: -2.8rem;
     left: 1rem;
     color: var(--standard-sif-colour);
+}
+#description {
+    margin-top: .5rem;
 }
 
 /* GENERAL TEXT STYLING */
