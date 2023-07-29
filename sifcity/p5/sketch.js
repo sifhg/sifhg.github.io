@@ -169,13 +169,7 @@ function draw() {
                             aPerlinStream.medium);
     }
 
-
-    /* noStroke();
-    fill(200, 20, 20, 127);
-    circle(width*2/5, map(aPerlinStream.fast, 0, 1, 0, height), 30);
-    fill(20, 200, 20, 127);
-    circle(width*3/5, map(aPerlinStream.medium, 0, 1, 0, height), 30);
-    fill(20, 20, 200, 127);
-    circle(width*4/5, map(aPerlinStream.slow, 0, 1, 0, height), 30); */
+    fill(255,0,0);
+    circle(width/2, perlin.get(.5,frameCount*.01)*height+height/2, 50);
     
 }
