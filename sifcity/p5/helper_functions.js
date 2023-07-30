@@ -173,6 +173,7 @@ class PerlinStream {
 class City {
     constructor(centerXp, centerYp) {
         this.buildings = [];
+        this.time = 0;
         if(!(centerXp >= 0 && centerXp <= 1 && centerYp >= 0 && centerYp <= 1)) {
             throw new Error(`centerXp = ${centerXp}; centerYp = ${centerYp}. centerXp and centerYp must be numbers in the range 0<=n<=1`);
         }
@@ -182,15 +183,141 @@ class City {
         }
     }
     addBuilding(angle, style) {
-        this.buildings.push
+        this.buildings.push(new Building(angle, style, this.time));
+    }
+    demolishBuilding(index) {
+        this.buildings = this.buildings.slice(0, index).concat(this.buildings.slice(index + 1));
+    }
+    update(speed) {
+        this.time += speed;
+    }
+    getCartesianCoordinates(building) {
+        let xCoor = Math.cos(building.angle) * (this.time - building.birthTime) + (this.center.x * canvas.width);
+        let yCoor = Math.sin(building.angle) * (this.time - building.birthTime) + (this.center.y * canvas.height);
+        yCoor += Math.pow((yCoor-(this.center.y*canvas.height))*.1, 2);
+        return {
+            x: xCoor,
+            y: yCoor
+        }
+    }
+    display(p) {
+        //p is the perspective acceleration
+        for(let b = 0; b < this.buildings.length; b++) {
+            let C = this.getCartesianCoordinates(this.buildings[b]);
+            C.y += Math.pow((C.y - (this.center.y * canvas.height)) * p, 2);
+            circle(C.x, C.y, 5, specialIngridColour, false);
+            if(C.y > canvas.height) {
+                this.demolishBuilding(b);
+            }
+        }
     }
 }
 
 class Building {
-    constructor(a, S) {
-        this.time = 0;
+    constructor(a, S, bt) {
         this.angle = a;
         this.style = S;
+        this.birthTime = bt;
+        this.coordinates = this.getAbstractCoordinates();
+
+        if(typeof(this.angle) != "number") {
+            throw new Error(`a = ${this.angle}, if of type ${typeof(this.angle)}. Building.constructor(). The angle argument, a, must be of type "number".`);
+        }
+        if(S != "A" && S != "B") {
+            throw new Error(`S = ${this.style}. Building.constructor(). The style argument, S, must be a string: either "A" or "B".`);
+        }
+        if(typeof(this.birthTime) != "number") {
+            throw new Error(`bt = ${this.birthTime}, if of type ${typeof(this.birthTime)}. Building.constructor(). The birth time argument, bt, must be of type "number".`);
+        }
+    }
+    getAbstractCoordinates() {
+        if(this.style == "A") {
+            return [{
+                x: 1,
+                y: 2,
+                t: 0
+            },{
+                x: -1,
+                y: 2,
+                t: 0
+            },{
+                x: -1,
+                y: 0,
+                t: 0
+            },{
+                x: 0,
+                y: -1,
+                t: 0
+            },{
+                x: 0,
+                y: -1,
+                t: -1
+            },{
+                x: 1,
+                y: 0,
+                t: -1
+            },{
+                x: 1,
+                y: 2,
+                t: -1
+            },{
+                x: 1,
+                y: 2,
+                t: 0
+            },{
+                x: 1,
+                y: 0,
+                t: 0
+            },{
+                x: 1,
+                y: 0,
+                t: -1
+            }]
+        }else if(this.style =="B") {
+            return [{
+                x: 1,
+                y: 2,
+                t: 0
+            },{
+                x: -1,
+                y: 2,
+                t: 0
+            },{
+                x: -1,
+                y: 0,
+                t: 0
+            },{
+                x: -1,
+                y: -1,
+                t: -.5
+            },{
+                x: 1,
+                y: -1,
+                t: -.5
+            },{
+                x: 1,
+                y: 0,
+                t: -1
+            },{
+                x: 1,
+                y: 2,
+                t: -1
+            },{
+                x: 1,
+                y: 2,
+                t: 0
+            },{
+                x: 1,
+                y: 0,
+                t: 0
+            },{
+                x: -1,
+                y: 0,
+                t: 0
+            },]
+        }else {
+            throw new Error(`S = ${this.style}. Building.getAbstractCoordinates(). The building.style property must be a string: either "A" or "B".`);
+        }
     }
 }
 

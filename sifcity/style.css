@@ -118,6 +118,7 @@ canvas {
     bottom: -2.8rem;
     left: 1rem;
     color: var(--standard-sif-colour);
+    z-index: 1;
 }
 #description {
     margin-top: .5rem;

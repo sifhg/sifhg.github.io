@@ -170,5 +170,4 @@ function draw() {
     }
 
     fill(255,0,0);
-    circle(width/2, perlin.get(.5,frameCount*.01)*height+height/2, 50);
 }
