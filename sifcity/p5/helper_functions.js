@@ -172,7 +172,7 @@ class PerlinStream {
         this.t++;
         this.fast = polarizor(map(perlin.get(this.s+0, this.t*.025), -1, 1, 0, 1), .2);
         this.medium = polarizor(map(perlin.get(this.s+1, this.t*.0075), -1, 1, 0, 1), .1);
-        this.slow = polarizor(map(perlin.get(this.s+2, this.t*.001), -1, 1, 0, 1), .1);
+        this.slow = polarizor(map(perlin.get(this.s+2, this.t*.001), -1, 1, 0, 1), .05);
     }
 }
 
@@ -204,8 +204,8 @@ class City {
         const INIT_Y = Math.sin(building.angle) * TIME + (this.center.y * canvas.height);
         const DIST = distance(.5, 1, map(INIT_X, 0, canvas.width, 0, 1), map(INIT_Y, this.center.y * canvas.height, canvas.height, 0, 1));
 
-        let xCoor = Math.cos(building.angle) * (TIME * (p*(DIST))) + (this.center.x * canvas.width);
-        let yCoor = Math.sin(building.angle) * (TIME * (p*(DIST))) + (this.center.y * canvas.height);
+        let xCoor = Math.cos(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.x * canvas.width);
+        let yCoor = Math.sin(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.y * canvas.height);
         return {
             x: xCoor,
             y: yCoor
@@ -216,7 +216,7 @@ class City {
         for(let b = 0; b < this.buildings.length; b++) {
             let C = this.getCartesianCoordinates(this.buildings[b], p);
             circle(C.x, C.y, 5, specialIngridColour, false);
-            if(C.y > canvas.height) {
+            if(C.y > canvas.height || C.y < canvas.height*this.center.y || C.x < 0 || C.x > canvas.width) {
                 this.demolishBuilding(b);
             }
         }
