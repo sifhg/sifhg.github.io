@@ -204,8 +204,8 @@ class City {
         const INIT_Y = Math.sin(building.angle) * TIME + (this.center.y * canvas.height);
         const DIST = distance(.5, 1, map(INIT_X, 0, canvas.width, 0, 1), map(INIT_Y, this.center.y * canvas.height, canvas.height, 0, 1));
 
-        let xCoor = Math.cos(building.angle) * (TIME * (p*(1-DIST))) + (this.center.x * canvas.width);
-        let yCoor = Math.sin(building.angle) * (TIME * (p*(1-DIST))) + (this.center.y * canvas.height);
+        let xCoor = Math.cos(building.angle) * (TIME * (p*(DIST))) + (this.center.x * canvas.width);
+        let yCoor = Math.sin(building.angle) * (TIME * (p*(DIST))) + (this.center.y * canvas.height);
         return {
             x: xCoor,
             y: yCoor
