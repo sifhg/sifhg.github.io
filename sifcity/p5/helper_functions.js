@@ -197,6 +197,17 @@ class City {
     update(speed) {
         this.time += speed;
     }
+    abstract2Concrete(building) {
+        const ABSTRACT = building.coordinates;
+        let concrete = [];
+        for(const COO of ABSTRACT) {
+            const X = COO.x;
+            const Y = COO.y;
+            const T = COO.t;
+            const THETA = (Math.PI/2) - (building.angle + (building.width * X));
+            const b = Math.cos(THETA)
+        }
+    }
     getCartesianCoordinates(building, p) {
         //p is the perspective acceleration
         const TIME = this.time - building.birthTime;
@@ -204,12 +215,16 @@ class City {
         const INIT_Y = Math.sin(building.angle) * TIME + (this.center.y * canvas.height);
         const DIST = distance(.5, 1, map(INIT_X, 0, canvas.width, 0, 1), map(INIT_Y, this.center.y * canvas.height, canvas.height, 0, 1));
 
-        let xCoor = Math.cos(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.x * canvas.width);
-        let yCoor = Math.sin(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.y * canvas.height);
-        return {
-            x: xCoor,
-            y: yCoor
+        const BUILDING_CENTER = {
+            x: Math.cos(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.x * canvas.width),
+            y: Math.sin(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.y * canvas.height)
         }
+
+        const POINTS = [{
+
+        }];
+        
+        return BUILDING_CENTER;
     }
     display(p) {
         //p is the perspective acceleration
@@ -229,6 +244,7 @@ class Building {
         this.style = S;
         this.birthTime = bt;
         this.coordinates = this.getAbstractCoordinates();
+        this.width = Math.PI/16;
 
         if(typeof(this.angle) != "number") {
             throw new Error(`a = ${this.angle}, if of type ${typeof(this.angle)}. Building.constructor(). The angle argument, a, must be of type "number".`);
