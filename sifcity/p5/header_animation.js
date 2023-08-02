@@ -9,8 +9,8 @@ let theCity = new City(.75, .25);
 
 let speed = 1;
 
-theCity.addBuilding(Math.PI*10/16, "A");
-theCity.addBuilding(Math.PI*11/16, "A");
+theCity.addBuilding(Math.PI*12/16, "A");
+//theCity.addBuilding(Math.PI*11/16, "A");
 
 
 function draw() {
@@ -23,11 +23,11 @@ function draw() {
 
     
     //Generate house
-/*     if(Math.random()*30 < 1) {
+    if(Math.random()*30 < 1) {
         theCity.addBuilding(map(aStream.fast, 0, 1, Math.PI/6, Math.PI*5/4), "A");
-    } */
+    }
 
-    theCity.display(4);
+    theCity.display(2);
     theCity.update(speed);
 
     window.requestAnimationFrame(draw);

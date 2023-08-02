@@ -197,16 +197,30 @@ class City {
     update(speed) {
         this.time += speed;
     }
-    abstract2Concrete(building) {
-        const ABSTRACT = building.coordinates;
+    abstract2Concrete(ac, dim, dist, pos, a) {
+        const ABSTRACT = ac;
+        const DIMENSIONS = dim;
+        const ANGLE = a;
+        const HEIGHT = pos.y - (this.center.y * canvas.height);
+        const WIDTH = pos.x - (this.center.x * canvas.width);
+        const DISTANCE = dist;
+
         let concrete = [];
         for(const COO of ABSTRACT) {
-            const X = COO.x;
-            const Y = COO.y;
-            const T = COO.t;
-            const THETA = (Math.PI/2) - (building.angle + (building.width * X));
-            const b = Math.cos(THETA)
+            let pointAngle = ANGLE - (COO.x * DIMENSIONS.width) - (COO.y * DIMENSIONS.height);
+            const THETA_X = Math.PI - (Math.PI/2) - (pointAngle-Math.PI/2);
+            const THETA_Y = Math.PI - pointAngle;
+            const DIST_DIFF_X = COO.x * ((HEIGHT / Math.sin(THETA_X)) - DISTANCE);
+            const DIST_DIFF_Y = -COO.y * ((WIDTH / Math.cos(THETA_Y)) - (COO.y * DISTANCE));
+            const POINT_DISTANCE = DISTANCE + DIST_DIFF_X - DIST_DIFF_Y;
+
+            concrete.push({
+                x: Math.cos(pointAngle) * POINT_DISTANCE + (this.center.x * canvas.width),
+                y: Math.sin(pointAngle) * POINT_DISTANCE + (this.center.y * canvas.height)
+            })
         }
+        console.log(concrete);
+        return concrete;
     }
     getCartesianCoordinates(building, p) {
         //p is the perspective acceleration
@@ -214,24 +228,25 @@ class City {
         const INIT_X = Math.cos(building.angle) * TIME + (this.center.x * canvas.width);
         const INIT_Y = Math.sin(building.angle) * TIME + (this.center.y * canvas.height);
         const DIST = distance(.5, 1, map(INIT_X, 0, canvas.width, 0, 1), map(INIT_Y, this.center.y * canvas.height, canvas.height, 0, 1));
+        const PERSPECTIVE_DIST = (TIME * Math.pow(2, (-p*DIST+p < 0) ? 0 : (-p*DIST+p)));
 
         const BUILDING_CENTER = {
-            x: Math.cos(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.x * canvas.width),
-            y: Math.sin(building.angle) * (TIME * Math.pow(2, (-p*DIST+p > 0) ? 0 : (-p*DIST+p > 0))) + (this.center.y * canvas.height)
+            x: Math.cos(building.angle) * PERSPECTIVE_DIST + (this.center.x * canvas.width),
+            y: Math.sin(building.angle) * PERSPECTIVE_DIST + (this.center.y * canvas.height)
         }
 
-        const POINTS = [{
-
-        }];
-        
-        return BUILDING_CENTER;
+        const POINT_COOR = this.abstract2Concrete(building.coordinates, building.dimensions, PERSPECTIVE_DIST, BUILDING_CENTER, building.angle);
+        return [BUILDING_CENTER].concat(POINT_COOR);
     }
     display(p) {
         //p is the perspective acceleration
         for(let b = 0; b < this.buildings.length; b++) {
             let C = this.getCartesianCoordinates(this.buildings[b], p);
-            circle(C.x, C.y, 5, specialIngridColour, false);
-            if(C.y > canvas.height || C.y < canvas.height*this.center.y || C.x < 0 || C.x > canvas.width) {
+            for(let p = 1; p < C.length; p++) {
+                circle(C[p].x,C[p].y, 5, specialIngridColour, false);
+            }
+            //circle(C.x, C.y, 5, specialIngridColour, false);
+            if(C[0].y > canvas.height || C[0].y < canvas.height*this.center.y || C[0].x < 0 || C[0].x > canvas.width) {
                 this.demolishBuilding(b);
             }
         }
@@ -244,6 +259,11 @@ class Building {
         this.style = S;
         this.birthTime = bt;
         this.coordinates = this.getAbstractCoordinates();
+        this.dimensions = {
+            width: Math.PI/16,
+            height: Math.PI/16,
+            length: 10
+        }
         this.width = Math.PI/16;
 
         if(typeof(this.angle) != "number") {
@@ -260,14 +280,10 @@ class Building {
         if(this.style == "A") {
             return [{
                 x: 1,
-                y: 2,
+                y: 0,
                 t: 0
             },{
-                x: -1,
-                y: 2,
-                t: 0
-            },{
-                x: -1,
+                x: 0,
                 y: 0,
                 t: 0
             },{
@@ -275,30 +291,10 @@ class Building {
                 y: -1,
                 t: 0
             },{
-                x: 0,
+                x: 1,
                 y: -1,
-                t: -1
-            },{
-                x: 1,
-                y: 0,
-                t: -1
-            },{
-                x: 1,
-                y: 2,
-                t: -1
-            },{
-                x: 1,
-                y: 2,
                 t: 0
-            },{
-                x: 1,
-                y: 0,
-                t: 0
-            },{
-                x: 1,
-                y: 0,
-                t: -1
-            }]
+            }];
         }else if(this.style =="B") {
             return [{
                 x: 1,
