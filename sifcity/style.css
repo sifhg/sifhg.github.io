@@ -189,10 +189,18 @@ ol {
 
 #references {
     list-style-type: none;
-    padding-left: 1rem;
+    padding-left: 0;
+    text-align: justify;
+}
+#reference li {
+    text-align: justify;
 }
 #references li::before {
     content: none;
+}
+#references li {
+    text-indent: -2em;
+    padding-left: 2em;
 }
 
 /* ILLUSTRATIONS */
