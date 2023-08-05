@@ -18,7 +18,7 @@ localStorage.setItem("allPublications", JSON.stringify(publications));
 
 
 //Place pages
-const PLACE_ROWS = document.getElementsByClassName("place");
+const PLACE_ROWS = document.getElementsByClassName("place").slice(0,4);
 let placePages =[];
 for(const PAGE of PLACE_ROWS) {
     const LINK_ELEMENT = PAGE.querySelector(".place-title a");

@@ -219,7 +219,7 @@ class City {
                 y: Math.sin(pointAngle) * POINT_DISTANCE + (this.center.y * canvas.height)
             })
         }
-        console.log(concrete);
+        //console.log(concrete);
         return concrete;
     }
     getCartesianCoordinates(building, p) {
