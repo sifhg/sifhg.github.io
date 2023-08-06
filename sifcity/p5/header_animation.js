@@ -9,7 +9,7 @@ let theCity = new City(.75, .25);
 
 let speed = 1;
 
-theCity.addBuilding(Math.PI*12/16, "A");
+//theCity.addBuilding(Math.PI*12/16, "A");
 //theCity.addBuilding(Math.PI*11/16, "A");
 
 
@@ -24,7 +24,10 @@ function draw() {
     
     //Generate house
     if(Math.random()*30 < 1) {
-        theCity.addBuilding(map(aStream.fast, 0, 1, Math.PI/6, Math.PI*5/4), "A");
+        // Jumpting glitch: theCity.addBuilding(Math.PI*4/9, "A");
+        //theCity.addBuilding(Math.PI*3/4, "A");
+        theCity.addBuilding(Math.PI*3/4, "B");
+        //theCity.addBuilding(map(aStream.fast, 0, 1, Math.PI/6, Math.PI*5/4), "A");
     }
 
     theCity.display(2);

@@ -42,8 +42,27 @@ function circle(x, y, r, strokeColour, fillColour) {
     }else {
         ctx.strokeStyle = strokeColour;
         ctx.stroke();
+    }   
+}
+function path(coordinates, strokeColour) {
+    if(coordinates.length < 2 || coordinates.length == undefined || coordinates[0].x == undefined || coordinates[0].y == undefined) {
+        throw new Error(`coordinates: ${coordinates},\n
+        coordinates length: ${coordinates.length},\n
+        coordinates type: ${typeof(coordinates)}.\n
+        Coordinates of a path element must be an array of at least length 2.\n
+        Elements of coordinates array must contain objects with the keys x and y.`);
     }
-    
+    ctx.beginPath();
+    ctx.moveTo(coordinates[0].x, coordinates[0].y);
+    for(let p = 1; p < coordinates.length; p++) {
+        ctx.lineTo(coordinates[p].x, coordinates[p].y);
+    }
+    if(strokeColour == undefined) {
+        ctx.strokeStyle = "#000000";
+    }else {
+        ctx.strokeStyle = strokeColour;
+    }
+    ctx.stroke();
 }
 
 function addAlpha(color, alpha) {
@@ -128,7 +147,7 @@ function hslToRgb(h, s, l) {
     b = Math.round(b * 255);
   
     return { r, g, b };
-  }
+}
 
 function map(i, imin, imax, omin, omax) {
     return (((i-imin)/(imax-imin))*omax-omin) + omin;
@@ -242,10 +261,11 @@ class City {
         //p is the perspective acceleration
         for(let b = 0; b < this.buildings.length; b++) {
             let C = this.getCartesianCoordinates(this.buildings[b], p);
-            for(let p = 1; p < C.length; p++) {
+            path(C, specialIngridColour);
+/*             for(let p = 1; p < C.length; p++) {
                 circle(C[p].x,C[p].y, 5, specialIngridColour, false);
-            }
-            //circle(C.x, C.y, 5, specialIngridColour, false);
+            } */
+            circle(C[0].x,C[0].y, 5, specialIngridColour, false);
             if(C[0].y > canvas.height || C[0].y < canvas.height*this.center.y || C[0].x < 0 || C[0].x > canvas.width) {
                 this.demolishBuilding(b);
             }
@@ -298,45 +318,55 @@ class Building {
         }else if(this.style =="B") {
             return [{
                 x: 1,
-                y: 2,
-                t: 0
-            },{
-                x: -1,
-                y: 2,
-                t: 0
-            },{
-                x: -1,
                 y: 0,
                 t: 0
             },{
-                x: -1,
+                x: .8,
+                y: 0,
+                t: 0
+            },{
+                x: .6,
+                y: 0,
+                t: 0
+            },{
+                x: .5,
+                y: 0,
+                t: 0
+            },{
+                x: .4,
+                y: 0,
+                t: 0
+            },{
+                x: .2,
+                y: 0,
+                t: 0
+            },
+            {
+                x: 0,
+                y: 0,
+                t: 0
+            },{
+                x: 0,
+                y: -.2,
+                t: 0
+            },{
+                x: 0,
+                y: -.4,
+                t: 0
+            },{
+                x: 0,
+                y: -.6,
+                t: 0
+            },{
+                x: 0,
+                y: -.8,
+                t: 0
+            },{
+                x: 0,
                 y: -1,
-                t: -.5
-            },{
-                x: 1,
-                y: -1,
-                t: -.5
-            },{
-                x: 1,
-                y: 0,
-                t: -1
-            },{
-                x: 1,
-                y: 2,
-                t: -1
-            },{
-                x: 1,
-                y: 2,
                 t: 0
-            },{
-                x: 1,
-                y: 0,
-                t: 0
-            },{
-                x: -1,
-                y: 0,
-                t: 0
-            },]
+            }
+        ];
         }else {
             throw new Error(`S = ${this.style}. Building.getAbstractCoordinates(). The building.style property must be a string: either "A" or "B".`);
         }
