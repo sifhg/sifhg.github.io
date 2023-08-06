@@ -150,7 +150,16 @@ function hslToRgb(h, s, l) {
 }
 
 function map(i, imin, imax, omin, omax) {
-    return (((i-imin)/(imax-imin))*omax-omin) + omin;
+    if(i == undefined) {
+        throw new Error(`input i = ${i}. Input i must be a number.`);
+    }
+
+    const OUTPUT = (((i-imin)/(imax-imin))*(omax-omin)) + omin;
+    
+    if(typeof(OUTPUT) != "number") {
+        throw new Error(`Type of OUT = ${typeof(OUTPUT)}. function map() must resolve to a number.`)
+    }
+    return OUTPUT;
 }
 
 function polarizor(x, f) {
@@ -216,29 +225,35 @@ class City {
     update(speed) {
         this.time += speed;
     }
-    abstract2Concrete(ac, dim, dist, pos, a) {
+    abstract2Concrete(ac, dim, pos, a) {
         const ABSTRACT = ac;
         const DIMENSIONS = dim;
         const ANGLE = a;
-        const HEIGHT = pos.y - (this.center.y * canvas.height);
-        const WIDTH = pos.x - (this.center.x * canvas.width);
-        const DISTANCE = dist;
+        const HEIGHT = Math.abs(pos.y - (this.center.y * canvas.height));
+        const WIDTH = Math.abs(pos.x - (this.center.x * canvas.width));
+
+        const ANGLE_X = ANGLE - DIMENSIONS.width;
+        const THETA_X = Math.PI - (Math.PI/2) - (ANGLE_X - Math.PI/2);
+        const UNIT_X = Math.cos(THETA_X) * HEIGHT/Math.sin(THETA_X);
+
+        const ANGLE_Y = ANGLE + DIMENSIONS.height;
+        const THETA_Y = Math.PI - ANGLE_Y;
+        const UNIT_Y = Math.tan(THETA_Y) * WIDTH;
+
+        const ABSTRACT_POSITION = {
+            x: pos.x + UNIT_X,
+            y: pos.y - UNIT_Y
+        };
 
         let concrete = [];
         for(const COO of ABSTRACT) {
-            let pointAngle = ANGLE - (COO.x * DIMENSIONS.width) - (COO.y * DIMENSIONS.height);
-            const THETA_X = Math.PI - (Math.PI/2) - (pointAngle-Math.PI/2);
-            const THETA_Y = Math.PI - pointAngle;
-            const DIST_DIFF_X = COO.x * ((HEIGHT / Math.sin(THETA_X)) - DISTANCE);
-            const DIST_DIFF_Y = -COO.y * ((WIDTH / Math.cos(THETA_Y)) - (COO.y * DISTANCE));
-            const POINT_DISTANCE = DISTANCE + DIST_DIFF_X - DIST_DIFF_Y;
-
-            concrete.push({
-                x: Math.cos(pointAngle) * POINT_DISTANCE + (this.center.x * canvas.width),
-                y: Math.sin(pointAngle) * POINT_DISTANCE + (this.center.y * canvas.height)
-            })
+            console.log(`COO.x = ${COO.x}; COO.y = ${COO.y}`);
+            const POSITION = {
+                x: map(COO.x, 0, 1, pos.x, ABSTRACT_POSITION.x),
+                y: map(COO.y, 0, -1, pos.y, ABSTRACT_POSITION.y)
+            };
+            concrete.push(POSITION);
         }
-        //console.log(concrete);
         return concrete;
     }
     getCartesianCoordinates(building, p) {
@@ -254,7 +269,7 @@ class City {
             y: Math.sin(building.angle) * PERSPECTIVE_DIST + (this.center.y * canvas.height)
         }
 
-        const POINT_COOR = this.abstract2Concrete(building.coordinates, building.dimensions, PERSPECTIVE_DIST, BUILDING_CENTER, building.angle);
+        const POINT_COOR = this.abstract2Concrete(building.coordinates, building.dimensions, BUILDING_CENTER, building.angle);
         return [BUILDING_CENTER].concat(POINT_COOR);
     }
     display(p) {
@@ -262,9 +277,7 @@ class City {
         for(let b = 0; b < this.buildings.length; b++) {
             let C = this.getCartesianCoordinates(this.buildings[b], p);
             path(C, specialIngridColour);
-/*             for(let p = 1; p < C.length; p++) {
-                circle(C[p].x,C[p].y, 5, specialIngridColour, false);
-            } */
+
             circle(C[0].x,C[0].y, 5, specialIngridColour, false);
             if(C[0].y > canvas.height || C[0].y < canvas.height*this.center.y || C[0].x < 0 || C[0].x > canvas.width) {
                 this.demolishBuilding(b);
@@ -320,50 +333,25 @@ class Building {
                 x: 1,
                 y: 0,
                 t: 0
-            },{
-                x: .8,
-                y: 0,
-                t: 0
-            },{
-                x: .6,
-                y: 0,
-                t: 0
-            },{
-                x: .5,
-                y: 0,
-                t: 0
-            },{
-                x: .4,
-                y: 0,
-                t: 0
-            },{
-                x: .2,
-                y: 0,
-                t: 0
             },
             {
                 x: 0,
                 y: 0,
                 t: 0
-            },{
-                x: 0,
-                y: -.2,
-                t: 0
-            },{
-                x: 0,
-                y: -.4,
-                t: 0
-            },{
-                x: 0,
-                y: -.6,
-                t: 0
-            },{
-                x: 0,
-                y: -.8,
-                t: 0
-            },{
+            },
+            {
                 x: 0,
                 y: -1,
+                t: 0
+            },
+            {
+                x: 1,
+                y: -1,
+                t: 0
+            },
+            {
+                x: .5,
+                y: -1.5,
                 t: 0
             }
         ];
