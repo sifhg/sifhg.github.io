@@ -225,12 +225,22 @@ class City {
     update(speed) {
         this.time += speed;
     }
-    abstract2Concrete(ac, dim, pos, a) {
-        const ABSTRACT = ac;
-        const DIMENSIONS = dim;
-        const ANGLE = a;
-        const HEIGHT = Math.abs(pos.y - (this.center.y * canvas.height));
-        const WIDTH = Math.abs(pos.x - (this.center.x * canvas.width));
+    abstract2Concrete(building, pos, p) {
+        const ABSTRACT = building.coordinates;
+        const DIMENSIONS = building.dimensions;
+        const ANGLE = building.angle;
+        const PERSPECTIVE_DIST = this.getPerspectiveDistance(this.time - building.birthTime, building.angle, p);
+        const POS = {
+            x: Math.cos(building.angle) * PERSPECTIVE_DIST + (this.center.x * canvas.width),
+            y: Math.sin(building.angle) * PERSPECTIVE_DIST + (this.center.y * canvas.height)
+        }
+        const PERSPECTIVE_DIST_BACK = this.getPerspectiveDistance(this.time + DIMENSIONS.length - building.birthTime, building.angle, p);
+        const POS_BACK = {
+            x: Math.cos(building.angle) * PERSPECTIVE_DIST_BACK + (this.center.x * canvas.width),
+            y: Math.sin(building.angle) * PERSPECTIVE_DIST_BACK + (this.center.y * canvas.height)
+        }
+        const HEIGHT = Math.abs(POS.y - (this.center.y * canvas.height));
+        const WIDTH = Math.abs(POS.x - (this.center.x * canvas.width));
 
         const ANGLE_X = ANGLE - DIMENSIONS.width;
         const THETA_X = Math.PI - (Math.PI/2) - (ANGLE_X - Math.PI/2);
@@ -241,35 +251,42 @@ class City {
         const UNIT_Y = Math.tan(THETA_Y) * WIDTH;
 
         const ABSTRACT_POSITION = {
-            x: pos.x + UNIT_X,
-            y: pos.y - UNIT_Y
+            x: POS.x + UNIT_X,
+            y: POS.y - UNIT_Y
+        };
+        const ABSTRACT_POSITION_BACK = {
+            x: POS_BACK.x + UNIT_X,
+            y: POS_BACK.y - UNIT_Y
         };
 
         let concrete = [];
         for(const COO of ABSTRACT) {
-            console.log(`COO.x = ${COO.x}; COO.y = ${COO.y}`);
             const POSITION = {
-                x: map(COO.x, 0, 1, pos.x, ABSTRACT_POSITION.x),
-                y: map(COO.y, 0, -1, pos.y, ABSTRACT_POSITION.y)
+                x: map(COO.x, 0, 1, map(COO.t, 0, 1, POS.x, POS_BACK.x), map(COO.t, 0, 1, ABSTRACT_POSITION.x, ABSTRACT_POSITION_BACK.x)),
+                y: map(COO.y, 0, -1, map(COO.t, 0, 1, POS.y, POS_BACK.y), map(COO.t, 0, 1, ABSTRACT_POSITION.y, ABSTRACT_POSITION_BACK.y))
             };
             concrete.push(POSITION);
         }
         return concrete;
     }
+    getPerspectiveDistance(t, a, p) {
+        const TIME = t;
+        const INIT_X = Math.cos(a) * TIME + (this.center.x * canvas.width);
+        const INIT_Y = Math.sin(a) * TIME + (this.center.y * canvas.height);
+        const DIST = distance(.5, 1, map(INIT_X, 0, canvas.width, 0, 1), map(INIT_Y, this.center.y * canvas.height, canvas.height, 0, 1));
+        return TIME * Math.pow(2, (-p*DIST+p < 0) ? 0 : (-p*DIST+p));
+    }
     getCartesianCoordinates(building, p) {
         //p is the perspective acceleration
-        const TIME = this.time - building.birthTime;
-        const INIT_X = Math.cos(building.angle) * TIME + (this.center.x * canvas.width);
-        const INIT_Y = Math.sin(building.angle) * TIME + (this.center.y * canvas.height);
-        const DIST = distance(.5, 1, map(INIT_X, 0, canvas.width, 0, 1), map(INIT_Y, this.center.y * canvas.height, canvas.height, 0, 1));
-        const PERSPECTIVE_DIST = (TIME * Math.pow(2, (-p*DIST+p < 0) ? 0 : (-p*DIST+p)));
+
+        const PERSPECTIVE_DIST = this.getPerspectiveDistance(this.time - building.birthTime, building.angle, p);
 
         const BUILDING_CENTER = {
             x: Math.cos(building.angle) * PERSPECTIVE_DIST + (this.center.x * canvas.width),
             y: Math.sin(building.angle) * PERSPECTIVE_DIST + (this.center.y * canvas.height)
         }
 
-        const POINT_COOR = this.abstract2Concrete(building.coordinates, building.dimensions, BUILDING_CENTER, building.angle);
+        const POINT_COOR = this.abstract2Concrete(building, BUILDING_CENTER, p);
         return [BUILDING_CENTER].concat(POINT_COOR);
     }
     display(p) {
@@ -278,7 +295,7 @@ class City {
             let C = this.getCartesianCoordinates(this.buildings[b], p);
             path(C, specialIngridColour);
 
-            circle(C[0].x,C[0].y, 5, specialIngridColour, false);
+            //circle(C[0].x,C[0].y, 5, specialIngridColour, false);
             if(C[0].y > canvas.height || C[0].y < canvas.height*this.center.y || C[0].x < 0 || C[0].x > canvas.width) {
                 this.demolishBuilding(b);
             }
@@ -341,18 +358,13 @@ class Building {
             },
             {
                 x: 0,
-                y: -1,
-                t: 0
+                y: 0,
+                t: -.5
             },
             {
-                x: 1,
-                y: -1,
-                t: 0
-            },
-            {
-                x: .5,
-                y: -1.5,
-                t: 0
+                x: 0,
+                y: 0,
+                t: -1
             }
         ];
         }else {
