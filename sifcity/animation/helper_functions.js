@@ -293,9 +293,12 @@ class City {
         //p is the perspective acceleration
         for(let b = 0; b < this.buildings.length; b++) {
             let C = this.getCartesianCoordinates(this.buildings[b], p);
-            path(C, specialIngridColour);
-
-            //circle(C[0].x,C[0].y, 5, specialIngridColour, false);
+            const TEN_PER = (canvas.height - (this.center.y * canvas.height)) * .1 + (this.center.y * canvas.height);
+            const MAX_ALPHA = 25;
+            let alpha = Math.floor(map(C[0].y, this.center.y * canvas.height, TEN_PER, 0, MAX_ALPHA));
+            alpha = (alpha < 0) ? 0 : alpha;
+            alpha = (alpha > MAX_ALPHA) ? MAX_ALPHA : alpha;
+            path(C, addAlpha(specialIngridColour, alpha));
             if(C[0].y > canvas.height || C[0].y < canvas.height*this.center.y || C[0].x < 0 || C[0].x > canvas.width) {
                 this.demolishBuilding(b);
             }

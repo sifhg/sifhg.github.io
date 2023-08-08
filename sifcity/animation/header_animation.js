@@ -23,7 +23,7 @@ function draw() {
 
     
     //Generate house
-    if(Math.random()*30 < 2) {
+    if(Math.random()*30 < 1) {
         // Jumpting glitch: theCity.addBuilding(Math.PI*4/9, "A");
         //theCity.addBuilding(Math.PI*3/4, "A");
         //theCity.addBuilding(Math.PI*3/4, "B");
