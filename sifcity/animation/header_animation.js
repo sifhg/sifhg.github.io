@@ -23,9 +23,9 @@ function draw() {
 
     
     //Generate house
-    if(Math.random()*30 < 1) {
+    if(Math.random()*30 < 2) {
         // Jumpting glitch: theCity.addBuilding(Math.PI*4/9, "A");
-        //theCity.addBuilding(Math.PI*3/4, "A");
+        //theCity.addBuilding(Math.PI*1/4, "B");
         //theCity.addBuilding(Math.PI*3/4, "B");
         theCity.addBuilding(map(aStream.fast, 0, 1, Math.PI/6, Math.PI*5/4), "B");
     }

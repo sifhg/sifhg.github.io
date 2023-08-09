@@ -225,10 +225,11 @@ class City {
     update(speed) {
         this.time += speed;
     }
-    abstract2Concrete(building, pos, p) {
+    abstract2Concrete(building, p) {
+        const MIRROR = building.angle < Math.PI/2;
         const ABSTRACT = building.coordinates;
         const DIMENSIONS = building.dimensions;
-        const ANGLE = building.angle;
+        const ANGLE = (MIRROR) ? building.angle + 2 * ((Math.PI/2) - building.angle): building.angle;
         const PERSPECTIVE_DIST = this.getPerspectiveDistance(this.time - building.birthTime, building.angle, p);
         const POS = {
             x: Math.cos(building.angle) * PERSPECTIVE_DIST + (this.center.x * canvas.width),
@@ -286,7 +287,7 @@ class City {
             y: Math.sin(building.angle) * PERSPECTIVE_DIST + (this.center.y * canvas.height)
         }
 
-        const POINT_COOR = this.abstract2Concrete(building, BUILDING_CENTER, p);
+        const POINT_COOR = this.abstract2Concrete(building, p);
         return [BUILDING_CENTER].concat(POINT_COOR);
     }
     display(p) {
