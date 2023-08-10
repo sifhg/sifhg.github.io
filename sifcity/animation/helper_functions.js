@@ -295,7 +295,7 @@ class City {
         for(let b = 0; b < this.buildings.length; b++) {
             let C = this.getCartesianCoordinates(this.buildings[b], p);
             const TEN_PER = (canvas.height - (this.center.y * canvas.height)) * .1 + (this.center.y * canvas.height);
-            const MAX_ALPHA = 25;
+            const MAX_ALPHA = 12.5;
             let alpha = Math.floor(map(C[0].y, this.center.y * canvas.height, TEN_PER, 0, MAX_ALPHA));
             alpha = (alpha < 0) ? 0 : alpha;
             alpha = (alpha > MAX_ALPHA) ? MAX_ALPHA : alpha;
@@ -351,21 +351,34 @@ class Building {
             }];
         }else if(this.style =="B") {
             return [{
+                x: 0,
+                y: 0,
+                t: 0
+            },{
+                x: 0,
+                y: 0,
+                t: -1
+            },{
+                x: 0,
+                y: -1,
+                t: -1
+            },{
+                x: 0,
+                y: -1,
+                t: 0
+            },{
+                x: 0,
+                y: 0,
+                t: 0
+            },{
                 x: 1,
                 y: 0,
                 t: 0
-            },
-            {
-                x: 0,
+            },{
+                x: 1,
                 y: 0,
-                t: 0
-            },
-            {
-                x: 0,
-                y: 0,
-                t: -.5
-            },
-            {
+                t: -1
+            },{
                 x: 0,
                 y: 0,
                 t: -1
