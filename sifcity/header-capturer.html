@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+
+
+</head>
+<body class="main-header">
+    <header>
+        <nav>
+            <a href="https://sifhg.github.io/sifcity/" target="_top" class="menu-item">Blog</a>
+            <a href="https://sifhg.github.io/sifcity/about-me" target="_top" class="menu-item">About me</a>
+            <a id="current-page" class="data">__Placeholder text__</a>
+        </nav>
+        <script>
+            document.getElementById("current-page").innerText = sessionStorage.getItem("title");
+        </script>
+        <div id="capture" style="padding-bottom: 2rem;">
+            <a href="https://sifhg.github.io/sifcity/" target="_top" class="noLine">
+                <div id="header-cover">
+                    <img id="svg-image" src="cover.svg" alt="SVG Image">
+                    <h1 id="blog-title">Sif City</h1>
+                </div>
+            </a>
+        </div>
+        
+        <p id="description"><i>Where I gather thoughts on the city</i></p>
+        <button id="capture-button">Capture and Save as PNG</button>
+        <script>
+            document.getElementById('capture-button').addEventListener('click', function () {
+                const divToCapture = document.getElementById('header-cover');
+
+                // Set the background color of the div explicitly
+                divToCapture.style.backgroundColor = 'hsl(10, 100%, 97%)'; // Set the desired background color
+
+                // Use html2canvas to render the div content onto a canvas
+                html2canvas(divToCapture).then(function (canvas) {
+                    // Convert the canvas content to a PNG data URL
+                    const pngDataUrl = canvas.toDataURL('image/png');
+
+                    // Create a link and trigger a download
+                    const link = document.createElement('a');
+                    link.href = pngDataUrl;
+                    link.download = 'header.png'; // Change the filename as needed
+
+                    // Clean up: reset the background color after capturing
+                    divToCapture.style.backgroundColor = '';
+
+                    link.click();
+                });
+            });
+
+        </script>
+    </header>
+</body>
+</html>
