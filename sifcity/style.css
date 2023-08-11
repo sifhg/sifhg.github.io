@@ -172,6 +172,11 @@ ol {
     content: counters(item, ".") ". ";
     counter-increment: item;
 }
+.block-quote {
+    padding: 1rem 2rem;
+    text-align: justify;
+    font-size: .9rem;
+}
 
 .content {
     margin-right: 1rem;
