@@ -8,9 +8,6 @@ function resizeHeader() {
     }else {
         HEADER.style.height = "360px";
     }
-    console.log(`Window width: ${window.innerWidth}`);
-    console.log(`Width: ${HEADER.style.width}`);
-    console.log(`Height: ${HEADER.style.height}`);
 }
 addEventListener("DOMContentLoaded", (event) => {
     resizeHeader();
