@@ -18,13 +18,15 @@
     <meta name="robots" content="index,follow">
 </head>
 <body>
-    <embed src="header.html" type="text/html" onbeforeload="updateTitle()"></embed>
+    <embed src="header.html" type="text/html" onbeforeload="updateTitle()" title="Blog header"></embed>
 
-    <h1>Latest Posts</h1>
-    
-    <table id="post-list"></table>
-    <script src="load-posts.js" defer></script>
-    <br><a href="https://sifhg.github.io/sifcity/all-posts" class="menu-item">All posts</a>
+    <main>
+        <h1>Latest Posts</h1>
+        
+        <table id="post-list"></table>
+        <script src="load-posts.js" defer></script>
+        <br><a href="https://sifhg.github.io/sifcity/all-posts" class="menu-item">All posts</a>
+    </main>
     
     <script src="headerAdjuster.js"></script>
     <embed src="all-posts/index.html" type="text/html" class="hidden-element">

@@ -15,7 +15,7 @@
     --dim-ingrid-colour: hsl(160, 75%, 50%);
     --standard-sif-colour: hsl(10, 30%, 10%);
     --special-sif-colour: hsl(0, 45%, 25%);
-    --dim-sif-colour: hsl(10, 50%, 62.5%);
+    --dim-sif-colour: hsl(10, 50%, 47%);
     /* --dim-sif-colour: hsl(10, 50%, 75%); I LIKED THIS COLOUR BETTER, BUT IT MIGHT NOT HAVE ENOUGH CONTRAST*/
     
     background-color: var(--background-colour);
