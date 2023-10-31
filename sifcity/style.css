@@ -177,6 +177,10 @@ ol {
     text-align: justify;
     font-size: .9rem;
 }
+.block-quote .reference {
+    display: block;
+    text-align: right;
+}
 
 .content {
     margin-right: 1rem;
