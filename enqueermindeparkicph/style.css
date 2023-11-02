@@ -1,0 +1,50 @@
+
+:root {
+    font-size: 20px;
+    --h1-size: 2rem;
+    --h2-size: 1.5rem;
+    --h3-size: 1.25rem;
+
+    /* Colours: https://huemint.com/back-gradient-5/#palette=fcf7fd-e32d31-13b7c9-11a877-1c9435-0b2816 */
+    --white: #fcf7fd;
+    --light-purple: #baafb6;
+    --black: hsl(289, 61%, 7%);
+    --dark-purple: #340f25;
+    --attention: #e22c2f;
+
+    --dark-green: #081c0f;
+    --accent-green: #1d9637;
+
+    --accent-blue: #13b6c9;
+    --dark-blue: #074a45;
+    
+    
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+#header {
+    width: 100%;
+    background-color: gray;
+}
+nav {
+    margin: auto;
+    width: 62.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.some {
+    border: 1px solid black;
+}
+
+.container {
+    margin: auto;
+    width: 62.5%;
+    display: grid;
+}
