@@ -2,7 +2,7 @@ function updateGridTemplateColumns() {
     const body = document.querySelector('body');
     const windowWidth = window.innerWidth;
   
-    if (windowWidth >= 1280) {
+    if (windowWidth >= 674) {
       body.style.gridTemplateColumns = "18.75% repeat(3, 1fr) 18.75%";
       for(const DIV of contentDivisions[2]) {
         DIV.style.gridColumn = "span 3";
@@ -10,24 +10,16 @@ function updateGridTemplateColumns() {
       for(const DIV of contentDivisions[1]) {
         DIV.style.gridColumn = "span 2";
       }
-    } else if (windowWidth >= 601) {
-      body.style.gridTemplateColumns = "18.75% repeat(2, 1fr) 18.75%";
-      for(const DIV of contentDivisions[2]) {
-        DIV.style.gridColumn = "span 2";
-      }
-      for(const DIV of contentDivisions[1]) {
-        DIV.style.gridColumn = "span 2";
+      for(const DIV of contentDivisions[0]) {
+        DIV.style.gridColumn = "span 1";
       }
     } else {
       body.style.gridTemplateColumns = "18.75% 1fr 18.75%";
-      for(const DIV of contentDivisions[2]) {
-        DIV.style.gridColumn = "span 1";
-      }
-      for(const DIV of contentDivisions[1]) {
+      for(const DIV of CONTENT) {
         DIV.style.gridColumn = "span 1";
       }
     }
-  }
+}
 
 function getEndColumn(element) {
     const computedStyle = window.getComputedStyle(element);
