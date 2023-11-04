@@ -26,10 +26,8 @@
 
 body {
     margin: 0%;
-
     display: grid;
-    grid-template-columns: 18.75% repeat(auto-fit, minmax(50px, 3fr)) 18.75%;
-    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    grid-template-columns: 18.75% repeat(auto-fit, minmax(256px,  1fr)) 18.75%;
     grid-template-rows: repeat(10, minmax(50px, 1fr));
     grid-gap: 1rem;
     padding: 1rem;
