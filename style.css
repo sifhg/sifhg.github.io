@@ -7,9 +7,9 @@
     --h3-size: 1.25rem;
 
     /* Colour palette: https://huemint.com/website-2/#palette=f7f4f3-2a2927-3d5c52-f60034 */
-    --background-colour: #f7f4f3;
-    --text-colour: #2a2927;
-    --header-colour: #3d5c52;
+    --background-colour: #faf5f6;
+    --text-colour: #433645;
+    --header-colour: #433645;
     --link-colour: #f60034;
     
     background-color: var(--background-colour);
