@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<span id="placeholder"></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching Tanks Lite...</title>
+</head>
+
+<body>
+    <span id="original-body">
+        <h1>Fetching Tanks Lite...</h1>
+        <p>Here the Tanks will show!</p>
+    </span>
+    <script>
+        function parseForCSS(htmlString, user, repo, filePath, branch = 'main') {
+            const PARSER = new DOMParser();
+            const doc = PARSER.parseFromString(htmlString, 'text/html');
+            const CSSLinks = doc.querySelectorAll('link[rel="stylesheet"][href$=".css"]');
+            for(LINK in CSSLinks) {
+                //FETCH THE TEXT CONTENT OF THE REFERENCE USING THE GETGITCONTENT FUNCTION
+                const STYLE_ELEMENT = doc.createElement('style');
+            }
+        }
+
+        function getGitContent(username, repo, filePath, branch = 'main') {
+            const rawUrl = `https://raw.githubusercontent.com/${username}/${repo}/${branch}/${filePath}`;
+
+            return fetch(rawUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Failed to fetch ${rawUrl}: ${response.status} ${response.statusText}`);
+                    }
+                    let htmlContent = response.text();
+                    return htmlContent;
+                })
+                .catch(error => {
+                    throw new Error(`Error fetching raw file: ${error}`);
+                });
+        }
+
+        document,addEventListener('DOMContentLoaded', () => {
+            const PLACEHOLDER = document.getElementById('placeholder');
+            const THIS_BODY = document.getElementById('original-body');
+            
+            console.log(THIS_BODY);
+
+            getGitContent('sifhg', 'api-test', 'index.html')
+            .then(data => {
+                PLACEHOLDER.outerHTML = data;
+                console.log('Raw file content:', data);
+                THIS_BODY.style.display = 'none';
+            })
+            .catch(error => {
+                console.error(error.message);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
