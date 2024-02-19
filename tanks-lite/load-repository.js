@@ -114,6 +114,7 @@ document,addEventListener('DOMContentLoaded', () => {
         console.log(paths);
         THIS_BODY.style.display = 'none';
         interpolateCSS(USER, TARGET_REPOSITORY, paths.CSS);
+        interpolateJS(USER, TARGET_REPOSITORY, paths.JS);
     })
     .catch(error => {
         console.error(error.message);
