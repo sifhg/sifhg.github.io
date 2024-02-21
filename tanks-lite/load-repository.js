@@ -89,8 +89,12 @@ function interpolateJS(username, repo, jsPaths, branch = 'main') {
     for(let e = 0; e < SCRIPT_ELEMENTS.length; e++) {
         getGitContent(username, repo, PATHS[e])
         .then(data => {
-            SCRIPT_ELEMENTS[e].removeAttribute('src');
-            SCRIPT_ELEMENTS[e].textContent = data;
+            const SCRIPT_CLONE = SCRIPT_ELEMENTS[e].cloneNode(true);
+            SCRIPT_CLONE.removeAttribute('src');
+            SCRIPT_CLONE.text = data;
+            const PARENT = SCRIPT_ELEMENTS[e].parentNode;
+            PARENT.removeChild(SCRIPT_ELEMENTS[e]);
+            PARENT.appendChild(SCRIPT_CLONE);
         })
         .catch(error => {
             console.error(error.message);
