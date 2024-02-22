@@ -52,7 +52,7 @@ function extractFilePaths(htmlElement) {
  * @param {object} scriptElement Element to be cloned
  * @returns {object} A clone of the argument
  */
-function cloneScriptElement(scriptElement, username, repo, jsPath, branch = 'main') {
+function cloneScriptElement(scriptElement, username, repo, jsPath = null, branch = 'main') {
     if (!(scriptElement instanceof HTMLScriptElement)) {
         throw new Error("First argument must be a HTML script element.");
     }
@@ -65,7 +65,7 @@ function cloneScriptElement(scriptElement, username, repo, jsPath, branch = 'mai
     }
 
     args = [...arguments];
-    if(args.length != 1 && args.length != 4 && args.length != 5) {
+    if(args.length != 1 && args.length != 3 && args.length != 4 && args.length != 5) {
         throw new Error("Arguments must match (HTMLScriptElement, string, string, string, string?) or (HTMLScriptElement)");
     }
     if(args.length > 1) {
@@ -79,6 +79,17 @@ function cloneScriptElement(scriptElement, username, repo, jsPath, branch = 'mai
     }
 
     SCRIPT_CLONE.text = scriptElement.text;
+
+    if(SCRIPT_CLONE.type == 'importmap') {
+        if(args.length < 2) {
+            throw new Error("Arguments about the repository must be provided when cloning script elements of type 'importmap'. Please provide the arguments: (scriptElement, username, repo, jsPath, branch?)");
+        }
+        SCRIPT_CLONE.removeAttribute('src');
+        const ABSOLUTE_PATH = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/`;
+        SCRIPT_CLONE.text = SCRIPT_CLONE.text.replace(/":\s*"/g, `": "${ABSOLUTE_PATH}`);
+        SCRIPT_CLONE.text = SCRIPT_CLONE.text.replace(/\/\//g, '/');
+    }
+
     return SCRIPT_CLONE;
 }
 
@@ -121,6 +132,15 @@ function interpolateJS(username, repo, jsPaths, branch = 'main') {
     if(PATHS.length != SCRIPT_ELEMENTS.length) {
         throw new Error(`Number of JS paths (${PATHS.length}) does not correspond to the number of link elements to .js files (${JS_LINKS.length}) in the target document.`);
     }
+
+    const IMPORTMAPS = document.getElementById("placeholder").querySelectorAll('script[type="importmap"]');
+    for(const MAP of IMPORTMAPS) {
+        const MAP_CLONE = cloneScriptElement(MAP, username, repo);
+        const PARENT = MAP.parentNode;
+        PARENT.removeChild(MAP);
+        PARENT.appendChild(MAP_CLONE);
+    }
+
     for(let e = 0; e < SCRIPT_ELEMENTS.length; e++) {
         const SCRIPT_CLONE = cloneScriptElement(SCRIPT_ELEMENTS[e], username, repo, PATHS[e]);
         const PARENT = SCRIPT_ELEMENTS[e].parentNode;
@@ -128,12 +148,6 @@ function interpolateJS(username, repo, jsPaths, branch = 'main') {
         PARENT.appendChild(SCRIPT_CLONE);
     }
 
-    const IMPORTMAPS = document.getElementById("placeholder").querySelectorAll('script[type="importmap"]');
-    for(const MAP of IMPORTMAPS) {
-        const ABSOLUTE_PATH = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/`;
-        MAP.text = MAP.text.replace(/":\s*"/g, `": ${ABSOLUTE_PATH}`);
-        MAP.text = MAP.text.replace(/\/\//g, '/');
-    }
     console.log(IMPORTMAPS.length);
 }
 
