@@ -49,6 +49,44 @@ function extractFilePaths(htmlElement) {
 
 /**
  * 
+ * @param {object} scriptElement Element to be cloned
+ * @returns {object} A clone of the argument
+ */
+function cloneScriptElement(scriptElement, username, repo, jsPaths, branch = 'main') {
+    if (!(scriptElement instanceof HTMLScriptElement)) {
+        throw new Error("First argument must be a HTML script element.");
+    }
+
+    const SCRIPT_CLONE = document.createElement('script');
+
+    for (var i = 0; i < scriptElement.attributes.length; i++) {
+        var attribute = scriptElement.attributes[i];
+        SCRIPT_CLONE.setAttribute(attribute.name, attribute.value);
+    }
+
+    args = [...arguments];
+    console.log(args.length);
+    if(args.length != 1 && args.length != 4 && args.length != 5) {
+        throw new Error("Arguments must match (HTMLScriptElement, string, string, string, string?) or (HTMLScriptElement)");
+    }
+    if(args.length > 1) {
+        for(let a = 1; a < args.length; a++) {
+            if(typeof args[a]!= 'string') {
+                throw new Error("The arugments, username, repo, jsPaths, branch, must be of type string");
+            }
+        }
+        const rawUrl = `https://raw.githubusercontent.com/${username}/${repo}/${branch}/${jsPaths}`;
+        const SRC_ATTRIBUTE = SCRIPT_CLONE.getAttribute('src');
+        SCRIPT_CLONE.setAttribute('src', `https://raw.githubusercontent.com/${username}/${repo}/${branch}/${filePath}/${SRC_ATTRIBUTE}`);
+    }
+
+    SCRIPT_CLONE.text = scriptElement.text;
+
+    return SCRIPT_CLONE;
+}
+
+/**
+ * 
  * @param {string} username is the username of the owner of the repository.
  * @param {string} repo is the name of the repository.
  * @param {string[]} cssPaths is an array of paths to the files to be fetched.
@@ -89,7 +127,7 @@ function interpolateJS(username, repo, jsPaths, branch = 'main') {
     for(let e = 0; e < SCRIPT_ELEMENTS.length; e++) {
         getGitContent(username, repo, PATHS[e])
         .then(data => {
-            const SCRIPT_CLONE = SCRIPT_ELEMENTS[e].cloneNode(true);
+            const SCRIPT_CLONE = cloneScriptElement(SCRIPT_ELEMENTS[e]);
             SCRIPT_CLONE.removeAttribute('src');
             SCRIPT_CLONE.text = data;
             const PARENT = SCRIPT_ELEMENTS[e].parentNode;
