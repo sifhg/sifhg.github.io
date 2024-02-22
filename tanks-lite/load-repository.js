@@ -52,7 +52,7 @@ function extractFilePaths(htmlElement) {
  * @param {object} scriptElement Element to be cloned
  * @returns {object} A clone of the argument
  */
-function cloneScriptElement(scriptElement, username, repo, jsPaths, branch = 'main') {
+function cloneScriptElement(scriptElement, username, repo, jsPath, branch = 'main') {
     if (!(scriptElement instanceof HTMLScriptElement)) {
         throw new Error("First argument must be a HTML script element.");
     }
@@ -72,12 +72,11 @@ function cloneScriptElement(scriptElement, username, repo, jsPaths, branch = 'ma
     if(args.length > 1) {
         for(let a = 1; a < args.length; a++) {
             if(typeof args[a]!= 'string') {
-                throw new Error("The arugments, username, repo, jsPaths, branch, must be of type string");
+                throw new Error("The arugments, username, repo, jsPath, branch, must be of type string");
             }
         }
-        const rawUrl = `https://raw.githubusercontent.com/${username}/${repo}/${branch}/${jsPaths}`;
-        const SRC_ATTRIBUTE = SCRIPT_CLONE.getAttribute('src');
-        SCRIPT_CLONE.setAttribute('src', `https://raw.githubusercontent.com/${username}/${repo}/${branch}/${filePath}/${SRC_ATTRIBUTE}`);
+        const RAW_URL = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/${jsPath}`;
+        SCRIPT_CLONE.setAttribute('src', RAW_URL);
     }
 
     SCRIPT_CLONE.text = scriptElement.text;
@@ -125,30 +124,21 @@ function interpolateJS(username, repo, jsPaths, branch = 'main') {
         throw new Error(`Number of JS paths (${PATHS.length}) does not correspond to the number of link elements to .js files (${JS_LINKS.length}) in the target document.`);
     }
     for(let e = 0; e < SCRIPT_ELEMENTS.length; e++) {
-        getGitContent(username, repo, PATHS[e])
-        .then(data => {
-            const SCRIPT_CLONE = cloneScriptElement(SCRIPT_ELEMENTS[e]);
-            SCRIPT_CLONE.removeAttribute('src');
-            SCRIPT_CLONE.text = data;
-            const PARENT = SCRIPT_ELEMENTS[e].parentNode;
-            PARENT.removeChild(SCRIPT_ELEMENTS[e]);
-            PARENT.appendChild(SCRIPT_CLONE);
-        })
-        .catch(error => {
-            console.error(error.message);
-        })
+        const SCRIPT_CLONE = cloneScriptElement(SCRIPT_ELEMENTS[e], username, repo, PATHS[e]);
+        const PARENT = SCRIPT_ELEMENTS[e].parentNode;
+        PARENT.removeChild(SCRIPT_ELEMENTS[e]);
+        PARENT.appendChild(SCRIPT_CLONE);
     }
 }
 
 let paths = [];
 const USER = 'sifhg';
-const TARGET_REPOSITORY = 'api-test';
+const TARGET_REPOSITORY = 'tanks_lite';
 const INDEX_PATH = 'index.html';
-document,addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const PLACEHOLDER = document.getElementById('placeholder');
     const THIS_BODY = document.getElementById('original-body');
     
-
     getGitContent(USER, TARGET_REPOSITORY, INDEX_PATH)
     .then(data => {
         PLACEHOLDER.innerHTML = data;
