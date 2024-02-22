@@ -59,13 +59,12 @@ function cloneScriptElement(scriptElement, username, repo, jsPath, branch = 'mai
 
     const SCRIPT_CLONE = document.createElement('script');
 
-    for (var i = 0; i < scriptElement.attributes.length; i++) {
+    for(let i = 0; i < scriptElement.attributes.length; i++) {
         var attribute = scriptElement.attributes[i];
         SCRIPT_CLONE.setAttribute(attribute.name, attribute.value);
     }
 
     args = [...arguments];
-    console.log(args.length);
     if(args.length != 1 && args.length != 4 && args.length != 5) {
         throw new Error("Arguments must match (HTMLScriptElement, string, string, string, string?) or (HTMLScriptElement)");
     }
@@ -80,7 +79,6 @@ function cloneScriptElement(scriptElement, username, repo, jsPath, branch = 'mai
     }
 
     SCRIPT_CLONE.text = scriptElement.text;
-
     return SCRIPT_CLONE;
 }
 
@@ -129,6 +127,14 @@ function interpolateJS(username, repo, jsPaths, branch = 'main') {
         PARENT.removeChild(SCRIPT_ELEMENTS[e]);
         PARENT.appendChild(SCRIPT_CLONE);
     }
+
+    const IMPORTMAPS = document.getElementById("placeholder").querySelectorAll('script[type="importmap"]');
+    for(const MAP of IMPORTMAPS) {
+        const ABSOLUTE_PATH = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/`;
+        MAP.text = MAP.text.replace(/":\s*"/g, `": ${ABSOLUTE_PATH}`);
+        MAP.text = MAP.text.replace(/\/\//g, '/');
+    }
+    console.log(IMPORTMAPS.length);
 }
 
 let paths = [];
