@@ -74,8 +74,9 @@ function cloneScriptElement(scriptElement, username, repo, jsPath = null, branch
                 throw new Error("The arugments, username, repo, jsPath, branch, must be of type string");
             }
         }
-        const RAW_URL = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/${jsPath}`;
-        SCRIPT_CLONE.setAttribute('src', RAW_URL);
+        let rawURL = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/${jsPath}`;
+        rawURL = rawURL.replace(/\/\//g, '/');
+        SCRIPT_CLONE.setAttribute('src', rawURL);
     }
 
     SCRIPT_CLONE.text = scriptElement.text;
