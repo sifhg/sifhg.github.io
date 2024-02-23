@@ -6,11 +6,11 @@
     --h2-size: 1.5rem;
     --h3-size: 1.25rem;
 
-    /* Colour palette: https://huemint.com/website-2/#palette=f7f4f3-2a2927-3d5c52-f60034 */
-    --background-colour: #faf5f6;
-    --text-colour: #433645;
-    --header-colour: #433645;
-    --link-colour: #f60034;
+    /* https://huemint.com/website-magazine/#palette=f4f3ee-f4f3ee-512b7e-de2338 */
+    --background-colour: #f4f3ee;
+    --text-colour: hsl(267, 49%, 17%);
+    --header-colour: hsl(270, 86%, 21%);
+    --link-colour: #de2338;
     
     background-color: var(--background-colour);
     color: var(--text-colour);
