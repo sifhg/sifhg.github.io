@@ -100,10 +100,11 @@ function cloneScriptElement(scriptElement, username, repo, jsPath = null, branch
  * @param {string} repo is the name of the repository.
  * @param {string[]} cssPaths is an array of paths to the files to be fetched.
  * @param {string} branch (optional) is set to 'main' by default and tells which branch of the repository is being fetched.
+ * @param {HTMLElement} container (optional) The HTML element in which the interpolation takes place. Default document.
  */
-function interpolateCSS(username, repo, cssPaths, branch = 'main') {
+function interpolateCSS(username, repo, cssPaths, container, branch = 'main') {
     const PATHS = cssPaths;
-    const CSS_LINKS = document.getElementById("placeholder").querySelectorAll('link[rel="stylesheet"][href$=".css"]');
+    const CSS_LINKS = container.querySelectorAll('link[rel="stylesheet"][href$=".css"]');
     if(PATHS.length != CSS_LINKS.length) {
         throw new Error(`Number of CSS paths (${PATHS.length}) does not correspond to the number of link elements to .css files (${CSS_LINKS.length}) in the target document.`);
     }
@@ -126,15 +127,16 @@ function interpolateCSS(username, repo, cssPaths, branch = 'main') {
  * @param {string} repo is the name of the repository.
  * @param {string[]} jsPaths is an array of paths to the files to be fetched.
  * @param {string} branch (optional) is set to 'main' by default and tells which branch of the repository is being fetched.
+ * @param {HTMLElement} container (optional) The HTML element in which the interpolation takes place. Default document.
  */
-function interpolateJS(username, repo, jsPaths, branch = 'main') {
+function interpolateJS(username, repo, jsPaths, container, branch = 'main') {
     const PATHS = jsPaths;
-    const SCRIPT_ELEMENTS = document.getElementById("placeholder").querySelectorAll('script[src]');
+    const SCRIPT_ELEMENTS = container.querySelectorAll('script[src]');
     if(PATHS.length != SCRIPT_ELEMENTS.length) {
         throw new Error(`Number of JS paths (${PATHS.length}) does not correspond to the number of link elements to .js files (${JS_LINKS.length}) in the target document.`);
     }
 
-    const IMPORTMAPS = document.getElementById("placeholder").querySelectorAll('script[type="importmap"]');
+    const IMPORTMAPS = container.querySelectorAll('script[type="importmap"]');
     for(const MAP of IMPORTMAPS) {
         const MAP_CLONE = cloneScriptElement(MAP, username, repo);
         const PARENT = MAP.parentNode;
@@ -156,18 +158,22 @@ let paths = [];
 const USER = 'sifhg';
 const TARGET_REPOSITORY = 'tanks_lite';
 const INDEX_PATH = 'index.html';
+const BRANCH = 'main';
 document.addEventListener('DOMContentLoaded', () => {
     const PLACEHOLDER = document.getElementById('placeholder');
     const THIS_BODY = document.getElementById('original-body');
     
     getGitContent(USER, TARGET_REPOSITORY, INDEX_PATH)
     .then(data => {
-        PLACEHOLDER.innerHTML = data;
-        paths = extractFilePaths(PLACEHOLDER);
+        let loadedPage = document.createElement('span');
+        loadedPage.setAttribute('id', 'placeholder');
+        loadedPage.innerHTML = data;
+        paths = extractFilePaths(loadedPage);
         console.log(paths);
+        interpolateCSS(USER, TARGET_REPOSITORY, paths.CSS, loadedPage);
+        interpolateJS(USER, TARGET_REPOSITORY, paths.JS, loadedPage);
+        PLACEHOLDER.replaceWith(loadedPage);
         THIS_BODY.style.display = 'none';
-        interpolateCSS(USER, TARGET_REPOSITORY, paths.CSS);
-        interpolateJS(USER, TARGET_REPOSITORY, paths.JS);
     })
     .catch(error => {
         console.error(error.message);
