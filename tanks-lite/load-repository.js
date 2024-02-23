@@ -165,15 +165,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     getGitContent(USER, TARGET_REPOSITORY, INDEX_PATH)
     .then(data => {
-        let loadedPage = document.createElement('span');
+        let loadedPage = document.createElement('html');
         loadedPage.setAttribute('id', 'placeholder');
         loadedPage.innerHTML = data;
+        loadedPage.outerHTML = loadedPage.querySelector('html');
         paths = extractFilePaths(loadedPage);
         console.log(paths);
         interpolateCSS(USER, TARGET_REPOSITORY, paths.CSS, loadedPage);
         interpolateJS(USER, TARGET_REPOSITORY, paths.JS, loadedPage);
-        PLACEHOLDER.replaceWith(loadedPage);
-        THIS_BODY.style.display = 'none';
+        const PAGE_HTML = document.querySelector('html');
+        const PARENT_HTML = PAGE_HTML.parentNode;
+        PARENT_HTML.removeChild(PAGE_HTML);
+        PARENT_HTML.appendChild(loadedPage);
+        // PLACEHOLDER.replaceWith(loadedPage);
+        // THIS_BODY.style.display = 'none';
     })
     .catch(error => {
         console.error(error.message);
