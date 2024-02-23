@@ -75,7 +75,7 @@ function cloneScriptElement(scriptElement, username, repo, jsPath = null, branch
             }
         }
         let rawURL = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/${jsPath}`;
-        rawURL = rawURL.replace(/\/\//g, '/');
+        rawURL = rawURL.replace(/([^:])\/\//g, '$1/');
         SCRIPT_CLONE.setAttribute('src', rawURL);
     }
 
@@ -88,7 +88,7 @@ function cloneScriptElement(scriptElement, username, repo, jsPath = null, branch
         SCRIPT_CLONE.removeAttribute('src');
         const ABSOLUTE_PATH = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${branch}/`;
         SCRIPT_CLONE.text = SCRIPT_CLONE.text.replace(/":\s*"/g, `": "${ABSOLUTE_PATH}`);
-        SCRIPT_CLONE.text = SCRIPT_CLONE.text.replace(/\/\//g, '/');
+        SCRIPT_CLONE.text = SCRIPT_CLONE.text.replace(/([^:])\/\//g, '$1/');
     }
 
     return SCRIPT_CLONE;
