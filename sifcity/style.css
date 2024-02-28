@@ -222,13 +222,19 @@ ol {
 /* ILLUSTRATIONS */
 .right {
     float: right;
+    max-width: 100%;
+    margin: 2em;
 }
 .left {
     float: left;
+    max-width: 100%;
+    margin: 2em;
 }
 .middle {
     display: block;
     text-align: center;
+    max-width: 100%;
+    margin: 2em;
 }
   
 
