@@ -233,7 +233,7 @@ ol {
 .middle {
     margin: auto;
     width: 75%;
-    padding: 2em;
+    padding: 1em 0;
     display: block;
     text-align: center;
 }
