@@ -172,15 +172,28 @@ ol {
     content: counters(item, ".") ". ";
     counter-increment: item;
 }
+blockquote {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    text-align: justify;
+    font-size: .9rem;
+    footer {
+        text-align: right;
+    }
+}
 .block-quote {
     padding: 1rem 2rem;
     text-align: justify;
     font-size: .9rem;
 }
-.block-quote .reference {
+.reference {
+    padding: 0px;
+    margin: 0px 0px 2rem 0px;
     display: block;
     text-align: right;
+    font-size: .9rem;
 }
+
 
 .content {
     margin-right: 1rem;
@@ -272,7 +285,7 @@ td>p {
     visibility: hidden;
 }
 
-footer {
+#about-me-footer {
     background-color: var(--standard-ingrid-colour);
     color: var(--dim-sif-colour);
     padding: 0;
