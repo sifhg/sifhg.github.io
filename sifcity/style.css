@@ -179,6 +179,9 @@ blockquote {
     font-size: .9rem;
     footer {
         text-align: right;
+        cite {
+            font-style: normal;
+        }
     }
 }
 .block-quote {
