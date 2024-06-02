@@ -230,6 +230,9 @@ blockquote {
 #references li {
     text-indent: -2em;
     padding-left: 2em;
+    a {
+        overflow-wrap: anywhere;
+    }
 }
 
 /* ILLUSTRATIONS */
