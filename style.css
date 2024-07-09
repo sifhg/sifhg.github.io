@@ -7,10 +7,10 @@
     --h3-size: 1.25rem;
 
     /* https://huemint.com/website-magazine/#palette=f4f3ee-f4f3ee-512b7e-de2338 */
-    --background-colour: #f4f3ee;
-    --text-colour: hsl(267, 49%, 17%);
-    --header-colour: hsl(270, 86%, 21%);
-    --link-colour: #de2338;
+    --background-colour: hsl(50, 21%, 97%);
+    --text-colour: hsl(267, 49%, 12.5%);
+    --header-colour: hsl(270, 86%, 18%);
+    --link-colour: hsl(353, 74%, 37%);
     
     background-color: var(--background-colour);
     color: var(--text-colour);
