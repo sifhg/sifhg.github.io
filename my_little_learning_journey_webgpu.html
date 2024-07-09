@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./icon.png" />
+    <meta name="robots" content="index,follow" />
+
+    <!--  General meta data  -->
+    <title>My Little Learning Journey: WebGPU</title>
+    <meta name="author" content="Sif Høg-Getgood" />
+    <meta name="description" content="[DESCRIPTION]" />
+
+    <!--  For social Media  -->
+    <meta
+      property="og:url"
+      content="https://sifhg.github.io/my_little_learning_journey_webgpu.html"
+    />
+    <meta property="og:type" content="blog" />
+    <meta
+      property="article:author"
+      content="https://www.linkedin.com/in/sif-høg"
+    />
+    <meta property="og:title" content="My Little Learning Journey: WebGPU" />
+    <meta property="og:description" content="[SOCIAL MEDIA DESCRIPTION]" />
+  </head>
+  <body>
+    <main>
+      <h1 id="my-little-learning-journey-webgpu">
+        My Little Learning Journey: WebGPU
+      </h1>
+      <p>Written by <em>Sif Høg-Getgood</em>, 10/07/2024</p>
+      <p>
+        I have been working on making a little game – a 2D tank interpretation
+        of World of Tanks – and most recently, I’ve been working on a desktop
+        app, where you can design levels in a CAD environment. It’s a great
+        learning experience! It&#39;s no secret that I want to build a game
+        engine, and all the knowledge I gain while developing this level design
+        app, I call her
+        <a
+          href="https://github.com/sifhg/tanks_lite/tree/main/battleground-builder"
+          >Battleground Builder</a
+        >, will be invaluable for that.
+      </p>
+      <p>
+        So the core functionality is to add instances of assets to a stage, move
+        them, rotate them, and scale them. Each asset has paths of vectors
+        describing its position and shape. Some assets have more vectors than
+        others, and every time the user performs an action (move, rotate, or
+        move), the CPU recalculates every element of every vector in every path
+        in every asset. I didn’t like the idea of the user tormenting their CPU
+        performing so many calculations if they create a level with a lot of
+        assets. So, I decided to learn how to utilize the GPU to perform those
+        calculations: more specifically WebGPU, WebGL’s successor, so modern
+        that a lot of browsers still don’t support it. The lack of support could
+        be an issue but Battleground Builder is a Electron app, which means it
+        installs an instance of Chromium which happens to support it so all is
+        good.
+      </p>
+      <h2 id="google-your-first-webgpu-app">Google: Your first WebGPU app</h2>
+      <p>
+        So I went to
+        <a href="https://codelabs.developers.google.com/your-first-webgpu-app#0"
+          >Google’s codelab course for learning WebGPU.</a
+        >
+        This course seemed promising in the beginning; the only requirement was
+        knowledge of HTML, JavaScript, and Chrome DevTool, not to forget a
+        browser that supports WebGPU. That sounded like no issue so I was on
+        board. I followed it closely but the further I dived into the course the
+        more terms were introduced that I just struggled to make sense of. I’ve
+        never done GPU computing before, so there were so many concepts I wasn’t
+        aware of, and even if I tried to reread the parts about those concepts,
+        I couldn’t comprehend it. I did manage to draw some graphics though, but
+        I couldn’t make sense of most of the code. If your browser supports it,
+        have a look at these pretty colours and shapes:<br />[What I managed to
+        create using]
+      </p>
+      <p>
+        I gave up on this when I got to chapter 5. Though I couldn’t grasp all
+        the content of this though, I did get a sense of how GPU computations
+        work. I figured that the computations themselves were carried out by
+        programs called shaders that can calculate positions on the screen
+        (vertex shaders) and colours of each pixel (fragment shaders), and do it
+        all in parallel.
+      </p>
+      <h2 id="-webgpu-for-beginners-"><strong>WebGPU for Beginners</strong></h2>
+      <p>
+        I moved on trying a new resource that was
+        <a
+          href="https://www.youtube.com/playlist?list=PLn3eTxaOtL2Ns3wkxdyS3CiqkJuwQdZzn"
+          >a youtube video series called WebGPU for Beginners</a
+        >. Good resource, but it would also show it was not quite what I was
+        looking for; I’m quite amazed by this YouTuber, being able to release
+        learning resources so quickly after the technology came out. The videos
+        on this channel,
+        <a href="https://www.youtube.com/@GetIntoGameDev">GetIntoGameDev</a>,
+        gave me the impression that Andres, who’s behind the channel, has a deep
+        passion for graphics programming, and for teaching it. If you are
+        interested in next gen graphic libraries such as DirectX 12, Vulkan, and
+        Metal, I’d highly encourage you to check out the channel.
+      </p>
+      <p>
+        Andrew took good time explaining the fundamental principles, and I felt
+        like I managed to grasp concepts like pipeline, renderer, and the
+        language WGSL better from these videos.
+      </p>
+      <p>Before I stopped, I managed to make this colourful triangle.</p>
+      <p>[]</p>
+      <p>
+        Why did I stop here? For two reason. 1) These videos were for beginners,
+        and even though I’m a beginner, they were for a different kind of
+        beginners. These videos were for people that already had experience in
+        GPU programming, but not so much in JS and Node.JS. I was the other way
+        I around: I had plenty of experience in JS making user interfaces, but I
+        had never worked with anything that resembled a GPU library. And 2) I
+        realized I was specifically learning graphics. What I wanted to do was
+        performing matrix computations in parallel. I imagine that most people
+        looking into GPU libraries do it to do, well, graphic processing, and
+        for such a young library as WebGPU, I don’t know if I can really expect
+        many reasoureces to be out for the learning WebGPU for the purpose of
+        non-graphic computations.
+      </p>
+      <h1 id="webgpu-fundamentals">WebGPU Fundamentals</h1>
+      <p>
+        So looking for something specifically teaching WebGPU for parallel
+        computations, I found
+        <a
+          href="https://webgpufundamentals.org/webgpu/lessons/webgpu-fundamentals.html"
+          >this is a website dedicated to teaching WebGPU</a
+        >, written by <a href="https://github.com/greggman">Gregg Tavares</a>. I
+        started from the beginning beginning, trying to solidify my undersanding
+        of the fundamentals again, skipped the part about graphics (vertex and
+        fragment shaders) and jumped directly to
+        <a
+          href="https://webgpufundamentals.org/webgpu/lessons/webgpu-fundamentals.html#a-run-computations-on-the-gpu"
+          >the precious compute shaders</a
+        >. I’ve only worked with this today, but I feel pretty certain I’ve
+        finally found the resource teaching me what I want to learn.
+      </p>
+      <p>See this!</p>
+      <p>[]</p>
+      <p>
+        I know it looks less impressive. I could quikly have made this vector
+        scalar with a simple script, but this is using the GPU and it calculates
+        everything i parallel; I'm proud of this, and I’m looking forward to get
+        a better hang of compute shaders, so I can use them for big matrix
+        calculations in Battleground Builder.
+      </p>
+    </main>
+  </body>
+</html>
