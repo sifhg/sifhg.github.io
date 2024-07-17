@@ -67,60 +67,59 @@
         >
         This course seemed promising in the beginning; the only requirement was
         knowledge of HTML, JavaScript, and Chrome DevTool, not to forget a
-        browser that supports WebGPU. That sounded like no issue so I was on
-        board. I followed it closely but the further I dived into the course the
-        more terms were introduced that I just struggled to make sense of. I’ve
-        never done GPU computing before, so there were so many concepts I wasn’t
-        aware of, and even if I tried to reread the parts about those concepts,
-        I couldn’t comprehend it. I did manage to draw some graphics though, but
-        I couldn’t make sense of most of the code. If your browser supports it,
-        have a look at these pretty colours and shapes:<br />[What I managed to
-        create using]
+        browser that supports WebGPU. That didn't sound like an issue, so I was
+        on board. I followed it closely but the further I dived into the course,
+        the more terms were introduced that I just struggled to make sense of.
+        I’ve never done GPU computing before, so there were quite a few concepts
+        I wasn’t aware of; and even when I reread the parts about those
+        concepts, the course didn't manage to introduce them in a language that
+        made sense to someone new to the topic. I did manage to draw some
+        graphics though, but I couldn’t make sense of most of the code. If your
+        browser supports it, have a look at these pretty colours and shapes:<br />[What
+        I managed to create using]
       </p>
       <p>
-        I gave up on this when I got to chapter 5. Though I couldn’t grasp all
-        the content of this though, I did get a sense of how GPU computations
-        work. I figured that the computations themselves were carried out by
-        programs called shaders that can calculate positions on the screen
-        (vertex shaders) and colours of each pixel (fragment shaders), and do it
-        all in parallel.
+        I gave up on this when I got to chapter 5. Though I didn't grasp all the
+        content of this, I did get a sense of how GPU computations work. I
+        figured that the computations themselves were carried out by programs
+        called <i>shaders</i> that can calculate positions on the screen (vertex
+        shaders) and colours of each pixel (fragment shaders), and do it all in
+        parallel.
       </p>
       <h2 id="-webgpu-for-beginners-"><strong>WebGPU for Beginners</strong></h2>
       <p>
         I moved on trying a new resource that was
         <a
           href="https://www.youtube.com/playlist?list=PLn3eTxaOtL2Ns3wkxdyS3CiqkJuwQdZzn"
-          >a youtube video series called WebGPU for Beginners</a
-        >. Good resource, but it would also show it was not quite what I was
-        looking for; I’m quite amazed by this YouTuber, being able to release
-        learning resources so quickly after the technology came out. The videos
-        on this channel,
+          >a YouTube video series called WebGPU for Beginners</a
+        >. While I’m quite amazed by this YouTuber, being able to release
+        learning resources so quickly after the technology was released, this
+        series, however, would show that it was not quite what I was looking
+        for. The videos on this channel,
         <a href="https://www.youtube.com/@GetIntoGameDev">GetIntoGameDev</a>,
-        gave me the impression that Andres, who’s behind the channel, has a deep
+        gave me the impression that Andrew, who’s behind the channel, has a deep
         passion for graphics programming, and for teaching it. If you are
-        interested in next gen graphic libraries such as DirectX 12, Vulkan, and
+        interested in next-gen graphic libraries such as DirectX 12, Vulkan, and
         Metal, I’d highly encourage you to check out the channel.
       </p>
       <p>
         Andrew took good time explaining the fundamental principles, and I felt
         like I managed to grasp concepts like pipeline, renderer, and the
-        language WGSL better from these videos.
+        language <i>WGSL</i> better from these videos.
       </p>
       <p>Before I stopped, I managed to make this colourful triangle.</p>
       <p>[]</p>
       <p>
-        Why did I stop here? For two reason. 1) These videos were for beginners,
-        and even though I’m a beginner, they were for a different kind of
-        beginners. These videos were for people that already had experience in
-        GPU programming, but not so much in JS and Node.JS. I was the other way
-        I around: I had plenty of experience in JS making user interfaces, but I
-        had never worked with anything that resembled a GPU library. And 2) I
-        realized I was specifically learning graphics. What I wanted to do was
-        performing matrix computations in parallel. I imagine that most people
-        looking into GPU libraries do it to do, well, graphic processing, and
-        for such a young library as WebGPU, I don’t know if I can really expect
-        many reasoureces to be out for the learning WebGPU for the purpose of
-        non-graphic computations.
+        I stopped following these videos herefor two reasons. 1) The videos were
+        geared towards beginners who already had experience in GPU programming,
+        but not so much in JavaScript and Node.js. I was the opposite – I had
+        plenty of experience in creating user interfaces with JavaScript, but
+        had never worked with anything resembling a GPU library. And 2) I
+        realised I was specifically learning about graphics. What I wanted to do
+        was perform matrix computations in parallel. I imagine that most people
+        looking into GPU libraries do so for graphic processing, and for such a
+        young library as WebGPU, I don't know if I can really expect many
+        resources focused on learning WebGPU for non-graphic computations.
       </p>
       <h1 id="webgpu-fundamentals">WebGPU Fundamentals</h1>
       <p>
@@ -128,11 +127,11 @@
         computations, I found
         <a
           href="https://webgpufundamentals.org/webgpu/lessons/webgpu-fundamentals.html"
-          >this is a website dedicated to teaching WebGPU</a
+          >this website dedicated to teaching WebGPU</a
         >, written by <a href="https://github.com/greggman">Gregg Tavares</a>. I
-        started from the beginning beginning, trying to solidify my undersanding
-        of the fundamentals again, skipped the part about graphics (vertex and
-        fragment shaders) and jumped directly to
+        started from the beginning, trying to solidify my undersanding of the
+        fundamentals again, skipped the part about graphics (vertex and fragment
+        shaders) and jumped directly to
         <a
           href="https://webgpufundamentals.org/webgpu/lessons/webgpu-fundamentals.html#a-run-computations-on-the-gpu"
           >the precious compute shaders</a
@@ -142,11 +141,11 @@
       <p>See this!</p>
       <p>[]</p>
       <p>
-        I know it looks less impressive. I could quikly have made this vector
-        scalar with a simple script, but this is using the GPU and it calculates
-        everything i parallel; I'm proud of this, and I’m looking forward to get
-        a better hang of compute shaders, so I can use them for big matrix
-        calculations in Battleground Builder.
+        I know this doesn't look very impressive as I could easily have made
+        this with a simple script. However, this is special because we are
+        performing parallel computations on the GPU. I'm excited to learn more
+        of compute shaders, as I believe they will be invaluable in enabling me
+        to perform large-scale matrix calculations for Battleground Builder.
       </p>
     </main>
   </body>
